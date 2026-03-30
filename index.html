@@ -4,13 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3H 지압온열침대 - VIP 무료 체험</title>
-    <!-- [로고 반영] 파비콘 (3h로고.png) -->
     <link rel="icon" href="./3h로고.png">
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Noto Sans KR -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     
     <script>
@@ -63,7 +59,6 @@
     <!-- Header -->
     <header class="bg-brand-dark text-white px-5 py-3 sticky top-0 z-50 shadow-md">
         <div class="max-w-md mx-auto flex justify-between items-center">
-            <!-- [로고 반영] 메인 로고 (3h 로고2.png) -->
             <div class="flex items-center">
                  <img src="./3h 로고2.png" alt="" class="h-8 object-contain bg-white rounded px-1 py-1">
             </div>
@@ -114,19 +109,18 @@
     <section class="py-8 px-5 bg-white border-b border-gray-100">
         <div class="max-w-md mx-auto fade-in-up delay-100">
             <h3 class="text-lg font-bold mb-4 text-brand-dark text-center">📺 3H 지압침대를 영상으로 만나보세요</h3>
-            <!-- 모바일 유튜브 앱 다이렉트 연결 주소로 변경 -->
-            <a href="https://www.youtube.com/watch?v=E1_MOJj9svo" target="_blank" rel="noopener noreferrer" class="block relative rounded-xl overflow-hidden shadow-md aspect-video bg-gray-200 group cursor-pointer">
-                <img src="https://img.youtube.com/vi/E1_MOJj9svo/hqdefault.jpg" alt="" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition-colors">
-                    <div class="bg-red-600 text-white rounded-full p-4 shadow-lg group-hover:scale-110 transition-transform">
-                        <i class="ph-fill ph-play text-4xl ml-1"></i>
-                    </div>
-                </div>
-                <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-3">
-                    <p class="text-white font-bold text-sm">2024년 3H 지압침대 TV CF</p>
-                    <p class="text-gray-300 text-xs mt-1">터치하여 유튜브에서 재생하기</p>
-                </div>
-            </a>
+
+            <!-- ✅ 변경: a 태그 → iframe으로 교체 (페이지 안에서 바로 재생) -->
+            <div class="rounded-xl overflow-hidden shadow-md aspect-video">
+                <iframe
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/E1_MOJj9svo"
+                    title="2024년 3H 지압침대 TV CF"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
     </section>
 
@@ -192,20 +186,17 @@
                 <p class="text-gray-500 text-sm mt-2">단순한 안마매트가 아닌 '척추 과학'입니다</p>
             </div>
 
-            <!-- [영상 2] 스파인얼라인 기술 영상 -->
-            <!-- 모바일 유튜브 앱 다이렉트 연결 주소로 변경 -->
-            <a href="https://www.youtube.com/watch?v=uDev_9Bwb_Y" target="_blank" rel="noopener noreferrer" class="block relative rounded-xl overflow-hidden shadow-md aspect-video mb-8 border border-gray-100 bg-gray-200 group cursor-pointer">
-                <img src="https://img.youtube.com/vi/uDev_9Bwb_Y/hqdefault.jpg" alt="" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition-colors">
-                    <div class="bg-red-600 text-white rounded-full p-4 shadow-lg group-hover:scale-110 transition-transform">
-                        <i class="ph-fill ph-play text-4xl ml-1"></i>
-                    </div>
-                </div>
-                <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-3">
-                    <p class="text-white font-bold text-sm">스파인얼라인 지압 기술의 핵심 원리</p>
-                    <p class="text-gray-300 text-xs mt-1">터치하여 유튜브에서 재생하기</p>
-                </div>
-            </a>
+            <!-- ✅ 변경: a 태그 → iframe으로 교체 (페이지 안에서 바로 재생) -->
+            <div class="rounded-xl overflow-hidden shadow-md aspect-video mb-8 border border-gray-100">
+                <iframe
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/uDev_9Bwb_Y"
+                    title="스파인얼라인 지압 기술의 핵심 원리"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
 
             <div class="space-y-4">
                 <div class="bg-gray-50 p-5 rounded-2xl shadow-sm border border-gray-100 relative overflow-hidden">
@@ -396,5 +387,3 @@
 
 </body>
 </html>
-
-
