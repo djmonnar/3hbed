@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3H 지압온열침대 - VIP 무료 체험</title>
-    <link rel="icon" href="https://cdn.imweb.me/thumbnail/20221009/58e40579dfc6a.png">
+    <!-- [로고 반영] 파비콘 (3h로고.png) -->
+    <link rel="icon" href="./3h로고.png">
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Pretendard & Noto Sans KR (Premium Typography) -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     
     <script>
@@ -18,23 +22,32 @@
                     },
                     colors: {
                         brand: {
-                            light: '#f7f2ea',
-                            gold: '#cba052',
-                            dark: '#1a1a1a',
-                            navy: '#2c3e50',
-                            green: '#008040'
+                            light: '#FAFAF8', // 더 부드럽고 고급스러운 웜화이트
+                            gold: '#D4AF37',  // 클래식하고 고급스러운 메탈릭 골드
+                            dark: '#18181B',  // 깊이감 있는 소프트 블랙
+                            navy: '#1e293b',
+                            green: '#047857'  // 무게감 있는 프리미엄 에메랄드 그린
                         }
+                    },
+                    boxShadow: {
+                        'soft': '0 20px 40px -15px rgba(0,0,0,0.05)',
+                        'glow': '0 0 20px rgba(212, 175, 55, 0.3)',
+                        'float': '0 -10px 40px rgba(0,0,0,0.08)'
                     }
                 }
             }
         }
     </script>
     <style>
-        body { font-family: 'Noto Sans KR', sans-serif; }
+        body { 
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #FAFAF8; 
+            letter-spacing: -0.02em; /* 세련된 자간 조정 */
+        }
         .fade-in-up {
-            animation: fadeInUp 0.8s ease-out forwards;
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
             opacity: 0;
-            transform: translateY(20px);
+            transform: translateY(24px);
         }
         @keyframes fadeInUp {
             to { opacity: 1; transform: translateY(0); }
@@ -43,62 +56,93 @@
         .delay-200 { animation-delay: 200ms; }
         .delay-300 { animation-delay: 300ms; }
         
+        /* 프리미엄 VIP 티켓 펀칭 디자인 */
         .coupon-cutout { position: relative; }
         .coupon-cutout::before, .coupon-cutout::after {
-            content: ''; position: absolute; top: 50%; width: 24px; height: 24px;
-            background-color: #f9fafb; border-radius: 50%; transform: translateY(-50%); z-index: 10;
+            content: ''; position: absolute; top: 50%; width: 32px; height: 32px;
+            background-color: #FAFAF8; border-radius: 50%; transform: translateY(-50%); z-index: 10;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);
         }
-        .coupon-cutout::before { left: -12px; }
-        .coupon-cutout::after { right: -12px; }
+        .coupon-cutout::before { left: -16px; }
+        .coupon-cutout::after { right: -16px; }
         
         ::-webkit-scrollbar { width: 0px; background: transparent; }
+
+        /* 유리 질감 (Glassmorphism) 유틸리티 */
+        .glass-header {
+            background: rgba(24, 24, 27, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .glass-bottom {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased pb-24">
+<body class="text-gray-800 antialiased pb-32">
 
-    <!-- Header -->
-    <header class="bg-brand-dark text-white px-5 py-3 sticky top-0 z-50 shadow-md">
+    <!-- Header (프리미엄 글래스모피즘 적용) -->
+    <header class="glass-header text-white px-5 py-3.5 sticky top-0 z-50 border-b border-white/10">
         <div class="max-w-md mx-auto flex justify-between items-center">
+            <!-- 메인 로고 -->
             <div class="flex items-center">
-                 <img src="https://cdn.imweb.me/thumbnail/20221009/58e40579dfc6a.png" alt="3H 로고" class="h-8 object-contain bg-white rounded px-1 py-1">
+                 <img src="./3h 로고2.png" alt="3H 지압침대 로고" class="h-8 object-contain bg-white/95 rounded-lg px-2 py-1 shadow-sm">
             </div>
-            <div class="text-xs text-brand-gold bg-gray-800 px-3 py-1.5 rounded-full border border-gray-700">
+            <div class="text-xs font-medium text-brand-gold bg-brand-gold/10 px-3.5 py-1.5 rounded-full border border-brand-gold/20 tracking-wide">
                 진주경상·남강센터
             </div>
         </div>
     </header>
 
     <!-- 메인 Hero 섹션 -->
-    <section class="relative bg-brand-light pt-8 pb-12 px-5 overflow-hidden">
+    <section class="relative bg-gradient-to-b from-brand-light to-white pt-10 pb-16 px-5 overflow-hidden">
+        <!-- 장식용 배경 블러 (Soft-skill) -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-brand-green/5 rounded-full blur-3xl -z-10"></div>
+        <div class="absolute bottom-10 left-10 w-48 h-48 bg-brand-gold/5 rounded-full blur-2xl -z-10"></div>
+
         <div class="max-w-md mx-auto relative z-10 fade-in-up">
-            <div class="inline-block bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-3 animate-pulse shadow-sm">
-                🎁 명함 QR 접속 고객 특별 혜택
+            <div class="inline-flex items-center gap-2 bg-red-50 text-red-600 text-xs font-bold px-3 py-1.5 rounded-full mb-4 border border-red-100 shadow-sm">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                </span>
+                명함 QR 접속 고객 특별 혜택
             </div>
-            <h2 class="text-3xl font-black leading-tight mb-4 text-brand-dark">
-                수천 번의 설명보다<br>한 번의 <span class="text-brand-green">직접 체험</span>이<br>정답입니다.
+            <h2 class="text-[32px] font-black leading-[1.3] mb-5 text-brand-dark tracking-tight">
+                수천 번의 설명보다<br>한 번의 <span class="text-brand-green relative inline-block">직접 체험<span class="absolute bottom-1 left-0 w-full h-2 bg-brand-green/20 -z-10"></span></span>이<br>정답입니다.
             </h2>
-            <p class="text-gray-600 mb-6 text-sm">
+            <p class="text-gray-500 mb-8 text-[15px] leading-relaxed font-medium">
                 특허받은 62개의 황동 지압봉과 70도 온열.<br>직접 누워보시면 왜 3H인지 알게 되십니다.
             </p>
             
-            <div class="rounded-xl overflow-hidden shadow-2xl mb-6 relative bg-white pb-4 border border-gray-100">
-                <div class="w-full h-56 bg-gray-200 flex items-center justify-center relative">
-                    <img src="https://www.3hk.co.kr/upload/product/2025/03/25/jAi2rXXGNrVB1qu-DJqprVGCS4gLZY.jpg" alt="" class="w-full h-full object-cover opacity-90 absolute inset-0">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                    <span class="absolute bottom-4 left-4 text-white font-bold text-lg drop-shadow-md">3H 스마트 지압침대</span>
+            <div class="rounded-3xl overflow-hidden shadow-soft mb-8 relative bg-white border border-gray-100/50 group">
+                <div class="w-full h-64 flex items-center justify-center relative overflow-hidden">
+                    <img src="https://www.3hk.co.kr/upload/product/2025/03/25/jAi2rXXGNrVB1qu-DJqprVGCS4gLZY.jpg" alt="3H 지압침대 메인" class="w-full h-full object-cover opacity-95 transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent"></div>
+                    <span class="absolute bottom-5 left-5 text-white font-bold text-xl drop-shadow-md tracking-tight">3H 스마트 지압침대</span>
                 </div>
-                <div class="flex justify-around pt-4 px-2">
-                    <div class="text-center">
-                        <i class="ph ph-thermometer-hot text-2xl text-red-500 mb-1"></i>
-                        <p class="text-xs font-bold">최고 70도 온열</p>
+                <div class="flex justify-between items-center p-5 bg-white">
+                    <div class="text-center flex-1">
+                        <div class="bg-red-50 w-12 h-12 mx-auto rounded-2xl flex items-center justify-center mb-2 text-red-500">
+                            <i class="ph-fill ph-thermometer-hot text-2xl"></i>
+                        </div>
+                        <p class="text-[11px] font-bold text-gray-700">최고 70도 온열</p>
                     </div>
-                    <div class="text-center border-l border-gray-200 pl-4">
-                        <i class="ph ph-hand-pointing text-2xl text-brand-gold mb-1"></i>
-                        <p class="text-xs font-bold">62개 지압봉</p>
+                    <div class="w-px h-10 bg-gray-100 mx-2"></div>
+                    <div class="text-center flex-1">
+                        <div class="bg-amber-50 w-12 h-12 mx-auto rounded-2xl flex items-center justify-center mb-2 text-brand-gold">
+                            <i class="ph-fill ph-hand-pointing text-2xl"></i>
+                        </div>
+                        <p class="text-[11px] font-bold text-gray-700">62개 지압봉</p>
                     </div>
-                    <div class="text-center border-l border-gray-200 pl-4">
-                        <i class="ph ph-stethoscope text-2xl text-blue-500 mb-1"></i>
-                        <p class="text-xs font-bold">의료기기 인증</p>
+                    <div class="w-px h-10 bg-gray-100 mx-2"></div>
+                    <div class="text-center flex-1">
+                        <div class="bg-blue-50 w-12 h-12 mx-auto rounded-2xl flex items-center justify-center mb-2 text-blue-500">
+                            <i class="ph-fill ph-stethoscope text-2xl"></i>
+                        </div>
+                        <p class="text-[11px] font-bold text-gray-700">의료기기 인증</p>
                     </div>
                 </div>
             </div>
@@ -106,126 +150,149 @@
     </section>
 
     <!-- [영상 1] 2024년 3H 지압침대 통합 영상 -->
-    <section class="py-8 px-5 bg-white border-b border-gray-100">
+    <section class="py-12 px-5 bg-white border-y border-gray-100/50">
         <div class="max-w-md mx-auto fade-in-up delay-100">
-            <h3 class="text-lg font-bold mb-4 text-brand-dark text-center">📺 3H 지압침대를 영상으로 만나보세요</h3>
-
-            <!-- ✅ 변경: a 태그 → iframe으로 교체 (페이지 안에서 바로 재생) -->
-            <div class="rounded-xl overflow-hidden shadow-md aspect-video">
-                <iframe
-                    class="w-full h-full"
-                    src="https://www.youtube.com/embed/E1_MOJj9svo"
-                    title="2024년 3H 지압침대 TV CF"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+            <div class="flex items-center gap-2 mb-6 justify-center">
+                <i class="ph-fill ph-monitor-play text-brand-gold text-xl"></i>
+                <h3 class="text-lg font-bold text-brand-dark">3H 지압침대 프리미엄 영상</h3>
             </div>
+            
+            <a href="https://www.youtube.com/watch?v=E1_MOJj9svo" target="_blank" rel="noopener noreferrer" class="block relative rounded-3xl overflow-hidden shadow-soft aspect-video bg-gray-100 group cursor-pointer border border-gray-100 transition-all duration-300 hover:shadow-glow">
+                <img src="https://img.youtube.com/vi/E1_MOJj9svo/hqdefault.jpg" alt="3H 지압침대 통합광고 썸네일" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-brand-dark/30 flex items-center justify-center group-hover:bg-brand-dark/40 transition-colors">
+                    <div class="bg-white/90 backdrop-blur-sm text-brand-dark rounded-full w-16 h-16 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform group-hover:text-red-600">
+                        <i class="ph-fill ph-play text-3xl ml-1"></i>
+                    </div>
+                </div>
+                <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-brand-dark/90 to-transparent p-4">
+                    <p class="text-white font-bold text-sm tracking-wide">2024년 3H 지압침대 TV CF</p>
+                    <p class="text-white/70 text-xs mt-1 font-medium">터치하여 고화질로 재생하기</p>
+                </div>
+            </a>
         </div>
     </section>
 
-    <!-- 🎁 VIP 무료 체험 안내 & 네이버 플레이스 연동 -->
-    <section class="py-10 px-5 bg-gray-50">
+    <!-- 🎁 VIP 무료 체험 안내 & 네이버 플레이스 연동 (프리미엄 쿠폰 디자인) -->
+    <section class="py-16 px-5 bg-brand-light">
         <div class="max-w-md mx-auto fade-in-up delay-100">
-            <div class="bg-brand-green text-white rounded-2xl shadow-lg overflow-hidden coupon-cutout mb-6">
-                <div class="p-6 border-b border-white/20 border-dashed relative">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-2xl font-black">VIP 무료 체험권</h3>
-                        <i class="ph-fill ph-ticket text-3xl text-brand-gold"></i>
+            
+            <div class="bg-gradient-to-br from-brand-green to-[#03543D] text-white rounded-[2rem] shadow-xl overflow-hidden coupon-cutout mb-8 border border-white/10 relative">
+                <!-- 빛반사 효과 -->
+                <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-tr from-transparent via-white/5 to-transparent skew-x-12 translate-x-1/2"></div>
+                
+                <div class="p-8 border-b border-white/10 relative">
+                    <div class="flex justify-between items-start mb-3">
+                        <div>
+                            <span class="text-brand-gold text-xs font-black tracking-widest mb-1 block">INVITATION</span>
+                            <h3 class="text-2xl font-black tracking-tight text-white drop-shadow-sm">VIP 무료 체험권</h3>
+                        </div>
+                        <div class="bg-white/10 p-2.5 rounded-2xl backdrop-blur-sm border border-white/10">
+                            <i class="ph-fill ph-crown text-3xl text-brand-gold drop-shadow-sm"></i>
+                        </div>
                     </div>
-                    <p class="text-sm opacity-90 mb-4">가까운 매장에 방문하셔서 부담 없이<br>척추 온열 지압의 기적을 경험해보세요.</p>
-                    <ul class="space-y-2 text-sm font-medium">
-                        <li class="flex items-center gap-2">
-                            <i class="ph-fill ph-check-circle text-brand-gold"></i><span>1:1 체형 맞춤 컨설팅 무료</span>
+                    <p class="text-[15px] text-white/90 mb-6 leading-relaxed font-medium">가까운 매장에 방문하셔서 부담 없이<br>척추 온열 지압의 기적을 경험해보세요.</p>
+                    
+                    <ul class="space-y-3 text-sm font-medium">
+                        <li class="flex items-center gap-3">
+                            <div class="bg-brand-gold/20 p-1 rounded-full"><i class="ph-bold ph-check text-brand-gold"></i></div>
+                            <span class="text-white/95">1:1 체형 맞춤 컨설팅 무료</span>
                         </li>
-                        <li class="flex items-center gap-2">
-                            <i class="ph-fill ph-check-circle text-brand-gold"></i><span>전 모델 40분 심층 지압/온열 체험</span>
+                        <li class="flex items-center gap-3">
+                            <div class="bg-brand-gold/20 p-1 rounded-full"><i class="ph-bold ph-check text-brand-gold"></i></div>
+                            <span class="text-white/95">전 모델 40분 심층 지압/온열 체험</span>
                         </li>
-                        <li class="flex items-center gap-2">
-                            <i class="ph-fill ph-check-circle text-brand-gold"></i><span>구매 강요 절대 없음 (편안한 휴식)</span>
+                        <li class="flex items-center gap-3">
+                            <div class="bg-brand-gold/20 p-1 rounded-full"><i class="ph-bold ph-check text-brand-gold"></i></div>
+                            <span class="text-white/95">구매 강요 절대 없음 (편안한 휴식)</span>
                         </li>
                     </ul>
                 </div>
-                <div class="p-4 bg-black/10 text-center">
-                    <p class="text-xs font-bold tracking-widest text-brand-gold">진주경상센터 / 남강센터 방문 고객 전용</p>
+                <div class="p-4 bg-black/20 text-center backdrop-blur-md">
+                    <p class="text-[11px] font-bold tracking-[0.2em] text-brand-gold/90">진주경상센터 / 남강센터 스페셜 혜택</p>
                 </div>
             </div>
             
             <div class="flex flex-col gap-3">
-                <a href="https://m.place.naver.com/place/1201130040/home?entry=pll&bk_query=3h%EC%A7%80%EC%95%95%EC%B9%A8%EB%8C%80%20%EC%A7%84%EC%A3%BC" target="_blank" rel="noopener noreferrer" class="w-full bg-white border border-gray-200 p-4 rounded-xl shadow-sm flex items-center justify-between hover:border-green-500 transition-colors group cursor-pointer">
-                    <div class="flex items-center gap-3">
-                        <div class="bg-green-50 p-2.5 rounded-full text-green-600 group-hover:bg-green-100"><i class="ph-fill ph-map-pin text-xl"></i></div>
+                <a href="https://m.place.naver.com/place/1201130040/home?entry=pll&bk_query=3h%EC%A7%80%EC%95%95%EC%B9%A8%EB%8C%80%20%EC%A7%84%EC%A3%BC" target="_blank" rel="noopener noreferrer" class="w-full bg-white border border-gray-100 p-5 rounded-3xl shadow-sm flex items-center justify-between hover:shadow-md hover:border-brand-green/30 transition-all duration-300 group cursor-pointer">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-brand-light p-3 rounded-2xl text-brand-green group-hover:bg-brand-green group-hover:text-white transition-colors duration-300">
+                            <i class="ph-fill ph-map-pin text-2xl"></i>
+                        </div>
                         <div class="text-left">
-                            <p class="font-bold text-gray-800 text-base">진주경상센터 <span class="text-xs font-normal text-gray-500 ml-1">경남 진주시</span></p>
-                            <p class="text-xs text-green-600 font-medium mt-0.5">네이버 지도로 매장 위치 보기</p>
+                            <p class="font-bold text-gray-900 text-[16px] mb-0.5">진주경상센터 <span class="text-xs font-normal text-gray-500 ml-1">경남 진주시</span></p>
+                            <p class="text-xs text-brand-green font-semibold">네이버 지도로 매장 위치 보기</p>
                         </div>
                     </div>
-                    <i class="ph-bold ph-caret-right text-gray-300 group-hover:text-green-500"></i>
+                    <div class="bg-gray-50 p-2 rounded-full group-hover:bg-brand-green/10 transition-colors">
+                        <i class="ph-bold ph-caret-right text-gray-400 group-hover:text-brand-green"></i>
+                    </div>
                 </a>
                 
-                <a href="https://m.place.naver.com/place/2091436964/home?entry=pll&bk_query=3h%EC%A7%80%EC%95%95%EC%B9%A8%EB%8C%80%20%EC%A7%84%EC%A3%BC" target="_blank" rel="noopener noreferrer" class="w-full bg-white border border-gray-200 p-4 rounded-xl shadow-sm flex items-center justify-between hover:border-green-500 transition-colors group cursor-pointer">
-                    <div class="flex items-center gap-3">
-                        <div class="bg-green-50 p-2.5 rounded-full text-green-600 group-hover:bg-green-100"><i class="ph-fill ph-map-pin text-xl"></i></div>
+                <a href="https://m.place.naver.com/place/2091436964/home?entry=pll&bk_query=3h%EC%A7%80%EC%95%95%EC%B9%A8%EB%8C%80%20%EC%A7%84%EC%A3%BC" target="_blank" rel="noopener noreferrer" class="w-full bg-white border border-gray-100 p-5 rounded-3xl shadow-sm flex items-center justify-between hover:shadow-md hover:border-brand-green/30 transition-all duration-300 group cursor-pointer">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-brand-light p-3 rounded-2xl text-brand-green group-hover:bg-brand-green group-hover:text-white transition-colors duration-300">
+                            <i class="ph-fill ph-map-pin text-2xl"></i>
+                        </div>
                         <div class="text-left">
-                            <p class="font-bold text-gray-800 text-base">남강센터 <span class="text-xs font-normal text-gray-500 ml-1">경남 진주시</span></p>
-                            <p class="text-xs text-green-600 font-medium mt-0.5">네이버 지도로 매장 위치 보기</p>
+                            <p class="font-bold text-gray-900 text-[16px] mb-0.5">남강센터 <span class="text-xs font-normal text-gray-500 ml-1">경남 진주시</span></p>
+                            <p class="text-xs text-brand-green font-semibold">네이버 지도로 매장 위치 보기</p>
                         </div>
                     </div>
-                    <i class="ph-bold ph-caret-right text-gray-300 group-hover:text-green-500"></i>
+                    <div class="bg-gray-50 p-2 rounded-full group-hover:bg-brand-green/10 transition-colors">
+                        <i class="ph-bold ph-caret-right text-gray-400 group-hover:text-brand-green"></i>
+                    </div>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- 차별점 (왜 3H 인가?) -->
-    <section class="py-12 px-5 bg-white">
+    <section class="py-16 px-5 bg-white border-t border-gray-100">
         <div class="max-w-md mx-auto fade-in-up delay-200">
-            <div class="text-center mb-8">
-                <span class="text-brand-green font-bold text-sm tracking-wider">TECHNOLOGY</span>
-                <h3 class="text-2xl font-black mt-1 text-brand-dark">다른 침대와 무엇이 다를까요?</h3>
-                <p class="text-gray-500 text-sm mt-2">단순한 안마매트가 아닌 '척추 과학'입니다</p>
+            <div class="text-center mb-10">
+                <span class="text-brand-green font-bold text-xs tracking-[0.2em] uppercase block mb-2">Core Technology</span>
+                <h3 class="text-[26px] font-black leading-tight text-brand-dark">비교할 수 없는<br>독보적 척추 과학</h3>
             </div>
 
-            <!-- ✅ 변경: a 태그 → iframe으로 교체 (페이지 안에서 바로 재생) -->
-            <div class="rounded-xl overflow-hidden shadow-md aspect-video mb-8 border border-gray-100">
-                <iframe
-                    class="w-full h-full"
-                    src="https://www.youtube.com/embed/uDev_9Bwb_Y"
-                    title="스파인얼라인 지압 기술의 핵심 원리"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
+            <!-- [영상 2] 스파인얼라인 기술 영상 -->
+            <a href="https://www.youtube.com/watch?v=uDev_9Bwb_Y" target="_blank" rel="noopener noreferrer" class="block relative rounded-3xl overflow-hidden shadow-soft mb-10 border border-gray-100/50 bg-gray-100 group cursor-pointer transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                <img src="https://img.youtube.com/vi/uDev_9Bwb_Y/hqdefault.jpg" alt="3H 지압침대 기술원리 썸네일" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-brand-dark/20 flex items-center justify-center group-hover:bg-brand-dark/30 transition-colors">
+                    <div class="bg-white/90 backdrop-blur-sm text-brand-dark rounded-full w-16 h-16 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="ph-fill ph-play text-3xl ml-1"></i>
+                    </div>
+                </div>
+                <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-brand-dark/90 via-brand-dark/50 to-transparent p-5">
+                    <span class="bg-brand-gold text-white text-[10px] font-bold px-2 py-1 rounded mb-2 inline-block">TECH 영상</span>
+                    <p class="text-white font-bold text-[15px]">스파인얼라인 지압 기술의 핵심 원리</p>
+                </div>
+            </a>
 
-            <div class="space-y-4">
-                <div class="bg-gray-50 p-5 rounded-2xl shadow-sm border border-gray-100 relative overflow-hidden">
-                    <div class="absolute top-0 left-0 w-1 h-full bg-brand-gold"></div>
+            <div class="space-y-5">
+                <div class="bg-brand-light p-6 rounded-3xl border border-gray-100 transition-all duration-300 hover:shadow-md hover:bg-white">
                     <div class="flex items-start gap-4">
-                        <div class="bg-white p-3 rounded-full text-brand-gold font-bold text-xl shadow-sm">1</div>
+                        <div class="bg-white p-3.5 rounded-2xl text-brand-green font-black text-xl shadow-sm border border-gray-50 flex items-center justify-center min-w-[52px]">01</div>
                         <div>
-                            <h4 class="font-bold text-lg mb-1">수평 롤링이 아닌 <span class="text-brand-green">'수직 상승 지압'</span></h4>
-                            <p class="text-gray-600 text-sm leading-relaxed">상하로 문지르는 롤링 방식은 척추에 무리를 줄 수 있습니다. 3H는 특허받은 <strong>62개의 황동 지압봉</strong>이 수직으로 상승하여 사람의 손가락처럼 척추 마디마디 18개 통증혈을 정확하고 깊숙하게 꾹꾹 눌러줍니다.</p>
+                            <h4 class="font-bold text-lg mb-2 text-brand-dark tracking-tight">수평 롤링이 아닌 <span class="text-brand-green">'수직 상승 지압'</span></h4>
+                            <p class="text-gray-500 text-[14px] leading-relaxed font-medium">상하로 문지르는 롤링 방식은 척추에 무리를 줄 수 있습니다. 특허받은 <strong>62개의 황동 지압봉</strong>이 사람의 손가락처럼 18개 통증혈을 정확히 수직으로 눌러줍니다.</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-50 p-5 rounded-2xl shadow-sm border border-gray-100 relative overflow-hidden">
-                    <div class="absolute top-0 left-0 w-1 h-full bg-red-500"></div>
+                <div class="bg-brand-light p-6 rounded-3xl border border-gray-100 transition-all duration-300 hover:shadow-md hover:bg-white">
                     <div class="flex items-start gap-4">
-                        <div class="bg-white p-3 rounded-full text-red-500 font-bold text-xl shadow-sm">2</div>
+                        <div class="bg-white p-3.5 rounded-2xl text-red-500 font-black text-xl shadow-sm border border-gray-50 flex items-center justify-center min-w-[52px]">02</div>
                         <div>
-                            <h4 class="font-bold text-lg mb-1">최고 70도 <span class="text-red-500">'온열 뜸'</span> 효과</h4>
-                            <p class="text-gray-600 text-sm leading-relaxed">단순히 표면만 따뜻해지는 온열 매트가 아닙니다. 지압봉 자체가 <strong>최고 70도</strong>까지 가열되어 혈자리에 직접 열을 전달하는 '전통 뜸'의 원리를 그대로 구현해 혈액순환과 근육 이완을 극대화합니다.</p>
+                            <h4 class="font-bold text-lg mb-2 text-brand-dark tracking-tight">최고 70도 <span class="text-red-500">'온열 뜸'</span> 효과</h4>
+                            <p class="text-gray-500 text-[14px] leading-relaxed font-medium">단순히 표면만 따뜻해지는 매트가 아닙니다. 지압봉 자체가 <strong>최고 70도</strong>까지 가열되어 혈자리에 열을 전달하는 '전통 뜸'의 원리로 근육 이완을 돕습니다.</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-50 p-5 rounded-2xl shadow-sm border border-gray-100 relative overflow-hidden">
-                    <div class="absolute top-0 left-0 w-1 h-full bg-blue-500"></div>
+                <div class="bg-brand-light p-6 rounded-3xl border border-gray-100 transition-all duration-300 hover:shadow-md hover:bg-white">
                     <div class="flex items-start gap-4">
-                        <div class="bg-white p-3 rounded-full text-blue-500 font-bold text-xl shadow-sm">3</div>
+                        <div class="bg-white p-3.5 rounded-2xl text-blue-500 font-black text-xl shadow-sm border border-gray-50 flex items-center justify-center min-w-[52px]">03</div>
                         <div>
-                            <h4 class="font-bold text-lg mb-1">공인받은 <span class="text-blue-500">'2등급 의료기기'</span></h4>
-                            <p class="text-gray-600 text-sm leading-relaxed">일반 가구가 아닙니다. 식약처 GMP 인증은 물론, <strong>미국 FDA 의료기기 등록, 미국 메디케어</strong> 등 까다로운 국내외 인증을 모두 통과한 신뢰할 수 있는 척추 온열 지압 의료기기입니다.</p>
+                            <h4 class="font-bold text-lg mb-2 text-brand-dark tracking-tight">공인받은 <span class="text-blue-600">'2등급 의료기기'</span></h4>
+                            <p class="text-gray-500 text-[14px] leading-relaxed font-medium">일반 가구가 아닙니다. 식약처 GMP 인증은 물론, <strong>미국 FDA 등록 및 메디케어</strong> 등 까다로운 국내외 인증을 통과한 신뢰할 수 있는 의료기기입니다.</p>
                         </div>
                     </div>
                 </div>
@@ -234,66 +301,73 @@
     </section>
 
     <!-- 주력 판매 모델 3가지 -->
-    <section class="py-12 px-5 bg-gray-50">
+    <section class="py-16 px-5 bg-brand-light/50 border-t border-gray-100">
         <div class="max-w-md mx-auto fade-in-up delay-200">
-            <div class="text-center mb-8">
-                <span class="text-brand-green font-bold text-sm tracking-wider">BEST SELLERS</span>
-                <h3 class="text-2xl font-black mt-1 text-brand-dark">매장 체험 1순위 주력 모델</h3>
-                <p class="text-gray-500 text-sm mt-2">매장에서 직접 누워보고 비교해보세요</p>
+            <div class="text-center mb-10">
+                <span class="text-brand-gold font-bold text-xs tracking-[0.2em] uppercase block mb-2">Signature Models</span>
+                <h3 class="text-[26px] font-black text-brand-dark tracking-tight">가장 사랑받는<br>주력 베스트셀러 3</h3>
             </div>
 
-            <div class="space-y-8">
+            <div class="space-y-10">
                 <!-- 모델 1: 슈페리어 -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] border border-gray-100">
-                    <div class="h-56 bg-white relative p-4 flex items-center justify-center">
-                        <img src="https://www.3hk.co.kr/upload/product/2025/03/25/CRMzfs5kvcKSYk_ZvHGwTWVxpp5nPZ.png" alt="" class="w-full h-full object-contain">
-                        <div class="absolute top-3 left-3 bg-brand-dark text-brand-gold text-xs font-bold px-3 py-1 rounded-full border border-brand-gold/30 shadow-sm">프리미엄 1위</div>
+                <div class="bg-white rounded-[2rem] overflow-hidden shadow-soft border border-gray-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl group">
+                    <div class="h-64 bg-gradient-to-b from-brand-light to-white relative p-6 flex items-center justify-center">
+                        <img src="https://www.3hk.co.kr/upload/product/2025/03/25/CRMzfs5kvcKSYk_ZvHGwTWVxpp5nPZ.png" alt="3H 지압침대 슈페리어" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-brand-dark text-brand-gold text-[11px] font-bold px-3 py-1.5 rounded-full shadow-md backdrop-blur-sm border border-brand-gold/30 tracking-wider">PREMIUM No.1</div>
                     </div>
-                    <div class="p-5 border-t border-gray-50">
-                        <h4 class="text-xl font-bold mb-2 text-gray-900">지압침대 슈페리어</h4>
-                        <p class="text-sm text-gray-600 leading-relaxed mb-3">3H의 기술력이 집약된 최고급 원목 프레임 모델입니다. 견고하고 중후한 원목의 질감을 그대로 살려 안방의 품격을 높여주며, 부모님을 위한 최고의 효도 선물로 압도적인 1위를 차지하고 있습니다.</p>
-                        <p class="text-xs font-medium text-gray-500 mb-4"><i class="ph-fill ph-palette text-brand-gold"></i> 색상: 클래식 월넛 (최고급 원목)</p>
+                    <div class="p-7 border-t border-gray-50">
+                        <div class="flex justify-between items-end mb-3">
+                            <h4 class="text-[22px] font-black text-brand-dark tracking-tight">지압침대 슈페리어</h4>
+                        </div>
+                        <p class="text-[14px] text-gray-500 leading-relaxed mb-4 font-medium">3H의 기술력이 집약된 최고급 원목 프레임. 견고하고 중후한 원목 질감이 안방의 품격을 높여주며, 부모님을 위한 최고의 효도 선물로 꼽힙니다.</p>
+                        <div class="bg-gray-50 rounded-xl p-3 mb-5 border border-gray-100/50">
+                            <p class="text-[12px] font-semibold text-gray-600 flex items-center gap-2"><i class="ph-fill ph-palette text-brand-gold text-lg"></i> 클래식 월넛 (최고급 원목)</p>
+                        </div>
                         <div class="flex gap-2 flex-wrap">
-                            <span class="bg-brand-light text-brand-gold font-medium text-xs px-2.5 py-1 rounded">#최고급원목</span>
-                            <span class="bg-brand-light text-brand-gold font-medium text-xs px-2.5 py-1 rounded">#프리미엄명작</span>
-                            <span class="bg-brand-light text-brand-gold font-medium text-xs px-2.5 py-1 rounded">#효도선물1위</span>
+                            <span class="bg-brand-gold/10 text-brand-gold font-bold text-[11px] px-3 py-1.5 rounded-lg border border-brand-gold/20">#최고급원목</span>
+                            <span class="bg-brand-gold/10 text-brand-gold font-bold text-[11px] px-3 py-1.5 rounded-lg border border-brand-gold/20">#프리미엄명작</span>
+                            <span class="bg-brand-gold/10 text-brand-gold font-bold text-[11px] px-3 py-1.5 rounded-lg border border-brand-gold/20">#효도선물1위</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- 모델 2: 인베스트 -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] border border-gray-100">
-                    <div class="h-56 bg-white relative p-4 flex items-center justify-center">
-                        <img src="https://www.3hk.co.kr/upload/product/2025/03/25/cn8oOwPDHB6NGbarmVqMCb39FEStWb.jpg" alt="" class="w-full h-full object-contain">
-                        <div class="absolute top-3 left-3 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">국민 베스트셀러</div>
+                <div class="bg-white rounded-[2rem] overflow-hidden shadow-soft border border-gray-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl group">
+                    <div class="h-64 bg-gradient-to-b from-gray-50 to-white relative p-6 flex items-center justify-center">
+                        <img src="https://www.3hk.co.kr/upload/product/2025/03/25/cn8oOwPDHB6NGbarmVqMCb39FEStWb.jpg" alt="3H 지압침대 인베스트" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105 drop-shadow-sm">
+                        <div class="absolute top-4 left-4 bg-blue-600 text-white text-[11px] font-bold px-3 py-1.5 rounded-full shadow-md tracking-wider">BEST SELLER</div>
                     </div>
-                    <div class="p-5 border-t border-gray-50">
-                        <h4 class="text-xl font-bold mb-2 text-gray-900">지압침대 인베스트</h4>
-                        <p class="text-sm text-gray-600 leading-relaxed mb-3">어떤 인테리어와도 조화롭게 어울리는 모던하고 세련된 가죽 헤드보드 디자인입니다. 합리적인 가격에 최상의 수면 환경을 제공하여 신혼부부부터 장년층까지 가장 대중적으로 사랑받는 모델입니다.</p>
-                        <p class="text-xs font-medium text-gray-500 mb-4"><i class="ph-fill ph-palette text-blue-500"></i> 색상: 베이지, 모카브라운, 네이비 등</p>
+                    <div class="p-7 border-t border-gray-50">
+                        <h4 class="text-[22px] font-black text-brand-dark tracking-tight mb-3">지압침대 인베스트</h4>
+                        <p class="text-[14px] text-gray-500 leading-relaxed mb-4 font-medium">어떤 인테리어와도 조화롭게 어울리는 모던한 가죽 헤드보드 디자인. 합리적인 가격으로 신혼부부부터 장년층까지 폭넓게 사랑받는 대중적 모델입니다.</p>
+                        <div class="bg-gray-50 rounded-xl p-3 mb-5 border border-gray-100/50">
+                            <p class="text-[12px] font-semibold text-gray-600 flex items-center gap-2"><i class="ph-fill ph-palette text-blue-500 text-lg"></i> 베이지, 모카브라운, 네이비 등</p>
+                        </div>
                         <div class="flex gap-2 flex-wrap">
-                            <span class="bg-blue-50 text-blue-600 font-medium text-xs px-2.5 py-1 rounded">#모던디자인</span>
-                            <span class="bg-blue-50 text-blue-600 font-medium text-xs px-2.5 py-1 rounded">#합리적인선택</span>
-                            <span class="bg-blue-50 text-blue-600 font-medium text-xs px-2.5 py-1 rounded">#신혼부부추천</span>
+                            <span class="bg-blue-50 text-blue-600 font-bold text-[11px] px-3 py-1.5 rounded-lg border border-blue-100/50">#모던디자인</span>
+                            <span class="bg-blue-50 text-blue-600 font-bold text-[11px] px-3 py-1.5 rounded-lg border border-blue-100/50">#가성비최고</span>
+                            <span class="bg-blue-50 text-blue-600 font-bold text-[11px] px-3 py-1.5 rounded-lg border border-blue-100/50">#신혼부부추천</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- 모델 3: 지압 쇼파 커버드 -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] border border-red-500/50 relative">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-red-500 z-10"></div>
-                    <div class="h-56 bg-white relative p-4 flex items-center justify-center">
-                        <img src="https://www.3hk.co.kr/upload/product/2025/03/25/R3DQ7WxCrevkkwq0YpkPaLdSRbczrx.png" alt="" class="w-full h-full object-contain">
-                        <div class="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full animate-pulse shadow-sm">NEW 핫 트렌드</div>
+                <div class="bg-white rounded-[2rem] overflow-hidden shadow-soft border border-gray-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl group relative">
+                    <div class="absolute top-0 left-0 w-full h-1.5 bg-red-500 z-10"></div>
+                    <div class="h-64 bg-gradient-to-b from-red-50/50 to-white relative p-6 flex items-center justify-center">
+                        <img src="https://www.3hk.co.kr/upload/product/2025/03/25/R3DQ7WxCrevkkwq0YpkPaLdSRbczrx.png" alt="3H 지압 쇼파 커버드" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-red-500 text-white text-[11px] font-bold px-3 py-1.5 rounded-full shadow-md animate-pulse tracking-wider">NEW TREND</div>
                     </div>
-                    <div class="p-5 border-t border-gray-50">
-                        <h4 class="text-xl font-bold mb-2 text-gray-900">지압 쇼파 커버드</h4>
-                        <p class="text-sm text-gray-600 leading-relaxed mb-3">거실 소파와 척추 지압 의료기기를 하나로 합친 혁신적인 2-in-1 모델입니다. 지압을 받지 않을 땐 전용 패브릭 커버를 덮어 고급스러운 거실 소파로 완벽하게 변신하여 공간 활용도가 뛰어납니다.</p>
-                        <p class="text-xs font-medium text-gray-500 mb-4"><i class="ph-fill ph-palette text-red-500"></i> 색상: 오트밀 베이지, 웜 그레이</p>
+                    <div class="p-7 border-t border-gray-50">
+                        <h4 class="text-[22px] font-black text-brand-dark tracking-tight mb-3">지압 쇼파 커버드</h4>
+                        <p class="text-[14px] text-gray-500 leading-relaxed mb-4 font-medium">거실 소파와 척추 지압 의료기기를 하나로 합친 혁신적인 2-in-1 모델. 지압을 받지 않을 땐 전용 패브릭 커버를 덮어 고급스러운 거실 소파로 변신합니다.</p>
+                        <div class="bg-gray-50 rounded-xl p-3 mb-5 border border-gray-100/50">
+                            <p class="text-[12px] font-semibold text-gray-600 flex items-center gap-2"><i class="ph-fill ph-palette text-red-500 text-lg"></i> 오트밀 베이지, 웜 그레이</p>
+                        </div>
                         <div class="flex gap-2 flex-wrap">
-                            <span class="bg-red-50 text-red-600 font-medium text-xs px-2.5 py-1 rounded">#투인원소파</span>
-                            <span class="bg-red-50 text-red-600 font-medium text-xs px-2.5 py-1 rounded">#거실인테리어</span>
-                            <span class="bg-red-50 text-red-600 font-medium text-xs px-2.5 py-1 rounded">#커버형디자인</span>
+                            <span class="bg-red-50 text-red-600 font-bold text-[11px] px-3 py-1.5 rounded-lg border border-red-100/50">#투인원소파</span>
+                            <span class="bg-red-50 text-red-600 font-bold text-[11px] px-3 py-1.5 rounded-lg border border-red-100/50">#거실인테리어</span>
+                            <span class="bg-red-50 text-red-600 font-bold text-[11px] px-3 py-1.5 rounded-lg border border-red-100/50">#커버형디자인</span>
                         </div>
                     </div>
                 </div>
@@ -302,51 +376,65 @@
     </section>
 
     <!-- 고객 리얼 후기 -->
-    <section class="py-12 px-5 bg-white">
+    <section class="py-16 px-5 bg-brand-dark text-white">
         <div class="max-w-md mx-auto">
-            <div class="text-center mb-8">
-                <h3 class="text-2xl font-black text-brand-dark mb-2">고객님들의 <span class="text-brand-green">생생한 후기</span></h3>
-                <p class="text-gray-500 text-sm">먼저 경험하신 분들의 이야기입니다</p>
+            <div class="mb-10 text-center">
+                <i class="ph-fill ph-quotes text-brand-gold text-3xl mb-3 opacity-80"></i>
+                <h3 class="text-[24px] font-black tracking-tight mb-2">고객님들의 생생한 후기</h3>
+                <p class="text-gray-400 text-sm font-medium">먼저 경험하신 분들의 이야기입니다</p>
             </div>
-            <div class="bg-brand-light/30 rounded-2xl p-5 mb-4 border border-brand-gold/20">
-                <div class="flex items-center gap-1 text-brand-gold mb-2 text-sm">
-                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+            
+            <div class="space-y-4">
+                <div class="bg-white/5 backdrop-blur-sm rounded-3xl p-6 border border-white/10 hover:bg-white/10 transition-colors">
+                    <div class="flex items-center gap-1 text-brand-gold mb-4 text-sm">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <h4 class="font-bold text-lg text-white mb-3 tracking-tight">"부모님이 너무 좋아하십니다."</h4>
+                    <p class="text-[14px] text-gray-300 leading-relaxed mb-5 font-medium">어머니가 평소 허리가 뻐근하시다고 해서 남강센터에 모시고 가서 직접 체험해보고 '슈페리어'로 구매했습니다. 지금은 아침에 일어나실 때 몸이 너무 가볍다며 칭찬이 자자하세요.</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-gold text-xs font-bold">김*</div>
+                        <p class="text-xs text-gray-400 font-semibold">40대 직장인 · 슈페리어 구매</p>
+                    </div>
                 </div>
-                <h4 class="font-bold text-gray-800 mb-2">"부모님이 너무 좋아하십니다."</h4>
-                <p class="text-sm text-gray-600 leading-relaxed mb-3">어머니가 평소 허리가 뻐근하시다고 해서 남강센터에 모시고 가서 직접 체험해보고 '슈페리어'로 구매했습니다. 지금은 아침에 일어나실 때 몸이 너무 가볍다며 칭찬이 자자하세요. 진작 사드릴 걸 그랬습니다.</p>
-                <p class="text-xs text-gray-400 font-medium">- 40대 직장인 김** 고객님 (슈페리어 구매)</p>
-            </div>
-            <div class="bg-brand-light/30 rounded-2xl p-5 mb-4 border border-brand-gold/20">
-                <div class="flex items-center gap-1 text-brand-gold mb-2 text-sm">
-                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                
+                <div class="bg-white/5 backdrop-blur-sm rounded-3xl p-6 border border-white/10 hover:bg-white/10 transition-colors">
+                    <div class="flex items-center gap-1 text-brand-gold mb-4 text-sm">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <h4 class="font-bold text-lg text-white mb-3 tracking-tight">"매일 퇴근하고 안마받는 기분이에요"</h4>
+                    <p class="text-[14px] text-gray-300 leading-relaxed mb-5 font-medium">거실에 일반 소파 대신 '쇼파 커버드'를 두었습니다. 퇴근하고 뜨끈하게 온열 올려놓고 지압 받으면서 TV 보면 하루 피로가 싹 풀립니다. 인테리어 해치지 않아서 더 만족스러워요.</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-brand-green/30 flex items-center justify-center text-brand-green text-xs font-bold">이*</div>
+                        <p class="text-xs text-gray-400 font-semibold">30대 주부 · 쇼파 커버드 구매</p>
+                    </div>
                 </div>
-                <h4 class="font-bold text-gray-800 mb-2">"매일 퇴근하고 안마받는 기분이에요"</h4>
-                <p class="text-sm text-gray-600 leading-relaxed mb-3">거실에 일반 소파 대신 '쇼파 커버드'를 두었습니다. 퇴근하고 뜨끈하게 온열 올려놓고 지압 받으면서 TV 보면 하루 피로가 싹 풀립니다. 인테리어 해치지 않아서 더 만족스러워요.</p>
-                <p class="text-xs text-gray-400 font-medium">- 30대 주부 이** 고객님 (쇼파 커버드 구매)</p>
             </div>
         </div>
     </section>
 
     <!-- 자주 묻는 질문 (FAQ) -->
-    <section class="py-12 px-5 bg-gray-50">
+    <section class="py-16 px-5 bg-brand-light">
         <div class="max-w-md mx-auto">
-            <h3 class="text-xl font-bold text-brand-dark mb-6 text-center">자주 묻는 질문 (FAQ)</h3>
-            <div class="space-y-3">
-                <div class="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-                    <div class="flex items-start gap-3">
-                        <span class="text-brand-green font-bold text-lg">Q.</span>
+            <div class="text-center mb-8">
+                <h3 class="text-2xl font-black text-brand-dark tracking-tight">자주 묻는 질문</h3>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm transition-all hover:shadow-md">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-brand-green/10 text-brand-green rounded-xl w-10 h-10 flex items-center justify-center font-black text-lg shrink-0">Q</div>
                         <div>
-                            <p class="font-bold text-gray-800 text-sm mb-1">매일 사용하면 전기 요금이 많이 나오지 않나요?</p>
-                            <p class="text-xs text-gray-600 leading-relaxed">아닙니다. 3H 지압침대는 최신 절전 설계가 적용되어 하루 8시간 매일 사용해도 한 달 전기 요금이 크게 부담되지 않는 초절전형 제품입니다.</p>
+                            <p class="font-bold text-gray-900 text-[15px] mb-2 tracking-tight">매일 사용하면 전기 요금이 많이 나오지 않나요?</p>
+                            <p class="text-[13px] text-gray-500 leading-relaxed font-medium">아닙니다. 최신 절전 설계가 적용되어 하루 8시간 매일 사용해도 한 달 전기 요금이 크게 부담되지 않는 초절전형 제품입니다.</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-                    <div class="flex items-start gap-3">
-                        <span class="text-brand-green font-bold text-lg">Q.</span>
+                <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm transition-all hover:shadow-md">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-brand-green/10 text-brand-green rounded-xl w-10 h-10 flex items-center justify-center font-black text-lg shrink-0">Q</div>
                         <div>
-                            <p class="font-bold text-gray-800 text-sm mb-1">A/S 보증 기간은 어떻게 되나요?</p>
-                            <p class="text-xs text-gray-600 leading-relaxed">업계 최장 수준인 <strong>무상 42개월(3년 6개월) A/S</strong>를 보장합니다. 전국 어디서든 본사의 체계적인 관리를 받으실 수 있어 안심하셔도 좋습니다.</p>
+                            <p class="font-bold text-gray-900 text-[15px] mb-2 tracking-tight">A/S 보증 기간은 어떻게 되나요?</p>
+                            <p class="text-[13px] text-gray-500 leading-relaxed font-medium">업계 최장 수준인 <strong>무상 42개월(3년 6개월) A/S</strong>를 보장합니다. 전국 어디서든 본사의 체계적인 관리를 받으실 수 있습니다.</p>
                         </div>
                     </div>
                 </div>
@@ -355,32 +443,35 @@
     </section>
 
     <!-- 담당자 연락 및 체험 예약 -->
-    <section class="py-12 px-5 bg-white mb-8">
-        <div class="max-w-md mx-auto border-2 border-brand-green rounded-2xl p-6 text-center shadow-lg relative bg-brand-light/20">
-            <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-white rounded-full p-2 shadow-md">
-                <img src="https://ui-avatars.com/api/?name=상담+매니저&background=008040&color=fff&size=64" alt="" class="w-16 h-16 rounded-full border-2 border-brand-green">
+    <section class="py-16 px-5 bg-white">
+        <div class="max-w-md mx-auto border border-brand-gold/30 rounded-[2.5rem] p-8 text-center shadow-soft relative bg-gradient-to-b from-brand-gold/5 to-white">
+            <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-white rounded-full p-2.5 shadow-lg">
+                <!-- 실제 사용 시 프로필 이미지 교체 요망 -->
+                <img src="https://ui-avatars.com/api/?name=상담+매니저&background=D4AF37&color=fff&size=80&font-weight=bold" alt="판매원 프로필" class="w-[72px] h-[72px] rounded-full border-[3px] border-brand-gold">
             </div>
-            <h3 class="text-xl font-bold mt-10 mb-2 text-brand-dark">가장 좋은 조건으로 모시겠습니다</h3>
-            <p class="text-sm text-gray-600 mb-6">구매하지 않으셔도 좋습니다.<br>직접 매장에 오셔서 따뜻한 차 한잔과 함께<br>몸이 가벼워지는 것을 먼저 느껴보세요.</p>
-            <div class="bg-white rounded-xl p-4 mb-6 shadow-inner border border-gray-100">
-                <p class="text-sm font-bold text-brand-green mb-1">3H지압침대 진주경상센터 / 남강센터</p>
-                <p class="text-xs text-gray-500 mb-2">공식 인증 매니저 (010-3552-0707)</p>
-                <div class="h-px bg-gray-200 w-full my-2"></div>
-                <p class="font-bold text-lg text-brand-dark mt-3">VIP 체험 예약 및 혜택 상담</p>
+            
+            <h3 class="text-[22px] font-black mt-12 mb-3 text-brand-dark tracking-tight">가장 좋은 조건으로 모시겠습니다</h3>
+            <p class="text-[14px] text-gray-500 mb-8 leading-relaxed font-medium">구매하지 않으셔도 좋습니다.<br>직접 매장에 오셔서 따뜻한 차 한잔과 함께<br>몸이 가벼워지는 것을 먼저 느껴보세요.</p>
+            
+            <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+                <p class="text-[13px] font-bold text-brand-gold mb-1">3H지압침대 진주경상센터 / 남강센터</p>
+                <p class="text-[11px] text-gray-400 font-semibold mb-3">공식 인증 매니저 (010-3552-0707)</p>
+                <div class="h-px bg-gray-100 w-full my-3"></div>
+                <p class="font-black text-[16px] text-brand-dark mt-2 tracking-tight">VIP 특별 혜택 및 체험 안내</p>
             </div>
         </div>
     </section>
 
-    <!-- 하단 고정 플로팅 버튼 -->
-    <div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow-[0_-5px_15px_rgba(0,0,0,0.1)] z-50 p-3 pb-safe">
+    <!-- 하단 고정 플로팅 버튼 (프리미엄 글래스모피즘 적용) -->
+    <div class="fixed bottom-0 left-0 w-full glass-bottom border-t border-gray-200/50 shadow-float z-50 p-4 pb-safe">
         <div class="max-w-md mx-auto flex gap-3">
-            <a href="sms:010-3552-0707?body=3H%20지압침대%20명함보고%20연락드립니다.%20매장에%20가서%20무료로%20체험해보고%20싶습니다." class="flex-1 bg-gray-100 text-gray-800 font-bold py-3.5 rounded-xl flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors">
+            <a href="sms:010-3552-0707?body=3H%20지압침대%20명함보고%20연락드립니다.%20매장에%20가서%20무료로%20체험해보고%20싶습니다." class="flex-[1.2] bg-gray-100 text-gray-800 font-bold py-4 rounded-2xl flex items-center justify-center gap-2 hover:bg-gray-200 transition-all border border-gray-200 active:scale-95">
                 <i class="ph-fill ph-chat-circle-text text-xl"></i>
-                <span class="text-sm">문자로 예약</span>
+                <span class="text-[14px]">문자로 예약</span>
             </a>
-            <a href="tel:010-3552-0707" class="flex-[2] bg-brand-green text-white font-bold py-3.5 rounded-xl flex items-center justify-center gap-2 hover:bg-green-700 transition-colors shadow-lg shadow-brand-green/30">
-                <i class="ph-fill ph-calendar-check text-xl"></i>
-                <span>체험/상담 전화 연결</span>
+            <a href="tel:010-3552-0707" class="flex-[2] bg-brand-green text-white font-bold py-4 rounded-2xl flex items-center justify-center gap-2 hover:bg-[#03543D] transition-all shadow-[0_8px_20px_rgba(4,120,87,0.3)] active:scale-95">
+                <i class="ph-fill ph-phone-call text-xl"></i>
+                <span class="text-[15px] tracking-wide">체험/상담 전화 연결</span>
             </a>
         </div>
     </div>
