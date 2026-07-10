@@ -1,0 +1,63 @@
+---
+import Icon from './Icon.astro';
+
+interface Props {
+  label: string;
+  todo: string;
+  tall?: boolean;
+}
+
+const { label, todo, tall = false } = Astro.props;
+---
+
+<div class:list={['photo-placeholder', { tall }]} role="img" aria-label={todo}>
+  <div class="placeholder-mark"><Icon name="building" size={30} /></div>
+  <div>
+    <p>{label}</p>
+    <small>{todo}</small>
+  </div>
+</div>
+
+<style>
+  .photo-placeholder {
+    display: grid;
+    min-height: 15rem;
+    place-items: center;
+    align-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    border: 1px solid #cabca7;
+    background-color: #eee3d1;
+    background-image: linear-gradient(135deg, rgba(255,255,255,.35) 25%, transparent 25%), linear-gradient(315deg, rgba(255,255,255,.35) 25%, transparent 25%);
+    background-position: 0 0, 16px 16px;
+    background-size: 32px 32px;
+    text-align: center;
+  }
+
+  .photo-placeholder.tall {
+    min-height: clamp(22rem, 48vw, 38rem);
+  }
+
+  .placeholder-mark {
+    display: grid;
+    width: 3.5rem;
+    height: 3.5rem;
+    place-items: center;
+    border: 1px solid #8f6835;
+    border-radius: 50%;
+    background: #fcfaf5;
+    color: #8f6835;
+  }
+
+  p {
+    margin: 0;
+    font-weight: 800;
+  }
+
+  small {
+    display: block;
+    margin-top: 0.25rem;
+    color: #716653;
+    font-size: 0.75rem;
+  }
+</style>

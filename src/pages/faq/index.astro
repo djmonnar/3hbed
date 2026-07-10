@@ -1,0 +1,77 @@
+---
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import FaqList from '@/components/FaqList.astro';
+import FinalCta from '@/components/FinalCta.astro';
+import PageHero from '@/components/PageHero.astro';
+import { publishedFaqs } from '@/data/faqs';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+const breadcrumbs = [
+  { name: '홈', href: '/' },
+  { name: '자주 묻는 질문', href: '/faq/' },
+];
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: publishedFaqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
+};
+---
+
+<BaseLayout
+  title="3H지압침대 무료체험 자주 묻는 질문"
+  description="무료체험 예약, 비용, 체험 시간, 제품 비교, 설치 공간, 의료기기 인증 관련 자주 묻는 질문입니다."
+  breadcrumbs={breadcrumbs}
+  schema={schema}
+>
+  <Breadcrumbs items={breadcrumbs} />
+  <PageHero kicker="FREQUENTLY ASKED QUESTIONS" title="방문과 제품 체험 전에 확인하세요" description="확정된 답변만 공개합니다. 전시 제품, 운영시간, 렌탈, 배송·설치처럼 변경될 수 있는 정보는 센터에 직접 확인해 주세요." tone="beige" />
+
+  <section class="section-space faq-section">
+    <div class="container-wide faq-grid">
+      <aside><p class="section-kicker">PUBLISHED ANSWERS</p><h2>확인된 답변</h2><p>답변이 확정되지 않은 질문은 데이터에 보관하되 화면과 검색 구조화 데이터에서는 숨겼습니다.</p></aside>
+      <FaqList faqs={publishedFaqs} />
+    </div>
+  </section>
+  <FinalCta />
+</BaseLayout>
+
+<style>
+  .faq-section {
+    background: white;
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: minmax(15rem, .45fr) minmax(0, 1.55fr);
+    gap: clamp(3rem, 8vw, 8rem);
+  }
+
+  aside {
+    position: sticky;
+    top: calc(var(--header-height) + 2rem);
+    align-self: start;
+  }
+
+  aside h2 {
+    margin: 0;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+  }
+
+  aside > p:last-child {
+    color: #5b625f;
+  }
+
+  @media (max-width: 760px) {
+    .faq-grid {
+      grid-template-columns: 1fr;
+    }
+
+    aside {
+      position: static;
+    }
+  }
+</style>

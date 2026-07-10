@@ -1,0 +1,132 @@
+---
+import Footer from '@/components/Footer.astro';
+import Header from '@/components/Header.astro';
+import MobileCta from '@/components/MobileCta.astro';
+import Tracking from '@/components/Tracking.astro';
+import { site } from '@/data/site';
+import { absoluteUrl, withBase } from '@/lib/paths';
+import '@/styles/global.css';
+
+interface Breadcrumb {
+  name: string;
+  href: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  breadcrumbs?: Breadcrumb[];
+  schema?: Record<string, unknown> | Record<string, unknown>[];
+  noindex?: boolean;
+  pageEvent?: string;
+  product?: string;
+  hideChrome?: boolean;
+}
+
+const {
+  title,
+  description,
+  image = '/images/og/3h-jinju-centers.jpg',
+  breadcrumbs = [],
+  schema = [],
+  noindex = false,
+  pageEvent,
+  product,
+  hideChrome = false,
+} = Astro.props;
+
+const fullTitle = title.includes('3H') ? title : `${title} | ${site.shortName}`;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? import.meta.env.PUBLIC_SITE_URL ?? 'https://djmonnar.github.io').toString();
+const socialImage = absoluteUrl(image);
+const schemas = Array.isArray(schema) ? schema : [schema];
+const baseSchemas: Record<string, unknown>[] = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: site.name,
+    url: absoluteUrl('/'),
+    logo: absoluteUrl('/images/brand/3h-logo-dark.png'),
+    telephone: site.representativePhone,
+    parentOrganization: {
+      '@type': 'Organization',
+      name: site.manufacturer.name,
+      url: site.headquartersUrl,
+    },
+  },
+];
+
+if (breadcrumbs.length) {
+  baseSchemas.push({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbs.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: absoluteUrl(item.href),
+    })),
+  });
+}
+
+const jsonLd = [...baseSchemas, ...schemas];
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#174b35" />
+    <meta name="format-detection" content="telephone=no" />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    {site.naverSiteVerification && <meta name="naver-site-verification" content={site.naverSiteVerification} />}
+    {site.googleSiteVerification && <meta name="google-site-verification" content={site.googleSiteVerification} />}
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href={withBase('/favicon.svg')} />
+    <link rel="manifest" href={withBase('/manifest.webmanifest')} />
+    <link rel="sitemap" href={withBase('/sitemap-index.xml')} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <slot name="head" />
+  </head>
+  <body data-page-event={pageEvent} data-product={product}>
+    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+    {!hideChrome && <Header />}
+    <main id="main-content"><slot /></main>
+    {!hideChrome && <Footer />}
+    {!hideChrome && <MobileCta />}
+    <Tracking />
+  </body>
+</html>
+
+<style is:global>
+  .skip-link {
+    position: fixed;
+    z-index: 999;
+    top: 0.5rem;
+    left: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: #171a19;
+    color: white;
+    transform: translateY(-150%);
+  }
+
+  .skip-link:focus {
+    transform: translateY(0);
+  }
+</style>

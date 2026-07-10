@@ -1,0 +1,127 @@
+---
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import CertificationCard from '@/components/CertificationCard.astro';
+import FinalCta from '@/components/FinalCta.astro';
+import PageHero from '@/components/PageHero.astro';
+import { publishedCertifications } from '@/data/certifications';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+const breadcrumbs = [
+  { name: '홈', href: '/' },
+  { name: '인증·허가 자료', href: '/certifications/' },
+];
+---
+
+<BaseLayout
+  title="3H 인증·허가 자료"
+  description="주식회사 쓰리에이치의 의료기기 제조업 허가와 특정 품목·모델 인증 자료를 적용 범위별로 안내합니다."
+  breadcrumbs={breadcrumbs}
+>
+  <Breadcrumbs items={breadcrumbs} />
+  <PageHero kicker="CERTIFICATION ARCHIVE" title="공식 인증과 기술로 확인하는 3H" description="제조업 허가, 제품 품목 인증, 의료광고 심의, 특허와 수상은 서로 다른 적용 범위를 가집니다. 확인된 자료만 공개합니다." tone="beige" />
+
+  <section class="section-space archive">
+    <div class="container-wide archive-grid">
+      <aside>
+        <p class="section-kicker">CURRENT ARCHIVE</p>
+        <h2>공개 자료 분류</h2>
+        <ul>
+          {['제조업 허가', '제품 품목 인증', '의료광고 심의', '특허', '국내·해외 인증', '수상·연구개발'].map((category) => <li>{category}</li>)}
+        </ul>
+      </aside>
+      <div>
+        {publishedCertifications.map((item) => <CertificationCard certification={item} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="privacy-section">
+    <div class="container-wide privacy-grid">
+      <div><p class="section-kicker">PRIVACY FIRST</p><h2>원본 인증서의 개인정보는 공개하지 않습니다</h2></div>
+      <div><p>현재 배포 파일에는 인증서 원본 이미지가 포함되어 있지 않습니다. 향후 인증 이미지를 추가할 때는 대표자·품질책임자의 생년월일 등 불필요한 개인정보를 완전히 마스킹한 별도 사본만 공개합니다.</p><ol><li>원본은 배포 대상에서 제외</li><li>개인정보를 복원 불가능하게 마스킹</li><li>공개용 별도 이미지 생성</li><li>데이터에서 공개·마스킹 상태 확인</li></ol></div>
+    </div>
+  </section>
+
+  <FinalCta />
+</BaseLayout>
+
+<style>
+  .archive {
+    background: #f0f1ef;
+  }
+
+  .archive-grid {
+    display: grid;
+    grid-template-columns: minmax(14rem, .45fr) minmax(0, 1.55fr);
+    gap: clamp(3rem, 8vw, 8rem);
+  }
+
+  aside {
+    position: sticky;
+    top: calc(var(--header-height) + 2rem);
+    align-self: start;
+  }
+
+  aside h2 {
+    margin: 0;
+    font-size: 1.6rem;
+  }
+
+  aside ul {
+    margin: 1.5rem 0 0;
+    padding: 0;
+    border-top: 1px solid #9ba29e;
+    list-style: none;
+  }
+
+  aside li {
+    padding-block: 0.7rem;
+    border-bottom: 1px solid #d5d8d5;
+    color: #5b625f;
+    font-size: 0.88rem;
+  }
+
+  .privacy-section {
+    padding-block: clamp(4rem, 8vw, 7rem);
+    background: #123d2d;
+    color: white;
+  }
+
+  .privacy-grid {
+    display: grid;
+    grid-template-columns: minmax(16rem, .8fr) minmax(0, 1.2fr);
+    gap: clamp(3rem, 8vw, 8rem);
+  }
+
+  .privacy-grid .section-kicker {
+    color: #d4b47c;
+  }
+
+  .privacy-grid h2 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.2;
+    letter-spacing: -0.05em;
+  }
+
+  .privacy-grid p {
+    margin-top: 0;
+    color: #dce9e1;
+  }
+
+  .privacy-grid ol {
+    margin: 1.5rem 0 0;
+    padding-left: 1.5rem;
+  }
+
+  @media (max-width: 760px) {
+    .archive-grid,
+    .privacy-grid {
+      grid-template-columns: 1fr;
+    }
+
+    aside {
+      position: static;
+    }
+  }
+</style>

@@ -1,0 +1,194 @@
+---
+import type { Certification } from '@/data/types';
+import Icon from './Icon.astro';
+import ResponsiveImage from './ResponsiveImage.astro';
+
+interface Props {
+  certification: Certification;
+}
+
+const { certification } = Astro.props;
+const modalId = `certificate-${certification.id}`;
+---
+
+<article class="certification-card">
+  <div class="certificate-number">{certification.number}</div>
+  <div>
+    <p>{certification.category}</p>
+    <h3>{certification.title}</h3>
+    <dl>
+      <div><dt>적용 범위</dt><dd>{certification.appliesTo}</dd></div>
+      {certification.issuer && <div><dt>발급기관</dt><dd>{certification.issuer}</dd></div>}
+      {certification.issuedAt && <div><dt>발급일</dt><dd>{certification.issuedAt}</dd></div>}
+      {certification.applicableModels.length > 0 && <div><dt>적용 모델</dt><dd>{certification.applicableModels.join(', ')}</dd></div>}
+    </dl>
+    <p class="description">{certification.description}</p>
+    {certification.image && certification.imagePublic && certification.personalDataMasked && (
+      <button type="button" data-dialog-open={modalId} data-track-event="certificate_view">
+        인증서 확대 보기 <Icon name="external" size={17} />
+      </button>
+    )}
+    {!certification.imagePublic && <small>공개 가능한 이미지가 준비되기 전까지 텍스트 정보만 제공합니다.</small>}
+  </div>
+</article>
+
+{certification.image && certification.imagePublic && certification.personalDataMasked && (
+  <dialog id={modalId} class="certificate-dialog" aria-labelledby={`${modalId}-title`}>
+    <div class="dialog-bar">
+      <h2 id={`${modalId}-title`}>{certification.title}</h2>
+      <button type="button" data-dialog-close aria-label="인증서 닫기"><Icon name="close" size={24} /></button>
+    </div>
+    <ResponsiveImage image={certification.image} class="certificate-image" sizes="90vw" />
+    <p>개인정보가 제거된 공개용 사본입니다.</p>
+  </dialog>
+)}
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-dialog-open]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const dialog = document.getElementById(button.dataset.dialogOpen || '') as HTMLDialogElement | null;
+      dialog?.showModal();
+      dialog?.querySelector<HTMLButtonElement>('[data-dialog-close]')?.focus();
+    });
+  });
+
+  document.querySelectorAll<HTMLDialogElement>('.certificate-dialog').forEach((dialog) => {
+    dialog.querySelector<HTMLButtonElement>('[data-dialog-close]')?.addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', (event) => {
+      if (event.target === dialog) dialog.close();
+    });
+    dialog.addEventListener('keydown', (event) => {
+      if (event.key !== 'Tab') return;
+      const focusable = [...dialog.querySelectorAll<HTMLElement>('button, [href], [tabindex]:not([tabindex="-1"])')];
+      const first = focusable[0];
+      const last = focusable.at(-1);
+      if (!first || !last) return;
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    });
+  });
+</script>
+
+<style>
+  .certification-card {
+    display: grid;
+    grid-template-columns: minmax(8rem, 0.55fr) minmax(0, 1.45fr);
+    gap: clamp(1.5rem, 5vw, 4rem);
+    padding-block: clamp(2rem, 5vw, 4rem);
+    border-top: 1px solid #b9bfbb;
+  }
+
+  .certificate-number {
+    color: #8f6835;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: clamp(1.15rem, 2vw, 1.5rem);
+    font-weight: 800;
+  }
+
+  article > div:last-child > p:first-child {
+    margin: 0 0 0.4rem;
+    color: #8f6835;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: clamp(1.55rem, 3.2vw, 2.5rem);
+    letter-spacing: -0.04em;
+  }
+
+  dl {
+    margin: 1.4rem 0;
+  }
+
+  dl > div {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    gap: 1rem;
+    padding-block: 0.45rem;
+  }
+
+  dt {
+    color: #707773;
+    font-size: 0.84rem;
+  }
+
+  dd {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 620;
+  }
+
+  .description {
+    color: #5b625f;
+  }
+
+  article button {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    gap: 0.45rem;
+    margin-top: 1rem;
+    border: 1px solid #174b35;
+    background: transparent;
+    color: #174b35;
+    font-weight: 750;
+  }
+
+  article small {
+    display: block;
+    margin-top: 1rem;
+    color: #707773;
+  }
+
+  .certificate-dialog {
+    width: min(92vw, 58rem);
+    max-height: 90vh;
+    padding: 0;
+    border: 0;
+    background: #fcfaf5;
+    color: #171a19;
+  }
+
+  .certificate-dialog::backdrop {
+    background: rgba(11, 45, 34, 0.82);
+  }
+
+  .dialog-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid #d5d8d5;
+  }
+
+  .dialog-bar h2 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .dialog-bar button {
+    display: grid;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    border: 0;
+    background: transparent;
+  }
+
+  .certificate-dialog > p {
+    margin: 0;
+    padding: 0.75rem 1.25rem 1.25rem;
+    color: #707773;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 620px) {
+    .certification-card {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+  }
+</style>

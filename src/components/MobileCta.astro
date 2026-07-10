@@ -1,0 +1,56 @@
+---
+import { site } from '@/data/site';
+import { phoneHref, smsHref } from '@/lib/paths';
+import Icon from './Icon.astro';
+---
+
+<aside class="mobile-cta" aria-label="빠른 상담">
+  <a href={smsHref(site.representativeSms, site.defaultSmsBody)} data-track-event="sms_click">
+    <Icon name="message" size={20} /> 문자 문의
+  </a>
+  <a href={phoneHref(site.representativePhone)} data-track-event="phone_click">
+    <Icon name="phone" size={20} /> 무료체험 전화
+  </a>
+</aside>
+
+<style>
+  .mobile-cta {
+    position: fixed;
+    z-index: 70;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 0.5rem;
+    padding: 0.65rem 0.75rem calc(0.65rem + env(safe-area-inset-bottom));
+    border-top: 1px solid #d5d8d5;
+    background: rgba(252, 250, 245, 0.98);
+  }
+
+  .mobile-cta a {
+    display: inline-flex;
+    min-height: 54px;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid #174b35;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .mobile-cta a:first-child {
+    color: #174b35;
+  }
+
+  .mobile-cta a:last-child {
+    background: #174b35;
+    color: white;
+  }
+
+  @media (max-width: 767px) {
+    .mobile-cta {
+      display: grid;
+    }
+  }
+</style>

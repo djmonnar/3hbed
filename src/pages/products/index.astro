@@ -1,0 +1,125 @@
+---
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import FinalCta from '@/components/FinalCta.astro';
+import PageHero from '@/components/PageHero.astro';
+import ProductCard from '@/components/ProductCard.astro';
+import { publishedProducts } from '@/data/products';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+const breadcrumbs = [
+  { name: '홈', href: '/' },
+  { name: '제품 라인업', href: '/products/' },
+];
+const categories = ['전체', '지압침대', '지압쇼파', '2인용', '프리미엄', '공간 활용형'];
+---
+
+<BaseLayout
+  title="3H지압침대 제품 라인업"
+  description="본사 공식 페이지에서 확인된 3H지압침대와 지압쇼파 제품을 살펴보고 진주센터 전시 여부를 문의하세요."
+  breadcrumbs={breadcrumbs}
+>
+  <Breadcrumbs items={breadcrumbs} />
+  <PageHero kicker="PRODUCT LINE" title="제품은 먼저 살펴보고, 센터에서 직접 비교하세요" description="제품명과 모델은 본사 공식 페이지에서 확인한 정보만 제공합니다. 센터별 실제 전시 상태는 방문 전에 문의해 주세요." />
+
+  <section class="section-space product-listing">
+    <div class="container-wide">
+      <div class="filters" role="group" aria-label="제품 분류">
+        {categories.map((category, index) => <button type="button" data-product-filter={category} aria-pressed={index === 0 ? 'true' : 'false'}>{category}</button>)}
+      </div>
+      <div class="product-grid" aria-live="polite">
+        {publishedProducts.map((product) => (
+          <div data-product-item data-categories={product.categories.join('|')}><ProductCard product={product} /></div>
+        ))}
+      </div>
+      <div class="product-notice">
+        <strong>전시 여부 안내</strong>
+        <p>현재 센터별 전시 제품 데이터가 확인되지 않았습니다. “체험 가능” 표시는 하지 않으며 방문 전에 원하는 모델을 전화 또는 문자로 문의해 주세요.</p>
+      </div>
+    </div>
+  </section>
+  <FinalCta />
+</BaseLayout>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('[data-product-filter]');
+  const items = document.querySelectorAll<HTMLElement>('[data-product-item]');
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const selected = button.dataset.productFilter || '전체';
+      buttons.forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+      items.forEach((item) => {
+        const categories = (item.dataset.categories || '').split('|');
+        item.hidden = selected !== '전체' && !categories.includes(selected);
+      });
+    });
+  });
+</script>
+
+<style>
+  .product-listing {
+    background: white;
+  }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #d5d8d5;
+  }
+
+  .filters button {
+    min-height: 48px;
+    padding: 0.55rem 1rem;
+    border: 1px solid #b9bfbb;
+    background: transparent;
+    color: #4a514e;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  .filters button[aria-pressed='true'] {
+    border-color: #174b35;
+    background: #174b35;
+    color: white;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(1.5rem, 4vw, 3rem);
+    margin-top: 3rem;
+  }
+
+  .product-grid > div[hidden] {
+    display: none;
+  }
+
+  .product-notice {
+    display: grid;
+    grid-template-columns: minmax(10rem, .4fr) minmax(0, 1.6fr);
+    gap: 2rem;
+    margin-top: 4rem;
+    padding: 1.5rem;
+    border-left: 4px solid #8f6835;
+    background: #f0f1ef;
+  }
+
+  .product-notice p {
+    margin: 0;
+    color: #5b625f;
+  }
+
+  @media (max-width: 860px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 580px) {
+    .product-grid,
+    .product-notice {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,133 @@
+---
+import { trackingConfig } from '@/data/tracking';
+---
+
+<script is:inline define:vars={{ trackingConfig }}>
+  (() => {
+    const config = trackingConfig;
+    const hasValue = (value) => Boolean(value && !String(value).startsWith('REPLACE'));
+    const params = new URLSearchParams(window.location.search);
+    const keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'NaPm', 'fbclid'];
+    const currentAttribution = Object.fromEntries(keys.map((key) => [key, params.get(key) || '']));
+    let storedAttribution = {};
+
+    try {
+      storedAttribution = JSON.parse(sessionStorage.getItem('threeh_attribution') || '{}');
+      const merged = { ...storedAttribution, ...Object.fromEntries(Object.entries(currentAttribution).filter(([, value]) => value)) };
+      sessionStorage.setItem('threeh_attribution', JSON.stringify(merged));
+      storedAttribution = merged;
+    } catch {}
+
+    const attribution = () => ({
+      utm_source: storedAttribution.utm_source || 'direct',
+      utm_medium: storedAttribution.utm_medium || '',
+      utm_campaign: storedAttribution.utm_campaign || '',
+      utm_content: storedAttribution.utm_content || '',
+      utm_term: storedAttribution.utm_term || '',
+      referrer: document.referrer || '',
+      click_id: storedAttribution.NaPm || storedAttribution.fbclid || '',
+    });
+
+    window.dataLayer = window.dataLayer || [];
+    window.threeHTrack = (eventName, detail = {}) => {
+      const payload = {
+        event: eventName,
+        page_path: window.location.pathname,
+        page_title: document.title,
+        ...attribution(),
+        ...detail,
+      };
+
+      window.dataLayer.push(payload);
+      if (typeof window.gtag === 'function') window.gtag('event', eventName, payload);
+
+      if (typeof window.fbq === 'function') {
+        const standard = eventName === 'place_click' ? 'FindLocation' : ['phone_click', 'sms_click', 'reservation_click'].includes(eventName) ? 'Contact' : null;
+        if (standard) window.fbq('track', standard, payload);
+        window.fbq('trackCustom', eventName, payload);
+      }
+
+      if (hasValue(config.naverWcsId) && window.wcs && typeof window.wcs.trans === 'function' && ['phone_click', 'sms_click', 'place_click', 'reservation_click'].includes(eventName)) {
+        window.wcs.trans({
+          type: hasValue(config.naverConversionId) ? config.naverConversionId : 'lead',
+          id: `${eventName}_${Date.now()}`,
+          ext: payload,
+        });
+      }
+    };
+
+    const loadTracking = () => {
+      if (hasValue(config.ga4Id)) {
+        window.gtag = function () { window.dataLayer.push(arguments); };
+        window.gtag('js', new Date());
+        window.gtag('config', config.ga4Id);
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(config.ga4Id)}`;
+        document.head.appendChild(script);
+      }
+
+      if (hasValue(config.metaPixelId)) {
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        window.fbq('init', config.metaPixelId);
+        window.fbq('track', 'PageView');
+      }
+
+      if (hasValue(config.naverWcsId)) {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://wcs.naver.net/wcslog.js';
+        script.onload = () => {
+          window.wcs_add = window.wcs_add || {};
+          window.wcs_add.wa = config.naverWcsId;
+          if (config.naverInflowDomain && window.wcs?.inflow) window.wcs.inflow(config.naverInflowDomain);
+          if (typeof window.wcs_do === 'function') window.wcs_do();
+        };
+        document.head.appendChild(script);
+      }
+    };
+
+    if ('requestIdleCallback' in window) window.requestIdleCallback(loadTracking, { timeout: 1800 });
+    else window.setTimeout(loadTracking, 600);
+
+    document.addEventListener('click', (event) => {
+      const target = event.target.closest('[data-track-event]');
+      if (!target) return;
+      const eventName = target.dataset.trackEvent;
+      const detail = {
+        center: target.dataset.center || '',
+        product: target.dataset.product || '',
+      };
+      window.threeHTrack?.(eventName, detail);
+
+      const href = target instanceof HTMLAnchorElement ? target.getAttribute('href') || '' : '';
+      if (/^(tel:|sms:)/.test(href)) {
+        event.preventDefault();
+        window.setTimeout(() => { window.location.href = href; }, 100);
+      }
+    });
+
+    document.querySelectorAll('details[data-track-faq]').forEach((detail) => {
+      detail.addEventListener('toggle', () => {
+        if (detail.open) window.threeHTrack?.('faq_open', { faq: detail.dataset.faq || '' });
+      });
+    });
+
+    const milestones = new Set();
+    const onScroll = () => {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollable <= 0) return;
+      const percent = Math.round((window.scrollY / scrollable) * 100);
+      [25, 50, 75, 90].forEach((mark) => {
+        if (percent >= mark && !milestones.has(mark)) {
+          milestones.add(mark);
+          window.threeHTrack?.(`scroll_${mark}`);
+        }
+      });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    const pageEvent = document.body.dataset.pageEvent;
+    if (pageEvent) window.threeHTrack?.(pageEvent, { product: document.body.dataset.product || '' });
+  })();
+</script>

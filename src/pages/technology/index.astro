@@ -1,0 +1,190 @@
+---
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import CertificationCard from '@/components/CertificationCard.astro';
+import FinalCta from '@/components/FinalCta.astro';
+import Icon from '@/components/Icon.astro';
+import PageHero from '@/components/PageHero.astro';
+import SectionHeading from '@/components/SectionHeading.astro';
+import VideoEmbed from '@/components/VideoEmbed.astro';
+import { publishedCertifications } from '@/data/certifications';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { absoluteUrl } from '@/lib/paths';
+
+const breadcrumbs = [
+  { name: '홈', href: '/' },
+  { name: '기술과 인증', href: '/technology/' },
+];
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: '3H 지압침대 기술 영상',
+    description: '3H 지압 기술의 원리를 소개하는 본사 공식 영상입니다.',
+    thumbnailUrl: absoluteUrl('/images/video/technology-film.webp'),
+    embedUrl: 'https://www.youtube-nocookie.com/embed/uDev_9Bwb_Y',
+  },
+];
+---
+
+<BaseLayout
+  title="3H 기술과 의료기기 정보"
+  description="62개 황동 지압봉, 최고 70도 온열 기능, 제조업 허가와 제품별 의료기기 인증 적용 범위를 안내합니다."
+  breadcrumbs={breadcrumbs}
+  schema={schema}
+>
+  <Breadcrumbs items={breadcrumbs} />
+  <PageHero kicker="TECHNOLOGY & SCOPE" title="기술은 구체적으로, 인증 범위는 정확하게" description="본사 공식 설명과 제공된 인증 자료를 기준으로 지압·온열 기술을 안내합니다. 제조업 허가와 개별 제품 인증은 분리해서 확인하세요." tone="green" />
+
+  <section class="section-space tech-detail">
+    <div class="container-wide">
+      <article class="tech-row">
+        <div class="tech-number">62</div>
+        <div class="tech-icon"><Icon name="hand" size={34} /></div>
+        <div><p class="section-kicker">ACUPRESSURE STRUCTURE</p><h2>62개의 황동 지압봉</h2><p>본사 공식 자료에서 안내하는 62개의 황동 지압봉 구조를 중심으로 작동 원리와 제품 내부 구성을 설명합니다.</p><ul><li>지압봉의 수와 구성</li><li>제품 작동 방식</li><li>제품별 조작 방법</li><li>공식 특허 정보와 적용 모델 확인</li></ul></div>
+      </article>
+      <article class="tech-row">
+        <div class="tech-number">70℃</div>
+        <div class="tech-icon"><Icon name="heat" size={34} /></div>
+        <div><p class="section-kicker">HEAT CONTROL</p><h2>최고 70도 온열 기능</h2><p>온열 온도와 조절 기능은 제품별 공식 설명서의 범위 안에서 안내하며, 올바른 사용 방법과 주의사항을 함께 확인합니다.</p><ul><li>최고 온열 온도</li><li>온도 조절과 조작부</li><li>지압과 온열의 결합 방식</li><li>사용 방법 및 주의사항</li></ul></div>
+      </article>
+      <article class="tech-row">
+        <div class="tech-number">02</div>
+        <div class="tech-icon"><Icon name="shield" size={34} /></div>
+        <div><p class="section-kicker">LICENSE VS CERTIFICATION</p><h2>제조업 허가와 품목 인증</h2><p>제조사가 의료기기 제조업 허가를 받았다는 사실과 특정 품목·모델이 인증을 받았다는 사실은 의미가 다릅니다.</p><ul><li>제조사 의료기기 제조업 허가</li><li>특정 품목의 의료기기 인증</li><li>의료기기 등급과 모델</li><li>제품별 적용 범위</li></ul></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-space film-section">
+    <div class="container-wide film-grid">
+      <SectionHeading kicker="OFFICIAL TECHNOLOGY FILM" title="공식 영상으로 작동 원리를 살펴보세요" description="재생 버튼을 누른 뒤에만 YouTube 영상을 불러옵니다." />
+      <VideoEmbed title="3H 기술 영상" description="본사 공식 영상 보기" videoId="uDev_9Bwb_Y" thumbnail="/images/video/technology-film.webp" />
+    </div>
+  </section>
+
+  <section class="section-space certificate-section">
+    <div class="container-wide">
+      <SectionHeading kicker="VERIFIED CERTIFICATES" title="현재 확인된 허가와 인증 자료" description="적용 범위를 카드마다 명확하게 표시합니다." />
+      <div class="certificates">{publishedCertifications.map((item) => <CertificationCard certification={item} />)}</div>
+    </div>
+  </section>
+
+  <section class="scope-warning">
+    <div class="container-wide"><strong>의료기기 정보 안내</strong><p>본 페이지는 제품과 기술의 공식 정보를 소개하기 위한 안내이며, 질환 치료나 완치를 보장하는 표현을 사용하지 않습니다. 제품별 사용 목적과 주의사항은 공식 설명서를 확인해 주세요.</p></div>
+  </section>
+
+  <FinalCta />
+</BaseLayout>
+
+<style>
+  .tech-detail {
+    background: white;
+  }
+
+  .tech-row {
+    display: grid;
+    grid-template-columns: minmax(8rem, .45fr) 4rem minmax(0, 1.55fr);
+    gap: clamp(1.5rem, 5vw, 5rem);
+    padding-block: clamp(3rem, 7vw, 6rem);
+    border-top: 1px solid #9ba29e;
+  }
+
+  .tech-row:last-child {
+    border-bottom: 1px solid #9ba29e;
+  }
+
+  .tech-number {
+    color: #174b35;
+    font-size: clamp(3rem, 7vw, 6rem);
+    font-weight: 780;
+    line-height: 1;
+    letter-spacing: -0.06em;
+  }
+
+  .tech-icon {
+    color: #8f6835;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    letter-spacing: -0.05em;
+  }
+
+  .tech-row > div:last-child > p:not(.section-kicker) {
+    max-width: 45rem;
+    color: #5b625f;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    margin: 2rem 0 0;
+    padding: 0;
+    border-top: 1px solid #d5d8d5;
+    list-style: none;
+  }
+
+  li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #d5d8d5;
+    font-size: 0.9rem;
+    font-weight: 650;
+  }
+
+  .film-section {
+    background: #171a19;
+    color: white;
+  }
+
+  .film-grid {
+    display: grid;
+    grid-template-columns: minmax(16rem, .6fr) minmax(0, 1.4fr);
+    gap: clamp(3rem, 8vw, 8rem);
+  }
+
+  .film-section :global(.section-heading > p:last-child) {
+    color: #b8bfbb;
+  }
+
+  .certificate-section {
+    background: #f0f1ef;
+  }
+
+  .certificates {
+    margin-top: 3rem;
+  }
+
+  .scope-warning {
+    padding-block: 2rem;
+    background: #eee3d1;
+  }
+
+  .scope-warning > div {
+    display: grid;
+    grid-template-columns: minmax(12rem, .4fr) minmax(0, 1.6fr);
+    gap: 2rem;
+  }
+
+  .scope-warning p {
+    margin: 0;
+    color: #5c5448;
+  }
+
+  @media (max-width: 780px) {
+    .tech-row,
+    .film-grid,
+    .scope-warning > div {
+      grid-template-columns: 1fr;
+    }
+
+    .tech-row {
+      gap: 1rem;
+    }
+
+    ul {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

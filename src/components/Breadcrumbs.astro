@@ -1,0 +1,51 @@
+---
+import { withBase } from '@/lib/paths';
+
+interface Item {
+  name: string;
+  href: string;
+}
+
+interface Props {
+  items: Item[];
+}
+
+const { items } = Astro.props;
+---
+
+<nav class="breadcrumbs container-wide" aria-label="현재 위치">
+  <ol>
+    {items.map((item, index) => (
+      <li>
+        {index < items.length - 1 ? <a href={withBase(item.href)}>{item.name}</a> : <span aria-current="page">{item.name}</span>}
+      </li>
+    ))}
+  </ol>
+</nav>
+
+<style>
+  .breadcrumbs {
+    padding-top: 1rem;
+  }
+
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: 0;
+    padding: 0;
+    color: #707773;
+    font-size: 0.78rem;
+    list-style: none;
+  }
+
+  li:not(:last-child)::after {
+    content: '/';
+    margin-left: 0.45rem;
+    color: #b9bfbb;
+  }
+
+  a:hover {
+    color: #174b35;
+  }
+</style>

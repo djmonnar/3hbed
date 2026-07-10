@@ -1,0 +1,316 @@
+---
+import { navigation } from '@/data/navigation';
+import { site } from '@/data/site';
+import { phoneHref, withBase } from '@/lib/paths';
+import Icon from './Icon.astro';
+
+const currentPath = Astro.url.pathname;
+const isActive = (href: string) => {
+  const path = withBase(href);
+  if (href === '/') return currentPath === path || currentPath === path.slice(0, -1);
+  return currentPath.startsWith(path);
+};
+---
+
+<header class="site-header" data-site-header>
+  <div class="container-wide header-inner">
+    <a class="brand-link" href={withBase('/')} aria-label={`${site.shortName} 홈`}>
+      <img src={withBase('/images/brand/3h-logo-dark.png')} width="126" height="52" alt="3H" />
+      <span>
+        <strong>진주경상 · 남강센터</strong>
+        <small>공식 대리점 통합 안내</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="주요 메뉴">
+      {navigation.map((item) => (
+        <a href={withBase(item.href)} aria-current={isActive(item.href) ? 'page' : undefined}>
+          {item.label}
+        </a>
+      ))}
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-experience" href={withBase('/experience/')} data-track-event="reservation_click">
+        무료체험 예약
+      </a>
+      <a class="header-phone" href={phoneHref(site.representativePhone)} data-track-event="phone_click" aria-label="전화상담">
+        <Icon name="phone" size={19} />
+        <span>전화상담</span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="메뉴 열기"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        data-menu-toggle
+      >
+        <Icon name="menu" size={26} />
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu>
+    <div class="mobile-menu-top container-wide">
+      <p>메뉴</p>
+      <button type="button" aria-label="메뉴 닫기" data-menu-close><Icon name="close" size={26} /></button>
+    </div>
+    <nav class="container-wide" aria-label="모바일 주요 메뉴">
+      {navigation.map((item, index) => (
+        <a href={withBase(item.href)} aria-current={isActive(item.href) ? 'page' : undefined}>
+          <span>{String(index + 1).padStart(2, '0')}</span>{item.label}
+        </a>
+      ))}
+    </nav>
+    <div class="container-wide mobile-menu-actions">
+      <a class="button-primary" href={withBase('/experience/')} data-track-event="reservation_click">무료체험 안내</a>
+      <a class="button-ghost" href={phoneHref(site.representativePhone)} data-track-event="phone_click">
+        <Icon name="phone" size={20} /> {site.representativePhone}
+      </a>
+    </div>
+  </div>
+</header>
+
+<script>
+  const header = document.querySelector<HTMLElement>('[data-site-header]');
+  const menu = document.querySelector<HTMLElement>('[data-mobile-menu]');
+  const toggle = document.querySelector<HTMLButtonElement>('[data-menu-toggle]');
+  const close = document.querySelector<HTMLButtonElement>('[data-menu-close]');
+
+  const setMenu = (open: boolean) => {
+    if (!menu || !toggle) return;
+    menu.dataset.open = String(open);
+    menu.setAttribute('aria-hidden', String(!open));
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
+    document.body.classList.toggle('menu-open', open);
+    if (open) close?.focus();
+    else toggle.focus();
+  };
+
+  toggle?.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
+  close?.addEventListener('click', () => setMenu(false));
+  menu?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') setMenu(false);
+  });
+  window.addEventListener('scroll', () => header?.classList.toggle('is-scrolled', window.scrollY > 24), { passive: true });
+</script>
+
+<style>
+  .site-header {
+    position: sticky;
+    z-index: 80;
+    top: 0;
+    height: var(--header-height);
+    border-bottom: 1px solid transparent;
+    background: rgba(252, 250, 245, 0.98);
+    transition: border-color 180ms ease, height 180ms ease;
+  }
+
+  .site-header.is-scrolled {
+    border-color: #d5d8d5;
+  }
+
+  .header-inner {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .brand-link {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .brand-link img {
+    width: 3.9rem;
+    height: auto;
+  }
+
+  .brand-link span {
+    display: grid;
+    line-height: 1.25;
+  }
+
+  .brand-link strong {
+    font-size: 0.85rem;
+    letter-spacing: -0.03em;
+  }
+
+  .brand-link small {
+    color: #707773;
+    font-size: 0.66rem;
+  }
+
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.75rem, 1.45vw, 1.35rem);
+  }
+
+  .desktop-nav a {
+    padding-block: 0.8rem;
+    color: #4a514e;
+    font-size: 0.86rem;
+    font-weight: 650;
+    white-space: nowrap;
+  }
+
+  .desktop-nav a:hover,
+  .desktop-nav a[aria-current='page'] {
+    color: #174b35;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .header-experience,
+  .header-phone {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    padding: 0.55rem 0.9rem;
+    font-size: 0.82rem;
+    font-weight: 750;
+  }
+
+  .header-experience {
+    background: #174b35;
+    color: white;
+  }
+
+  .header-phone {
+    border: 1px solid #b9bfbb;
+  }
+
+  .menu-toggle {
+    display: none;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background: transparent;
+    color: #171a19;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    z-index: 90;
+    inset: 0;
+    display: none;
+    overflow-y: auto;
+    background: #fcfaf5;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 180ms ease, visibility 180ms ease;
+  }
+
+  .mobile-menu[data-open='true'] {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .mobile-menu-top {
+    display: flex;
+    min-height: 76px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #d5d8d5;
+  }
+
+  .mobile-menu-top p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 750;
+  }
+
+  .mobile-menu-top button {
+    display: grid;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    border: 0;
+    background: transparent;
+  }
+
+  .mobile-menu nav {
+    display: grid;
+    padding-block: 2rem;
+  }
+
+  .mobile-menu nav a {
+    display: flex;
+    min-height: 58px;
+    align-items: baseline;
+    gap: 1rem;
+    border-bottom: 1px solid #e4e5e2;
+    font-size: clamp(1.35rem, 5vw, 2rem);
+    font-weight: 700;
+  }
+
+  .mobile-menu nav a span {
+    color: #8f6835;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+  }
+
+  .mobile-menu-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    padding-bottom: 2rem;
+  }
+
+  @media (max-width: 1180px) {
+    .desktop-nav,
+    .header-experience,
+    .header-phone span {
+      display: none;
+    }
+
+    .header-phone {
+      width: 48px;
+      height: 48px;
+      padding: 0;
+    }
+
+    .menu-toggle,
+    .mobile-menu {
+      display: flex;
+    }
+
+    .mobile-menu {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .brand-link span {
+      display: none;
+    }
+
+    .brand-link img {
+      width: 3.6rem;
+    }
+
+    .header-phone {
+      border: 0;
+    }
+
+    .mobile-menu-actions {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

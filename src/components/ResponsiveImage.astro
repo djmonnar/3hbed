@@ -1,0 +1,35 @@
+---
+import type { ImageAsset } from '@/data/types';
+import { withBase } from '@/lib/paths';
+
+interface Props {
+  image: ImageAsset;
+  class?: string;
+  loading?: 'eager' | 'lazy';
+  fetchpriority?: 'high' | 'low' | 'auto';
+  sizes?: string;
+}
+
+const {
+  image,
+  class: className,
+  loading = 'lazy',
+  fetchpriority = 'auto',
+  sizes = '(max-width: 768px) 100vw, 50vw',
+} = Astro.props;
+---
+
+<picture>
+  {image.avif && <source srcset={withBase(image.avif)} type="image/avif" sizes={sizes} />}
+  {image.webp && <source srcset={withBase(image.webp)} type="image/webp" sizes={sizes} />}
+  <img
+    src={withBase(image.src)}
+    alt={image.alt}
+    width={image.width}
+    height={image.height}
+    loading={loading}
+    fetchpriority={fetchpriority}
+    decoding="async"
+    class={className}
+  />
+</picture>

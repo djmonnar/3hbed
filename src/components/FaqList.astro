@@ -1,0 +1,88 @@
+---
+import type { Faq } from '@/data/types';
+import Icon from './Icon.astro';
+
+interface Props {
+  faqs: Faq[];
+}
+
+const { faqs } = Astro.props;
+---
+
+<div class="faq-list">
+  {faqs.map((faq, index) => (
+    <details data-track-faq data-faq={faq.question}>
+      <summary>
+        <span>{String(index + 1).padStart(2, '0')}</span>
+        <strong>{faq.question}</strong>
+        <span class="faq-toggle"><Icon name="arrow" size={20} /></span>
+      </summary>
+      <div class="faq-answer"><p>{faq.answer}</p></div>
+    </details>
+  ))}
+</div>
+
+<style>
+  .faq-list {
+    border-top: 1px solid #9ba29e;
+  }
+
+  details {
+    border-bottom: 1px solid #d5d8d5;
+  }
+
+  summary {
+    display: grid;
+    min-height: 74px;
+    grid-template-columns: 3rem 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 0.8rem;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary > span:first-child {
+    color: #8f6835;
+    font-size: 0.75rem;
+    font-weight: 800;
+  }
+
+  summary strong {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+  }
+
+  .faq-toggle {
+    transition: transform 180ms ease;
+  }
+
+  details[open] .faq-toggle {
+    transform: rotate(90deg);
+  }
+
+  .faq-answer {
+    padding: 0 3rem 1.6rem 4rem;
+  }
+
+  .faq-answer p {
+    max-width: 48rem;
+    margin: 0;
+    color: #5b625f;
+  }
+
+  @media (max-width: 620px) {
+    summary {
+      grid-template-columns: 2rem 1fr auto;
+      gap: 0.55rem;
+    }
+
+    .faq-answer {
+      padding-left: 2.55rem;
+      padding-right: 0;
+    }
+  }
+</style>

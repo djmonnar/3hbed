@@ -1,0 +1,122 @@
+---
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import CenterCard from '@/components/CenterCard.astro';
+import FinalCta from '@/components/FinalCta.astro';
+import PageHero from '@/components/PageHero.astro';
+import SectionHeading from '@/components/SectionHeading.astro';
+import { centers } from '@/data/centers';
+import { site } from '@/data/site';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { absoluteUrl } from '@/lib/paths';
+
+const breadcrumbs = [
+  { name: '홈', href: '/' },
+  { name: '진주센터', href: '/centers/' },
+];
+const schema = centers.map((center) => ({
+  '@context': 'https://schema.org',
+  '@type': 'Store',
+  name: center.name,
+  url: absoluteUrl(`/centers/${center.slug}/`),
+  telephone: center.phone ?? site.representativePhone,
+  address: center.address ? { '@type': 'PostalAddress', streetAddress: center.address, addressLocality: '진주시', addressRegion: '경상남도', addressCountry: 'KR' } : undefined,
+  sameAs: center.naverPlaceUrl,
+}));
+---
+
+<BaseLayout
+  title="3H지압침대 진주센터"
+  description="3H지압침대 진주 남강센터와 진주경상센터의 위치, 무료체험, 전화·문자·네이버 플레이스 안내입니다."
+  breadcrumbs={breadcrumbs}
+  schema={schema}
+>
+  <Breadcrumbs items={breadcrumbs} />
+  <PageHero kicker="TWO CENTERS IN JINJU" title="진주에서 가까운 3H 체험센터를 선택하세요" description="두 센터 모두 무료체험 문의가 가능합니다. 실제 전시 제품과 운영시간은 방문 전에 센터로 확인해 주세요." />
+
+  <section class="section-space center-list">
+    <div class="container-wide center-grid">{centers.map((center) => <CenterCard center={center} headingLevel="h2" />)}</div>
+  </section>
+
+  <section class="section-space compare-section">
+    <div class="container-wide compare-grid">
+      <SectionHeading kicker="CENTER INFORMATION" title="확인된 정보와 미확정 정보를 구분했습니다" description="주소·전화·운영시간을 임의로 채우지 않고, 확인된 데이터만 검색엔진과 화면에 제공합니다." />
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>항목</th>{centers.map((center) => <th>{center.shortName}</th>)}</tr></thead>
+          <tbody>
+            <tr><th>주소</th>{centers.map((center) => <td>{center.address ?? '네이버 플레이스 확인'}</td>)}</tr>
+            <tr><th>전화</th>{centers.map((center) => <td>{center.phone ?? '대표번호로 문의'}</td>)}</tr>
+            <tr><th>무료체험</th>{centers.map((center) => <td>{center.freeExperience ? '문의 가능' : '확인 필요'}</td>)}</tr>
+            <tr><th>운영시간</th>{centers.map((center) => <td>{center.openingHours ?? '방문 전 확인'}</td>)}</tr>
+            <tr><th>주차</th>{centers.map((center) => <td>{center.parking ?? '방문 전 확인'}</td>)}</tr>
+            <tr><th>전시 제품</th>{centers.map((center) => <td>{center.experienceProducts.length ? center.experienceProducts.join(', ') : '방문 전 확인'}</td>)}</tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <FinalCta />
+</BaseLayout>
+
+<style>
+  .center-list {
+    background: #f0f1ef;
+  }
+
+  .center-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .compare-section {
+    background: white;
+  }
+
+  .compare-grid {
+    display: grid;
+    grid-template-columns: minmax(17rem, .6fr) minmax(0, 1.4fr);
+    gap: clamp(3rem, 8vw, 8rem);
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    min-width: 42rem;
+    border-collapse: collapse;
+    text-align: left;
+  }
+
+  th,
+  td {
+    padding: 1rem;
+    border-bottom: 1px solid #d5d8d5;
+    vertical-align: top;
+  }
+
+  thead th {
+    border-top: 1px solid #9ba29e;
+    background: #f0f1ef;
+  }
+
+  tbody th {
+    width: 8rem;
+    color: #707773;
+    font-size: 0.84rem;
+  }
+
+  td {
+    font-size: 0.9rem;
+    font-weight: 620;
+  }
+
+  @media (max-width: 800px) {
+    .center-grid,
+    .compare-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

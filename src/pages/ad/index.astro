@@ -1,0 +1,447 @@
+---
+import CertificationCard from '@/components/CertificationCard.astro';
+import ExperienceSteps from '@/components/ExperienceSteps.astro';
+import Icon from '@/components/Icon.astro';
+import ResponsiveImage from '@/components/ResponsiveImage.astro';
+import { centers } from '@/data/centers';
+import { publishedCertifications } from '@/data/certifications';
+import { publishedProducts } from '@/data/products';
+import { site } from '@/data/site';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { phoneHref, smsHref, withBase } from '@/lib/paths';
+
+const heroProduct = publishedProducts[0];
+---
+
+<BaseLayout
+  title="3H지압침대 진주 무료체험 예약"
+  description="진주경상센터·남강센터에서 3H지압침대와 지압쇼파를 직접 비교하는 무료체험 상담 안내입니다."
+  noindex={false}
+  hideChrome
+>
+  <header class="ad-header">
+    <div class="ad-container header-inner">
+      <a href={withBase('/')} aria-label="3H 진주센터 홈페이지"><img src={withBase('/images/brand/3h-logo-dark.png')} width="126" height="52" alt="3H" /></a>
+      <span>진주경상 · 남강센터</span>
+    </div>
+  </header>
+
+  <section class="ad-hero">
+    <div class="ad-container hero-grid">
+      <div class="hero-copy">
+        <p class="ad-kicker">진주 2개 센터 무료체험</p>
+        <h1>구매 전,<br />직접 누워보고<br /><em>비교해 보세요</em></h1>
+        <p>3H지압침대와 지압쇼파는 형태와 크기, 사용감이 다릅니다. 실제 사용하실 분과 함께 진주센터에서 부담 없이 체험하세요.</p>
+        <div class="hero-actions">
+          <a href={phoneHref(site.representativePhone)} data-track-event="phone_click" data-center="common"><Icon name="phone" size={20} /> 전화 예약</a>
+          <a href={smsHref(site.representativeSms, site.defaultSmsBody)} data-track-event="sms_click" data-center="common"><Icon name="message" size={20} /> 문자 문의</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        {heroProduct && <ResponsiveImage image={heroProduct.mainImage} class="product-image" loading="eager" fetchpriority="high" sizes="(max-width: 760px) 100vw, 48vw" />}
+        <div><span>본사 공식 제품 이미지</span><strong>{heroProduct?.name}</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ad-section tech-section">
+    <div class="ad-container">
+      <header class="ad-heading"><p class="ad-kicker">3H 핵심 기능</p><h2>직접 확인할 세 가지</h2></header>
+      <div class="feature-grid">
+        <article><span>62</span><h3>황동 지압봉</h3><p>지압봉의 구조와 작동 방식을 센터에서 확인하세요.</p></article>
+        <article><span>70℃</span><h3>최고 온열 기능</h3><p>온도 조절과 올바른 사용 방법을 안내받으세요.</p></article>
+        <article><span>02</span><h3>공식 자료 구분</h3><p>제조업 허가와 품목·모델 인증의 범위를 구분합니다.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="ad-section centers-section">
+    <div class="ad-container">
+      <header class="ad-heading"><p class="ad-kicker">가까운 센터 선택</p><h2>진주 2개 센터</h2></header>
+      <div class="center-list">
+        {centers.map((center) => (
+          <article>
+            <div><p>무료체험 문의 가능</p><h3>{center.shortName}</h3><span>{center.address ?? '상세 위치는 네이버 플레이스에서 확인'}</span></div>
+            <div class="center-actions">
+              <a href={center.naverPlaceUrl} target="_blank" rel="noopener noreferrer" data-track-event="place_click" data-center={center.id}><Icon name="map" size={19} /> 위치 보기</a>
+              <a href={phoneHref(center.phone ?? site.representativePhone)} data-track-event="phone_click" data-center={center.id}><Icon name="phone" size={19} /> 전화</a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="ad-section process-section">
+    <div class="ad-container">
+      <header class="ad-heading"><p class="ad-kicker">무료체험 진행 과정</p><h2>문의부터 상담까지</h2></header>
+      <ExperienceSteps />
+      <p class="time-note">방문 인원과 체험 제품에 따라 소요 시간이 달라질 수 있습니다.</p>
+    </div>
+  </section>
+
+  <section class="ad-section cert-section">
+    <div class="ad-container">
+      <header class="ad-heading"><p class="ad-kicker">인증 범위 안내</p><h2>허가와 품목 인증을 구분합니다</h2></header>
+      {publishedCertifications.map((item) => <CertificationCard certification={item} />)}
+    </div>
+  </section>
+
+  <section class="ad-final">
+    <div class="ad-container">
+      <h2>사진으로만 보지 말고<br />진주센터에서 직접 체험해 보세요</h2>
+      <p>무료체험 후 바로 구매하지 않으셔도 됩니다. 여러 모델을 비교하고 충분히 상담받은 뒤 결정하세요.</p>
+      <div class="hero-actions">
+        <a href={phoneHref(site.representativePhone)} data-track-event="phone_click" data-center="common"><Icon name="phone" size={20} /> 전화로 예약</a>
+        <a href={smsHref(site.representativeSms, site.defaultSmsBody)} data-track-event="sms_click" data-center="common"><Icon name="message" size={20} /> 문자로 문의</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="ad-footer">
+    <div class="ad-container"><p>{site.officialDealerNotice}</p><p>제조사: 주식회사 쓰리에이치 · 의료기기 제조업 허가 제228호</p><small>제품 사용감은 개인에 따라 다를 수 있습니다. 제품별 공식 사용 목적과 주의사항은 센터에서 확인해 주세요.</small></div>
+  </footer>
+
+  <aside class="ad-fixed" aria-label="빠른 상담">
+    <a href={smsHref(site.representativeSms, site.defaultSmsBody)} data-track-event="sms_click" data-center="common"><Icon name="message" size={20} /> 문자 문의</a>
+    <a href={phoneHref(site.representativePhone)} data-track-event="phone_click" data-center="common"><Icon name="phone" size={20} /> 전화 예약</a>
+  </aside>
+</BaseLayout>
+
+<style>
+  :global(body) {
+    background: #fcfaf5;
+  }
+
+  .ad-container {
+    width: min(100% - 1.5rem, 70rem);
+    margin-inline: auto;
+  }
+
+  .ad-header {
+    position: sticky;
+    z-index: 50;
+    top: 0;
+    border-bottom: 1px solid #d5d8d5;
+    background: rgba(252,250,245,.98);
+  }
+
+  .header-inner {
+    display: flex;
+    min-height: 66px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .header-inner img {
+    width: 3.8rem;
+    height: auto;
+  }
+
+  .header-inner span {
+    font-size: 0.8rem;
+    font-weight: 750;
+  }
+
+  .ad-hero {
+    padding-block: clamp(2.5rem, 7vw, 5.5rem);
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(20rem, 1fr);
+    align-items: center;
+    gap: clamp(2rem, 7vw, 6rem);
+  }
+
+  .ad-kicker {
+    margin: 0 0 0.8rem;
+    color: #8f6835;
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+  }
+
+  .hero-copy h1 {
+    margin: 0;
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
+    line-height: 1.08;
+    letter-spacing: -0.06em;
+  }
+
+  .hero-copy h1 em {
+    color: #174b35;
+    font-style: normal;
+  }
+
+  .hero-copy > p:not(.ad-kicker) {
+    max-width: 34rem;
+    margin: 1.5rem 0;
+    color: #5b625f;
+    font-size: 1.03rem;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .hero-actions a {
+    display: inline-flex;
+    min-height: 54px;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.2rem;
+    background: #174b35;
+    color: white;
+    font-weight: 800;
+  }
+
+  .hero-actions a:last-child {
+    background: #171a19;
+  }
+
+  .hero-image {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    background: #eee3d1;
+  }
+
+  .product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-image > div {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    padding: 3rem 1rem 1rem;
+    background: linear-gradient(transparent, rgba(11,45,34,.88));
+    color: white;
+  }
+
+  .hero-image span {
+    color: #d4b47c;
+    font-size: 0.68rem;
+  }
+
+  .ad-section {
+    padding-block: clamp(3.5rem, 8vw, 6.5rem);
+  }
+
+  .ad-heading {
+    max-width: 43rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .ad-heading h2,
+  .ad-final h2 {
+    margin: 0;
+    font-size: clamp(2rem, 4.7vw, 3.8rem);
+    line-height: 1.15;
+    letter-spacing: -0.05em;
+  }
+
+  .tech-section,
+  .cert-section {
+    background: #f0f1ef;
+  }
+
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #9ba29e;
+    border-bottom: 1px solid #9ba29e;
+  }
+
+  .feature-grid article {
+    min-height: 18rem;
+    padding: 1.5rem;
+    border-right: 1px solid #d5d8d5;
+  }
+
+  .feature-grid article:last-child {
+    border-right: 0;
+  }
+
+  .feature-grid span {
+    color: #174b35;
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-weight: 780;
+    line-height: 1;
+  }
+
+  .feature-grid h3 {
+    margin: 3rem 0 .5rem;
+  }
+
+  .feature-grid p {
+    color: #5b625f;
+  }
+
+  .centers-section {
+    background: white;
+  }
+
+  .center-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .center-list article {
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    border-top: 3px solid #174b35;
+    background: #f0f1ef;
+  }
+
+  .center-list article p {
+    margin: 0;
+    color: #8f6835;
+    font-size: .72rem;
+    font-weight: 800;
+  }
+
+  .center-list h3 {
+    margin: .25rem 0;
+    font-size: 1.8rem;
+  }
+
+  .center-list article span {
+    color: #5b625f;
+    font-size: .86rem;
+  }
+
+  .center-actions {
+    display: flex;
+    gap: .5rem;
+    margin-top: 1.5rem;
+  }
+
+  .center-actions a {
+    display: inline-flex;
+    min-height: 50px;
+    align-items: center;
+    gap: .45rem;
+    padding: .65rem 1rem;
+    border: 1px solid #174b35;
+    color: #174b35;
+    font-weight: 750;
+  }
+
+  .center-actions a:last-child {
+    background: #174b35;
+    color: white;
+  }
+
+  .process-section {
+    background: #fcfaf5;
+  }
+
+  .time-note {
+    margin-top: 1.5rem;
+    color: #5b625f;
+    font-size: .85rem;
+  }
+
+  .ad-final {
+    padding-block: clamp(4rem, 9vw, 8rem);
+    background: #123d2d;
+    color: white;
+    text-align: center;
+  }
+
+  .ad-final h2 {
+    max-width: 20ch;
+    margin-inline: auto;
+  }
+
+  .ad-final > div > p {
+    max-width: 40rem;
+    margin: 1.5rem auto;
+    color: #dce9e1;
+  }
+
+  .ad-final .hero-actions {
+    justify-content: center;
+  }
+
+  .ad-final .hero-actions a:first-child {
+    background: white;
+    color: #174b35;
+  }
+
+  .ad-footer {
+    padding: 2.5rem 0 7rem;
+    background: #171a19;
+    color: #b8bfbb;
+    font-size: .78rem;
+  }
+
+  .ad-footer p {
+    margin: .2rem 0;
+  }
+
+  .ad-fixed {
+    position: fixed;
+    z-index: 60;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: .5rem;
+    padding: .65rem max(.75rem, calc((100vw - 32rem) / 2)) calc(.65rem + env(safe-area-inset-bottom));
+    border-top: 1px solid #d5d8d5;
+    background: rgba(252,250,245,.98);
+  }
+
+  .ad-fixed a {
+    display: inline-flex;
+    min-height: 54px;
+    align-items: center;
+    justify-content: center;
+    gap: .45rem;
+    border: 1px solid #174b35;
+    color: #174b35;
+    font-weight: 800;
+  }
+
+  .ad-fixed a:last-child {
+    background: #174b35;
+    color: white;
+  }
+
+  @media (max-width: 760px) {
+    .hero-grid,
+    .center-list,
+    .feature-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .feature-grid article {
+      min-height: auto;
+      border-right: 0;
+      border-bottom: 1px solid #d5d8d5;
+    }
+
+    .feature-grid h3 {
+      margin-top: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-actions,
+    .center-actions {
+      display: grid;
+    }
+  }
+</style>

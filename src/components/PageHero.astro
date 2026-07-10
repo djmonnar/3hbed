@@ -1,0 +1,78 @@
+---
+interface Props {
+  kicker: string;
+  title: string;
+  description: string;
+  tone?: 'ivory' | 'green' | 'beige';
+}
+
+const { kicker, title, description, tone = 'ivory' } = Astro.props;
+---
+
+<section class:list={['page-hero', `tone-${tone}`]}>
+  <div class="container-wide page-hero-inner">
+    <div>
+      <p class="section-kicker">{kicker}</p>
+      <h1>{title}</h1>
+    </div>
+    <p>{description}</p>
+  </div>
+</section>
+
+<style>
+  .page-hero {
+    padding-block: clamp(3.5rem, 8vw, 7rem);
+    border-bottom: 1px solid #d5d8d5;
+  }
+
+  .tone-ivory {
+    background: #fcfaf5;
+  }
+
+  .tone-beige {
+    background: #eee3d1;
+  }
+
+  .tone-green {
+    background: #123d2d;
+    color: white;
+  }
+
+  .tone-green .section-kicker {
+    color: #d4b47c;
+  }
+
+  .page-hero-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(18rem, 0.7fr);
+    align-items: end;
+    gap: clamp(2rem, 8vw, 8rem);
+  }
+
+  h1 {
+    max-width: 13ch;
+    margin: 0;
+    font-size: clamp(2.65rem, 6vw, 5.4rem);
+    font-weight: 780;
+    line-height: 1.08;
+    letter-spacing: -0.055em;
+  }
+
+  .page-hero-inner > p {
+    margin: 0;
+    color: #5b625f;
+    font-size: clamp(1rem, 1.7vw, 1.2rem);
+    line-height: 1.8;
+  }
+
+  .tone-green .page-hero-inner > p {
+    color: #dce9e1;
+  }
+
+  @media (max-width: 760px) {
+    .page-hero-inner {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+</style>

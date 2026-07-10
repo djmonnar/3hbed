@@ -1,0 +1,149 @@
+---
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import CenterCard from '@/components/CenterCard.astro';
+import ExperienceSteps from '@/components/ExperienceSteps.astro';
+import FinalCta from '@/components/FinalCta.astro';
+import PageHero from '@/components/PageHero.astro';
+import SectionHeading from '@/components/SectionHeading.astro';
+import { centers } from '@/data/centers';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+const breadcrumbs = [
+  { name: '홈', href: '/' },
+  { name: '무료체험', href: '/experience/' },
+];
+---
+
+<BaseLayout
+  title="3H지압침대 무료체험"
+  description="진주경상센터와 남강센터에서 3H지압침대와 지압쇼파를 직접 비교하는 무료체험 안내입니다."
+  breadcrumbs={breadcrumbs}
+>
+  <Breadcrumbs items={breadcrumbs} />
+  <PageHero kicker="FREE EXPERIENCE" title="구매 전에 직접 누워보고 비교하세요" description="온라인 정보만으로 결정하지 않고 실제 사용하실 분이 제품 형태와 크기, 지압감과 온열감을 충분히 비교한 뒤 상담받을 수 있습니다." tone="beige" />
+
+  <section class="section-space">
+    <div class="container-wide compare-grid">
+      <SectionHeading kicker="COMPARE IN PERSON" title="직접 체험이 필요한 이유" description="같은 기능 설명을 보더라도 몸에 닿는 느낌과 설치 공간은 사람과 집마다 다릅니다." />
+      <ol>
+        {[
+          ['제품별 사용감', '모델과 프레임 형태에 따라 느껴지는 차이를 비교합니다.'],
+          ['침대형과 쇼파형', '생활 방식과 설치 공간에 맞는 제품 형태를 살펴봅니다.'],
+          ['1인용과 2인용', '실제 크기와 사용 인원을 기준으로 비교합니다.'],
+          ['지압과 온열 기능', '작동 방식과 조작 방법을 안내받고 직접 확인합니다.'],
+          ['설치 공간 상담', '가로·세로 크기와 이동 동선을 함께 검토합니다.'],
+          ['가족 동반 체험', '실제로 사용할 가족과 함께 누워보고 의견을 나눕니다.'],
+          ['구매·렌탈 상담', '체험 후 희망하는 경우에만 최신 조건을 확인합니다.'],
+        ].map(([title, description], index) => (
+          <li><span>{String(index + 1).padStart(2, '0')}</span><div><h3>{title}</h3><p>{description}</p></div></li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section-space flow">
+    <div class="container-wide">
+      <SectionHeading kicker="VISIT FLOW" title="방문부터 상담까지, 여섯 단계" description="방문 인원과 체험 제품에 따라 소요 시간이 달라질 수 있습니다." />
+      <ExperienceSteps />
+      <div class="reassurance">
+        <strong>무료체험 후 바로 구매하지 않으셔도 됩니다.</strong>
+        <p>여러 모델을 충분히 비교해본 뒤 결정하세요. 체험과 상담은 제품을 이해하기 위한 과정입니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-space centers">
+    <div class="container-wide">
+      <SectionHeading kicker="SELECT CENTER" title="가까운 센터에 방문 시간을 문의하세요" />
+      <div class="center-grid">{centers.map((center) => <CenterCard center={center} />)}</div>
+    </div>
+  </section>
+
+  <FinalCta />
+</BaseLayout>
+
+<style>
+  .compare-grid {
+    display: grid;
+    grid-template-columns: minmax(18rem, .75fr) minmax(0, 1.25fr);
+    gap: clamp(3rem, 8vw, 8rem);
+  }
+
+  ol {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #9ba29e;
+    list-style: none;
+  }
+
+  ol li {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    gap: 1rem;
+    padding: 1.15rem 0;
+    border-bottom: 1px solid #d5d8d5;
+  }
+
+  ol li > span {
+    color: #8f6835;
+    font-size: 0.72rem;
+    font-weight: 800;
+  }
+
+  h3,
+  ol p {
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 1.05rem;
+  }
+
+  ol p {
+    margin-top: 0.2rem;
+    color: #5b625f;
+    font-size: 0.9rem;
+  }
+
+  .flow {
+    background: #f0f1ef;
+  }
+
+  .flow :global(.experience-steps) {
+    margin-top: 3rem;
+  }
+
+  .reassurance {
+    display: grid;
+    grid-template-columns: minmax(18rem, .8fr) minmax(0, 1.2fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-left: 4px solid #174b35;
+    background: white;
+  }
+
+  .reassurance p {
+    margin: 0;
+    color: #5b625f;
+  }
+
+  .centers {
+    background: white;
+  }
+
+  .center-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-top: 3rem;
+  }
+
+  @media (max-width: 800px) {
+    .compare-grid,
+    .reassurance,
+    .center-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

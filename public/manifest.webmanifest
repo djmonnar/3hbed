@@ -1,0 +1,13 @@
+{
+  "name": "3H지압침대 진주경상·남강센터",
+  "short_name": "3H 진주센터",
+  "description": "진주 3H지압침대 무료체험과 두 센터 통합 안내",
+  "start_url": "/3hbed/",
+  "scope": "/3hbed/",
+  "display": "standalone",
+  "background_color": "#fcfaf5",
+  "theme_color": "#174b35",
+  "icons": [
+    { "src": "/3hbed/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
