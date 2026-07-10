@@ -13,7 +13,7 @@
   --color-charcoal-700: #353938;
   --color-charcoal-900: #171a19;
   --color-bronze-400: #b78d53;
-  --color-bronze-600: #8f6835;
+  --color-bronze-600: #795526;
   --color-beige-100: #eee3d1;
   --color-beige-200: #e2d2ba;
   --color-mist-100: #f0f1ef;
@@ -98,7 +98,7 @@ svg {
 
 .section-kicker {
   margin: 0 0 0.75rem;
-  color: #8f6835;
+  color: #795526;
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.14em;

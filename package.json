@@ -9,6 +9,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "check": "astro check",
+    "audit:build": "node scripts/audit-build.mjs",
     "optimize:images": "node scripts/optimize-images.mjs && node scripts/generate-og.mjs"
   },
   "dependencies": {

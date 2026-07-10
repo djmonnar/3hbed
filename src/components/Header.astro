@@ -77,6 +77,11 @@ const isActive = (href: string) => {
   const menu = document.querySelector<HTMLElement>('[data-mobile-menu]');
   const toggle = document.querySelector<HTMLButtonElement>('[data-menu-toggle]');
   const close = document.querySelector<HTMLButtonElement>('[data-menu-close]');
+  const headerInner = header?.querySelector<HTMLElement>('.header-inner');
+  const pageContent = document.getElementById('main-content');
+  const footer = document.querySelector<HTMLElement>('.site-footer');
+  const mobileCta = document.querySelector<HTMLElement>('.mobile-cta');
+  const skipLink = document.querySelector<HTMLElement>('.skip-link');
 
   const setMenu = (open: boolean) => {
     if (!menu || !toggle) return;
@@ -85,6 +90,11 @@ const isActive = (href: string) => {
     toggle.setAttribute('aria-expanded', String(open));
     toggle.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
     document.body.classList.toggle('menu-open', open);
+    if (headerInner) headerInner.inert = open;
+    if (pageContent) pageContent.inert = open;
+    if (footer) footer.inert = open;
+    if (mobileCta) mobileCta.inert = open;
+    if (skipLink) skipLink.inert = open;
     if (open) close?.focus();
     else toggle.focus();
   };
