@@ -9,6 +9,7 @@ export interface ImageAsset {
   alt: string;
   width: number;
   height: number;
+  sourceUrl?: string;
 }
 
 export interface Center {
@@ -37,10 +38,12 @@ export interface Center {
 }
 
 export interface Product {
+  officialId: number;
   name: string;
   slug: string;
-  officialModel: string;
-  productType: '지압침대' | '지압쇼파';
+  officialModel: string | null;
+  productType: string;
+  officialCategory: string;
   categories: string[];
   summary: string;
   mainImage: ImageAsset;
@@ -57,8 +60,11 @@ export interface Product {
   medicalDeviceClass: string | null;
   itemCertificationNumber: string | null;
   certificationScope: string | null;
+  officialPriceText: string | null;
+  officialPriceKrw: number | null;
+  priceCheckedAt: string;
   pricePublished: boolean;
-  rentalConsultationAvailable: boolean | null;
+  rentalConsultationAvailable: boolean;
   centerAvailability: Record<CenterId, DisplayStatus>;
   officialProductUrl: string;
   officialVideoUrl: string | null;

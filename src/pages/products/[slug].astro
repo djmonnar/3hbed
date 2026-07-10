@@ -4,6 +4,7 @@ import CenterCard from '@/components/CenterCard.astro';
 import FinalCta from '@/components/FinalCta.astro';
 import Icon from '@/components/Icon.astro';
 import ResponsiveImage from '@/components/ResponsiveImage.astro';
+import SectionHeading from '@/components/SectionHeading.astro';
 import { centers } from '@/data/centers';
 import { publishedProducts } from '@/data/products';
 import type { Product } from '@/data/types';
@@ -19,6 +20,7 @@ interface Props {
 }
 
 const { product } = Astro.props;
+const modelLabel = product.officialModel ?? '공식 모델 코드 미표기';
 const breadcrumbs = [
   { name: '홈', href: '/' },
   { name: '제품 라인업', href: '/products/' },
@@ -28,18 +30,24 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'Product',
   name: product.name,
-  model: product.officialModel,
+  model: product.officialModel ?? undefined,
   category: product.productType,
   description: product.summary,
   image: absoluteUrl(product.mainImage.webp ?? product.mainImage.src),
   brand: { '@type': 'Brand', name: '3H' },
   url: absoluteUrl(`/products/${product.slug}/`),
+  offers: product.officialPriceKrw ? {
+    '@type': 'Offer',
+    priceCurrency: 'KRW',
+    price: product.officialPriceKrw,
+    url: product.officialProductUrl,
+  } : undefined,
 };
 ---
 
 <BaseLayout
-  title={`${product.name} ${product.officialModel}`}
-  description={`${product.name}(${product.officialModel}) 공식 제품 정보와 진주센터 체험 문의 안내입니다.`}
+  title={`${product.name}${product.officialModel ? ` ${product.officialModel}` : ''}`}
+  description={`${product.name}${product.officialModel ? `(${product.officialModel})` : ''} 공식 가격·사진·상세 정보와 진주센터 체험 문의 안내입니다.`}
   image={product.mainImage.webp ?? product.mainImage.src}
   breadcrumbs={breadcrumbs}
   schema={schema}
@@ -51,9 +59,10 @@ const schema = {
     <div class="container-wide product-hero-grid">
       <div class="product-visual"><ResponsiveImage image={product.mainImage} class="main-image" loading="eager" fetchpriority="high" sizes="(max-width: 800px) 100vw, 55vw" /></div>
       <div class="product-copy">
-        <p class="section-kicker">{product.productType} · OFFICIAL MODEL</p>
+        <p class="section-kicker">{product.officialCategory} · OFFICIAL CATALOG</p>
         <h1>{product.name}</h1>
-        <p class="model">{product.officialModel}</p>
+        <p class="model">{modelLabel}</p>
+        <p class="price">{product.officialPriceText ?? '공식 홈페이지 가격 미표기'}</p>
         <p class="description">{product.summary}</p>
         <div class="tags">{product.categories.map((category) => <span>{category}</span>)}</div>
         <div class="product-actions">
@@ -66,19 +75,31 @@ const schema = {
 
   <section class="section-space facts-section">
     <div class="container-wide facts-grid">
-      <div><p class="section-kicker">VERIFIED DATA</p><h2 class="section-title">확인된 정보만 표시합니다</h2></div>
+      <div><p class="section-kicker">OFFICIAL PRODUCT DATA</p><h2 class="section-title">공식 카탈로그 정보를 정리했습니다</h2></div>
       <dl>
         <div><dt>제품명</dt><dd>{product.name}</dd></div>
-        <div><dt>공식 모델명</dt><dd>{product.officialModel}</dd></div>
+        <div><dt>공식 모델명</dt><dd>{modelLabel}</dd></div>
+        <div><dt>공식 카테고리</dt><dd>{product.officialCategory}</dd></div>
         <div><dt>제품 유형</dt><dd>{product.productType}</dd></div>
-        <div><dt>가격</dt><dd>센터에서 최신 정보 확인</dd></div>
-        <div><dt>의료기기 인증</dt><dd>해당 모델의 공식 품목 인증 범위와 인증서를 상담 시 안내합니다.</dd></div>
-        <div><dt>사용 목적·방법·주의사항</dt><dd>제품별 공식 설명서에 따라 사용 방법과 주의사항을 안내합니다.</dd></div>
+        <div><dt>공식 표시 가격</dt><dd>{product.officialPriceText ?? '공식 홈페이지에 가격이 게시되지 않았습니다.'}</dd></div>
+        <div><dt>렌탈 표시</dt><dd>{product.rentalConsultationAvailable ? '공식 목록에 렌탈 가능 표시' : '공식 목록에 렌탈 표시 없음'}</dd></div>
+        <div><dt>상세 이미지</dt><dd>{product.gallery.length}장</dd></div>
+        <div><dt>정보 확인일</dt><dd><time datetime={product.priceCheckedAt}>{product.priceCheckedAt}</time></dd></div>
       </dl>
     </div>
     <div class="container-wide scope-notice">
-      <strong>인증 적용 범위 안내</strong>
-      <p>제인 19-4214호 인증은 인증서에 기재된 개인용 온열기 품목과 모델 3H22M-1에 관한 자료입니다. 현재 보고 계신 제품에 적용된다고 확인되지 않아 이 페이지의 제품 인증으로 표시하지 않습니다.</p>
+      <strong>공식 자료 기준</strong>
+      <p>가격·모델·사진은 3H 공식 제품 페이지 기준입니다. 의료기기 해당 여부, 사용 목적·방법·주의사항은 제품별 공식 상세자료와 사용설명서를 따르며 센터 판매 조건은 상담 시 안내합니다.</p>
+      <a href={product.officialProductUrl} target="_blank" rel="noopener noreferrer">공식 원문 열기 <Icon name="external" size={17} /></a>
+    </div>
+  </section>
+
+  <section class="section-space detail-section">
+    <div class="container-wide detail-container">
+      <SectionHeading kicker="OFFICIAL DETAIL IMAGES" title={`${product.name} 상세 정보`} description="3H 공식 제품 상세페이지에 게시된 이미지 자료를 웹용으로 최적화해 순서대로 제공합니다." />
+      <div class="product-gallery">
+        {product.gallery.map((image) => <ResponsiveImage image={image} class="detail-image" sizes="(max-width: 1200px) 100vw, 1100px" />)}
+      </div>
     </div>
   </section>
 
@@ -106,13 +127,14 @@ const schema = {
 
   .product-visual {
     overflow: hidden;
+    aspect-ratio: 4 / 3;
     background: white;
   }
 
   .main-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   h1 {
@@ -127,6 +149,13 @@ const schema = {
     color: #8f6835;
     font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     font-weight: 800;
+  }
+
+  .price {
+    margin: .5rem 0 0;
+    color: #174b35;
+    font-size: clamp(1.45rem, 3vw, 2.2rem);
+    font-weight: 850;
   }
 
   .description {
@@ -186,7 +215,7 @@ const schema = {
 
   .scope-notice {
     display: grid;
-    grid-template-columns: minmax(12rem, .4fr) minmax(0, 1.6fr);
+    grid-template-columns: minmax(10rem, .35fr) minmax(0, 1.35fr) auto;
     gap: 2rem;
     margin-top: 3rem;
     padding: 1.5rem;
@@ -198,6 +227,36 @@ const schema = {
   .centers-heading > p:last-child {
     margin: 0;
     color: #5b625f;
+  }
+
+  .scope-notice a {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    gap: .4rem;
+    color: #174b35;
+    font-weight: 800;
+  }
+
+  .detail-section {
+    background: #f0f1ef;
+  }
+
+  .detail-container {
+    max-width: 72rem;
+  }
+
+  .product-gallery {
+    display: grid;
+    margin-top: 3rem;
+    overflow: hidden;
+    background: white;
+  }
+
+  .detail-image {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   .centers-section {

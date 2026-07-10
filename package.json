@@ -10,7 +10,8 @@
     "preview": "astro preview",
     "check": "astro check",
     "audit:build": "node scripts/audit-build.mjs",
-    "optimize:images": "node scripts/optimize-images.mjs && node scripts/generate-og.mjs"
+    "optimize:images": "node scripts/optimize-images.mjs && node scripts/generate-og.mjs",
+    "sync:products": "node scripts/sync-official-products.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",

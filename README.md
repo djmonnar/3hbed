@@ -47,7 +47,7 @@ npm run preview
 - `/` 통합 메인
 - `/experience/` 무료체험 안내
 - `/products/` 제품 라인업
-- `/products/[slug]/` 제품 상세
+- `/products/[slug]/` 공식 제품 상세 45개
 - `/technology/` 3H 기술과 의료기기 정보
 - `/certifications/` 인증·허가 자료
 - `/centers/` 진주센터 통합 안내
@@ -66,7 +66,8 @@ npm run preview
 | --- | --- |
 | `src/data/site.ts` | 사이트명, 대표 전화·문자, 본사 URL, 제조사 정보, 인증 메타 |
 | `src/data/centers.ts` | 주소, 전화, 운영시간, 주차, 네이버 플레이스, 사진, 전시 제품 |
-| `src/data/products.ts` | 제품명, 모델, 이미지, 사양, 인증, 전시 상태, 공식 URL |
+| `src/data/official-products.json` | 공식 제품 45개의 모델·가격·분류·사진·출처 |
+| `src/data/products.ts` | 공식 제품 데이터를 사이트용 타입으로 변환하고 주요 제품을 선별 |
 | `src/data/certifications.ts` | 허가·인증 종류, 번호, 발급기관, 적용 범위, 공개 이미지 상태 |
 | `src/data/reviews.ts` | 후기 원문, 출처, 동의, 개인정보 마스킹 상태 |
 | `src/data/faqs.ts` | 질문, 답변, 분류, 공개 여부 |
@@ -84,16 +85,21 @@ npm run preview
 
 현재 두 센터의 주소·전화·운영시간·휴무·주차·찾아오는 길·편의시설은 2026-07-10 네이버 플레이스에서 확인한 정보입니다. 운영 정보가 바뀌면 `src/data/centers.ts`와 구조화 데이터를 함께 갱신합니다.
 
-## 제품 추가
+## 공식 제품 카탈로그 갱신
 
-1. 본사 공식 제품명, 모델명, 공식 URL을 확인합니다.
-2. 사용 권한이 있는 원본 이미지를 `public/images/products/`에 저장합니다.
-3. `npm run optimize:images`로 WebP·AVIF를 생성합니다.
-4. `src/data/products.ts`에 모든 필드를 추가합니다.
-5. 센터 전시 상태는 반드시 `displayed`, `availableByReservation`, `notDisplayed`, `unknown` 중 하나로 설정합니다.
-6. 제품별 의료기기 인증이 확인되지 않으면 인증번호·등급을 비워둡니다.
+```bash
+npm run sync:products
+```
 
-가격, 렌탈 조건, 크기, 소재, 사용 목적, 주의사항은 공식 자료가 확인된 경우에만 공개합니다.
+이 명령은 3H 공식 홈페이지의 제품 목록 4페이지와 상세페이지 45개를 확인해 다음 작업을 수행합니다.
+
+1. 제품명, 모델 코드, 공식 카테고리, 표시 가격, 렌탈 표시와 공식 URL을 수집합니다.
+2. 대표·상세 이미지를 로컬로 내려받아 WebP로 최적화하고 대표 이미지는 AVIF도 생성합니다.
+3. 매우 긴 상세 이미지는 WebP 최대 규격 안에서 비율을 유지해 축소합니다.
+4. 결과를 `src/data/official-products.json`과 `public/images/products/official/`에 저장합니다.
+5. 기존 노블레스·인베스트 URL slug를 유지하고 신규 제품 상세 경로를 자동 생성합니다.
+
+2026-07-10 기준 45개 제품, 348개 이미지, 공식 표시 가격 24개를 반영했습니다. 공식 홈페이지에 가격이 없는 21개 제품은 금액을 만들지 않고 가격 미표기로 안내합니다.
 
 ## 인증서 추가
 

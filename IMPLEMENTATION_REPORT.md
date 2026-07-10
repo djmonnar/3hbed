@@ -31,7 +31,7 @@
 
 - 통합 메인 1개
 - 무료체험 1개
-- 제품 목록 1개, 제품 상세 3개
+- 제품 목록 1개, 제품 상세 45개
 - 기술 1개, 인증 1개
 - 센터 목록 1개, 센터 상세 2개
 - 후기 1개, FAQ 1개
@@ -44,7 +44,7 @@
 - 배포: `.github/workflows/deploy.yml`
 - 레이아웃: `src/layouts/BaseLayout.astro`, `src/styles/global.css`
 - 공통 UI: `src/components/`
-- 데이터: `src/data/site.ts`, `centers.ts`, `products.ts`, `certifications.ts`, `reviews.ts`, `faqs.ts`, `navigation.ts`, `tracking.ts`
+- 데이터: `src/data/site.ts`, `centers.ts`, `official-products.json`, `products.ts`, `certifications.ts`, `reviews.ts`, `faqs.ts`, `navigation.ts`, `tracking.ts`
 - 페이지: `src/pages/`
 - 이미지: `public/images/brand/`, `products/`, `video/`, `centers/`, `og/`
 - 호환·SEO: `public/ad.html`, `public/404.html`, `manifest.webmanifest`, `favicon.svg`, `src/pages/robots.txt.ts`
@@ -73,9 +73,11 @@
 ## 8. 공식 콘텐츠 적용 위치
 
 - 사용자 제공 문구: 62개 황동 지압봉, 최고 70도 온열, 무료체험 흐름
-- 본사 공식 페이지 확인: 노블레스 침대 `3H-1530NB`, 노블레스 쇼파 `3H-920WS NB`, 인베스트 1530 `3H-1530N Series`
-- 본사 공식 제품·로고 이미지는 2026-07-10 확인 후 로컬 저장하고 WebP·AVIF를 생성했습니다.
-- 각 제품 데이터에 본사 공식 상세 URL을 보관했습니다.
+- 본사 공식 제품 목록 4페이지와 상세페이지 45개를 2026-07-10 동기화했습니다.
+- 제품명·모델·공식 카테고리·가격·렌탈 표시·태그·공식 URL을 구조화했습니다.
+- 대표·상세 이미지 348개를 로컬 저장하고 WebP·AVIF로 최적화했습니다. 최적화된 전체 제품 이미지 용량은 약 30.5MB입니다.
+- 공식 가격이 게시된 24개 제품은 가격과 확인일을 표시하고, 가격이 없는 21개 제품은 금액 미표기로 구분했습니다.
+- `npm run sync:products`로 같은 수집·최적화 과정을 반복할 수 있습니다.
 
 ## 9. 인증서 개인정보 처리
 
@@ -95,7 +97,7 @@
 - Organization
 - BreadcrumbList
 - Store: 센터별 주소·전화·운영시간과 네이버 플레이스 연결
-- Product: 가격·Offers 없이 확인된 모델 정보만 포함
+- Product: 확인된 모델·카테고리·이미지와 공식 표시 가격이 있는 경우 Offer 포함
 - FAQPage: 공개 답변만 포함
 - VideoObject
 
@@ -116,7 +118,7 @@
 
 ## 14. 추가로 필요한 정보
 
-제품별 공식 판매 자료, 가격·렌탈·배송·설치 조건, 심의필과 심의번호, 공개용 마스킹 인증서, 실제 후기 본문 게시 동의, 추적 ID가 필요합니다. 추가 센터 사진은 확보되는 순서대로 갤러리를 확장합니다.
+센터 실제 판매가·렌탈·배송·설치 조건, 센터별 체험 모델, 심의필과 심의번호, 공개용 마스킹 인증서, 실제 후기 본문 게시 동의, 추적 ID가 필요합니다. 추가 센터 사진은 확보되는 순서대로 갤러리를 확장합니다.
 
 ## 15. 센터 실정보와 후기 처리
 

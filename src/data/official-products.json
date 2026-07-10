@@ -1,0 +1,3475 @@
+{
+  "source": "https://www.3hk.co.kr/sub/02_product/product_01.php",
+  "checkedAt": "2026-07-10",
+  "catalogTotal": 45,
+  "products": [
+    {
+      "officialId": 68,
+      "name": "블루다이아몬드",
+      "slug": "3h-1530bd",
+      "officialModel": "3H-1530BD",
+      "productType": "3H지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "3H지압침대",
+        "NEW",
+        "2인용",
+        "실리콘원단"
+      ],
+      "summary": "블루다이아몬드은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/68/cover.webp",
+        "webp": "/images/products/official/68/cover.webp",
+        "avif": "/images/products/official/68/cover.avif",
+        "alt": "블루다이아몬드 공식 제품 이미지",
+        "width": 785,
+        "height": 520,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2026/06/16/oJM87QH7TLJqLCFVFQ37g9zO9GEg3H.jpg"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/68/detail-01.webp",
+          "webp": "/images/products/official/68/detail-01.webp",
+          "alt": "블루다이아몬드 공식 상세정보 1",
+          "width": 860,
+          "height": 1300,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606161218451740479302.jpg"
+        },
+        {
+          "src": "/images/products/official/68/detail-02.webp",
+          "webp": "/images/products/official/68/detail-02.webp",
+          "alt": "블루다이아몬드 공식 상세정보 2",
+          "width": 860,
+          "height": 1600,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606161218491755200083.jpg"
+        },
+        {
+          "src": "/images/products/official/68/detail-03.webp",
+          "webp": "/images/products/official/68/detail-03.webp",
+          "alt": "블루다이아몬드 공식 상세정보 3",
+          "width": 860,
+          "height": 400,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260616121855655783718.jpg"
+        },
+        {
+          "src": "/images/products/official/68/detail-04.webp",
+          "webp": "/images/products/official/68/detail-04.webp",
+          "alt": "블루다이아몬드 공식 상세정보 4",
+          "width": 860,
+          "height": 1200,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606161219021402926043.jpg"
+        },
+        {
+          "src": "/images/products/official/68/detail-05.webp",
+          "webp": "/images/products/official/68/detail-05.webp",
+          "alt": "블루다이아몬드 공식 상세정보 5",
+          "width": 860,
+          "height": 700,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606161219081482966245.jpg"
+        },
+        {
+          "src": "/images/products/official/68/detail-06.webp",
+          "webp": "/images/products/official/68/detail-06.webp",
+          "alt": "블루다이아몬드 공식 상세정보 6",
+          "width": 860,
+          "height": 250,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260618153044607432776.jpg"
+        }
+      ],
+      "officialPriceText": "75,000,000원",
+      "officialPriceKrw": 75000000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=68",
+      "isPublished": true
+    },
+    {
+      "officialId": 69,
+      "name": "수리모",
+      "slug": "official-product-69",
+      "officialModel": "공식 페이지 참조",
+      "productType": "건강 · 미용용품",
+      "officialCategory": "건강 · 미용용품",
+      "categories": [
+        "건강 · 미용용품",
+        "NEW",
+        "BEST"
+      ],
+      "summary": "수리모은 3H 공식 제품 카탈로그에 등록된 건강 · 미용용품 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/69/cover.webp",
+        "webp": "/images/products/official/69/cover.webp",
+        "avif": "/images/products/official/69/cover.avif",
+        "alt": "수리모 공식 제품 이미지",
+        "width": 785,
+        "height": 520,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2026/06/16/X4YVUJt_Lfwl1tbCjU3m-tIprt5tt-.jpg"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/69/detail-01.webp",
+          "webp": "/images/products/official/69/detail-01.webp",
+          "alt": "수리모 공식 상세정보 1",
+          "width": 860,
+          "height": 1600,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606161633451371514884.jpg"
+        },
+        {
+          "src": "/images/products/official/69/detail-02.webp",
+          "webp": "/images/products/official/69/detail-02.webp",
+          "alt": "수리모 공식 상세정보 2",
+          "width": 860,
+          "height": 400,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260616163349628690682.jpg"
+        },
+        {
+          "src": "/images/products/official/69/detail-03.webp",
+          "webp": "/images/products/official/69/detail-03.webp",
+          "alt": "수리모 공식 상세정보 3",
+          "width": 860,
+          "height": 1300,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606161633541292687865.jpg"
+        },
+        {
+          "src": "/images/products/official/69/detail-04.webp",
+          "webp": "/images/products/official/69/detail-04.webp",
+          "alt": "수리모 공식 상세정보 4",
+          "width": 860,
+          "height": 1000,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606171658231192379862.jpg"
+        },
+        {
+          "src": "/images/products/official/69/detail-05.webp",
+          "webp": "/images/products/official/69/detail-05.webp",
+          "alt": "수리모 공식 상세정보 5",
+          "width": 860,
+          "height": 1180,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260618111715658739705.jpg"
+        },
+        {
+          "src": "/images/products/official/69/detail-06.webp",
+          "webp": "/images/products/official/69/detail-06.webp",
+          "alt": "수리모 공식 상세정보 6",
+          "width": 860,
+          "height": 700,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606161633581598274593.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=69",
+      "isPublished": true
+    },
+    {
+      "officialId": 60,
+      "name": "지압쇼파 COVERED",
+      "slug": "3h-920cv",
+      "officialModel": "3H-920CV",
+      "productType": "지압쇼파",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압쇼파",
+        "3H지압침대",
+        "NEW",
+        "1인용",
+        "실리콘원단"
+      ],
+      "summary": "지압쇼파 COVERED은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/60/cover.webp",
+        "webp": "/images/products/official/60/cover.webp",
+        "avif": "/images/products/official/60/cover.avif",
+        "alt": "지압쇼파 COVERED 공식 제품 이미지",
+        "width": 1200,
+        "height": 800,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/04/24/SXhcU0DjSBBjP58vrOdNABP_t_1o7n.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/60/detail-01.webp",
+          "webp": "/images/products/official/60/detail-01.webp",
+          "alt": "지압쇼파 COVERED 공식 상세정보 1",
+          "width": 785,
+          "height": 520,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/2ed7_1SN6632t6iHDFRpKAtIIVXl9x.png"
+        },
+        {
+          "src": "/images/products/official/60/detail-02.webp",
+          "webp": "/images/products/official/60/detail-02.webp",
+          "alt": "지압쇼파 COVERED 공식 상세정보 2",
+          "width": 785,
+          "height": 520,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/R3DQ7WxCrevkkwq0YpkPaLdSRbczrx.png"
+        },
+        {
+          "src": "/images/products/official/60/detail-03.webp",
+          "webp": "/images/products/official/60/detail-03.webp",
+          "alt": "지압쇼파 COVERED 공식 상세정보 3",
+          "width": 1600,
+          "height": 1067,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/04/24/OpMuSdZM8LczmQ_uMdPO4sMJtiXlJJ.png"
+        },
+        {
+          "src": "/images/products/official/60/detail-04.webp",
+          "webp": "/images/products/official/60/detail-04.webp",
+          "alt": "지압쇼파 COVERED 공식 상세정보 4",
+          "width": 860,
+          "height": 5335,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606181432182004290665.jpg"
+        },
+        {
+          "src": "/images/products/official/60/detail-05.webp",
+          "webp": "/images/products/official/60/detail-05.webp",
+          "alt": "지압쇼파 COVERED 공식 상세정보 5",
+          "width": 860,
+          "height": 4070,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260618143223241485578.jpg"
+        },
+        {
+          "src": "/images/products/official/60/detail-06.webp",
+          "webp": "/images/products/official/60/detail-06.webp",
+          "alt": "지압쇼파 COVERED 공식 상세정보 6",
+          "width": 860,
+          "height": 5056,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606191057391224948818.jpg"
+        }
+      ],
+      "officialPriceText": "9,680,000원",
+      "officialPriceKrw": 9680000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=60",
+      "isPublished": true
+    },
+    {
+      "officialId": 8,
+      "name": "지압쇼파 820 SOFA",
+      "slug": "3h-820sf",
+      "officialModel": "3H-820SF",
+      "productType": "지압쇼파",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압쇼파",
+        "3H지압침대",
+        "NEW",
+        "1인용",
+        "실리콘원단"
+      ],
+      "summary": "지압쇼파 820 SOFA은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/8/cover.webp",
+        "webp": "/images/products/official/8/cover.webp",
+        "avif": "/images/products/official/8/cover.avif",
+        "alt": "지압쇼파 820 SOFA 공식 제품 이미지",
+        "width": 1200,
+        "height": 800,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/04/24/stsyGrnI01w7ePYNLtOTxrg2AVCxwA.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/8/detail-01.webp",
+          "webp": "/images/products/official/8/detail-01.webp",
+          "alt": "지압쇼파 820 SOFA 공식 상세정보 1",
+          "width": 1600,
+          "height": 1000,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/04/24/jk80p6u2ncrMY3mxoX-CueniQc33MR.png"
+        },
+        {
+          "src": "/images/products/official/8/detail-02.webp",
+          "webp": "/images/products/official/8/detail-02.webp",
+          "alt": "지압쇼파 820 SOFA 공식 상세정보 2",
+          "width": 1600,
+          "height": 1067,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/04/24/bz4G8wZvpAAiifxoZp2SbE1vxgFBIq.png"
+        },
+        {
+          "src": "/images/products/official/8/detail-03.webp",
+          "webp": "/images/products/official/8/detail-03.webp",
+          "alt": "지압쇼파 820 SOFA 공식 상세정보 3",
+          "width": 860,
+          "height": 3720,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260618142905101057731.jpg"
+        },
+        {
+          "src": "/images/products/official/8/detail-04.webp",
+          "webp": "/images/products/official/8/detail-04.webp",
+          "alt": "지압쇼파 820 SOFA 공식 상세정보 4",
+          "width": 860,
+          "height": 4090,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606181429111578371602.jpg"
+        },
+        {
+          "src": "/images/products/official/8/detail-05.webp",
+          "webp": "/images/products/official/8/detail-05.webp",
+          "alt": "지압쇼파 820 SOFA 공식 상세정보 5",
+          "width": 860,
+          "height": 4963,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260618142919530224925.jpg"
+        }
+      ],
+      "officialPriceText": "9,680,000원",
+      "officialPriceKrw": 9680000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=8",
+      "isPublished": true
+    },
+    {
+      "officialId": 9,
+      "name": "지압침대 노블레스",
+      "slug": "noblesse-bed",
+      "officialModel": "3H-1530NB",
+      "productType": "지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압침대",
+        "3H지압침대",
+        "BEST",
+        "2인용",
+        "원목",
+        "렌탈 가능"
+      ],
+      "summary": "지압침대 노블레스은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/9/cover.webp",
+        "webp": "/images/products/official/9/cover.webp",
+        "avif": "/images/products/official/9/cover.avif",
+        "alt": "지압침대 노블레스 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/jAi2rXXGNrVB1qu-DJqprVGCS4gLZY.jpg"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/9/detail-01.webp",
+          "webp": "/images/products/official/9/detail-01.webp",
+          "alt": "지압침대 노블레스 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/eqFjXuxpHv97K-OgtVntMAmV3L2T0h.jpg"
+        },
+        {
+          "src": "/images/products/official/9/detail-02.webp",
+          "webp": "/images/products/official/9/detail-02.webp",
+          "alt": "지압침대 노블레스 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/H9zyUhsHfWafxIbxYbgZtpHqLcoi06.jpg"
+        },
+        {
+          "src": "/images/products/official/9/detail-03.webp",
+          "webp": "/images/products/official/9/detail-03.webp",
+          "alt": "지압침대 노블레스 공식 상세정보 3",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/D6yTobGNsi2rFL3mAfvRDp-mw8dyFC.jpg"
+        },
+        {
+          "src": "/images/products/official/9/detail-04.webp",
+          "webp": "/images/products/official/9/detail-04.webp",
+          "alt": "지압침대 노블레스 공식 상세정보 4",
+          "width": 860,
+          "height": 7760,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202601080919551620405169.jpg"
+        },
+        {
+          "src": "/images/products/official/9/detail-05.webp",
+          "webp": "/images/products/official/9/detail-05.webp",
+          "alt": "지압침대 노블레스 공식 상세정보 5",
+          "width": 860,
+          "height": 5360,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202601080920012143693384.jpg"
+        },
+        {
+          "src": "/images/products/official/9/detail-06.webp",
+          "webp": "/images/products/official/9/detail-06.webp",
+          "alt": "지압침대 노블레스 공식 상세정보 6",
+          "width": 860,
+          "height": 7700,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202601080920051661969140.jpg"
+        }
+      ],
+      "officialPriceText": "19,550,000원",
+      "officialPriceKrw": 19550000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": true,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=9",
+      "isPublished": true
+    },
+    {
+      "officialId": 10,
+      "name": "지압쇼파 노블레스",
+      "slug": "noblesse-sofa",
+      "officialModel": "3H-920WS NB",
+      "productType": "지압쇼파",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압쇼파",
+        "3H지압침대",
+        "BEST",
+        "1인용",
+        "원목"
+      ],
+      "summary": "지압쇼파 노블레스은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/10/cover.webp",
+        "webp": "/images/products/official/10/cover.webp",
+        "avif": "/images/products/official/10/cover.avif",
+        "alt": "지압쇼파 노블레스 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/8xMSNFVT7PrUzWEAEYmc_p1e8DRW3n.jpg"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/10/detail-01.webp",
+          "webp": "/images/products/official/10/detail-01.webp",
+          "alt": "지압쇼파 노블레스 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/-Ii4s7qp-PXTWZy4YaTeN7XSvoj_SB.jpg"
+        },
+        {
+          "src": "/images/products/official/10/detail-02.webp",
+          "webp": "/images/products/official/10/detail-02.webp",
+          "alt": "지압쇼파 노블레스 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/lVnv2wTbglCCoPGcK0wyO6gJX0klYC.jpg"
+        },
+        {
+          "src": "/images/products/official/10/detail-03.webp",
+          "webp": "/images/products/official/10/detail-03.webp",
+          "alt": "지압쇼파 노블레스 공식 상세정보 3",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/1XH4ZpispE9v129-iczVzXTa1f-74U.jpg"
+        },
+        {
+          "src": "/images/products/official/10/detail-04.webp",
+          "webp": "/images/products/official/10/detail-04.webp",
+          "alt": "지압쇼파 노블레스 공식 상세정보 4",
+          "width": 860,
+          "height": 5775,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606190940501425022747.jpg"
+        },
+        {
+          "src": "/images/products/official/10/detail-05.webp",
+          "webp": "/images/products/official/10/detail-05.webp",
+          "alt": "지압쇼파 노블레스 공식 상세정보 5",
+          "width": 860,
+          "height": 5390,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606190940551197749085.jpg"
+        },
+        {
+          "src": "/images/products/official/10/detail-06.webp",
+          "webp": "/images/products/official/10/detail-06.webp",
+          "alt": "지압쇼파 노블레스 공식 상세정보 6",
+          "width": 860,
+          "height": 5390,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260619100216856794334.jpg"
+        },
+        {
+          "src": "/images/products/official/10/detail-07.webp",
+          "webp": "/images/products/official/10/detail-07.webp",
+          "alt": "지압쇼파 노블레스 공식 상세정보 7",
+          "width": 860,
+          "height": 7699,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606190940591188596351.jpg"
+        }
+      ],
+      "officialPriceText": "14,200,000원",
+      "officialPriceKrw": 14200000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=10",
+      "isPublished": true
+    },
+    {
+      "officialId": 49,
+      "name": "스파인얼라인 (SA-680R)",
+      "slug": "sa-680r",
+      "officialModel": "SA-680R",
+      "productType": "3H지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "3H지압침대",
+        "NEW",
+        "BEST",
+        "1인용"
+      ],
+      "summary": "스파인얼라인 (SA-680R)은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/49/cover.webp",
+        "webp": "/images/products/official/49/cover.webp",
+        "avif": "/images/products/official/49/cover.avif",
+        "alt": "스파인얼라인 (SA-680R) 공식 제품 이미지",
+        "width": 1200,
+        "height": 750,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/11/25/1hVauDR172T5qc-qsZzbIfoxdZ85-u.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/49/detail-01.webp",
+          "webp": "/images/products/official/49/detail-01.webp",
+          "alt": "스파인얼라인 (SA-680R) 공식 상세정보 1",
+          "width": 1600,
+          "height": 1000,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/04/24/bhf1CiIRpPG3ggjhQb2ck11xcA0ltT.png"
+        },
+        {
+          "src": "/images/products/official/49/detail-02.webp",
+          "webp": "/images/products/official/49/detail-02.webp",
+          "alt": "스파인얼라인 (SA-680R) 공식 상세정보 2",
+          "width": 1600,
+          "height": 1000,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/04/24/fx9WWf14UQ26PyQT_MhcNBPagmgNoy.png"
+        },
+        {
+          "src": "/images/products/official/49/detail-03.webp",
+          "webp": "/images/products/official/49/detail-03.webp",
+          "alt": "스파인얼라인 (SA-680R) 공식 상세정보 3",
+          "width": 860,
+          "height": 7300,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260618162125211707123.jpg"
+        }
+      ],
+      "officialPriceText": "7,374,000원",
+      "officialPriceKrw": 7374000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=49",
+      "isPublished": true
+    },
+    {
+      "officialId": 50,
+      "name": "스파인얼라인 (SA-820R)",
+      "slug": "sa-820r",
+      "officialModel": "SA-820R",
+      "productType": "3H지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "3H지압침대",
+        "NEW",
+        "BEST",
+        "1인용"
+      ],
+      "summary": "스파인얼라인 (SA-820R)은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/50/cover.webp",
+        "webp": "/images/products/official/50/cover.webp",
+        "avif": "/images/products/official/50/cover.avif",
+        "alt": "스파인얼라인 (SA-820R) 공식 제품 이미지",
+        "width": 1200,
+        "height": 750,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2026/06/16/14pzAFSvp2JxDCs2D9mCkIjdg0mnDT.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/50/detail-01.webp",
+          "webp": "/images/products/official/50/detail-01.webp",
+          "alt": "스파인얼라인 (SA-820R) 공식 상세정보 1",
+          "width": 1600,
+          "height": 1000,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2026/06/16/CZlfTZJQ7yYK0zMsUKS2dSszQny_zS.png"
+        },
+        {
+          "src": "/images/products/official/50/detail-02.webp",
+          "webp": "/images/products/official/50/detail-02.webp",
+          "alt": "스파인얼라인 (SA-820R) 공식 상세정보 2",
+          "width": 1600,
+          "height": 1000,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2026/06/16/7YjG1Y3-46mX9P_GEUPXmVaqQvf9re.png"
+        },
+        {
+          "src": "/images/products/official/50/detail-03.webp",
+          "webp": "/images/products/official/50/detail-03.webp",
+          "alt": "스파인얼라인 (SA-820R) 공식 상세정보 3",
+          "width": 860,
+          "height": 7300,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260618162125211707123.jpg"
+        }
+      ],
+      "officialPriceText": "7,974,000원",
+      "officialPriceKrw": 7974000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=50",
+      "isPublished": true
+    },
+    {
+      "officialId": 12,
+      "name": "지압침대 인베스트 1530 시리즈",
+      "slug": "invest-1530",
+      "officialModel": "3H-1530N Series",
+      "productType": "지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압침대",
+        "3H지압침대",
+        "BEST",
+        "2인용",
+        "실리콘원단",
+        "렌탈 가능"
+      ],
+      "summary": "지압침대 인베스트 1530 시리즈은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/12/cover.webp",
+        "webp": "/images/products/official/12/cover.webp",
+        "avif": "/images/products/official/12/cover.avif",
+        "alt": "지압침대 인베스트 1530 시리즈 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/cn8oOwPDHB6NGbarmVqMCb39FEStWb.jpg"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/12/detail-01.webp",
+          "webp": "/images/products/official/12/detail-01.webp",
+          "alt": "지압침대 인베스트 1530 시리즈 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/Egb_GTCF_ZhcGahg6d9Cu3lrYCL3X1.jpg"
+        },
+        {
+          "src": "/images/products/official/12/detail-02.webp",
+          "webp": "/images/products/official/12/detail-02.webp",
+          "alt": "지압침대 인베스트 1530 시리즈 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/9g9Y5m_oEhF1o5WqcGolRS8dEzWRCh.jpg"
+        },
+        {
+          "src": "/images/products/official/12/detail-03.webp",
+          "webp": "/images/products/official/12/detail-03.webp",
+          "alt": "지압침대 인베스트 1530 시리즈 공식 상세정보 3",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/3ybgrVFeYhR6X7EU5hhpe1dZriqEL_.jpg"
+        },
+        {
+          "src": "/images/products/official/12/detail-04.webp",
+          "webp": "/images/products/official/12/detail-04.webp",
+          "alt": "지압침대 인베스트 1530 시리즈 공식 상세정보 4",
+          "width": 860,
+          "height": 3800,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260123142441847145480.jpg"
+        },
+        {
+          "src": "/images/products/official/12/detail-05.webp",
+          "webp": "/images/products/official/12/detail-05.webp",
+          "alt": "지압침대 인베스트 1530 시리즈 공식 상세정보 5",
+          "width": 860,
+          "height": 2790,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202601231320101641560707.jpg"
+        },
+        {
+          "src": "/images/products/official/12/detail-06.webp",
+          "webp": "/images/products/official/12/detail-06.webp",
+          "alt": "지압침대 인베스트 1530 시리즈 공식 상세정보 6",
+          "width": 860,
+          "height": 2420,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260123132147926559830.jpg"
+        },
+        {
+          "src": "/images/products/official/12/detail-07.webp",
+          "webp": "/images/products/official/12/detail-07.webp",
+          "alt": "지압침대 인베스트 1530 시리즈 공식 상세정보 7",
+          "width": 860,
+          "height": 5360,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260123132250595882591.jpg"
+        },
+        {
+          "src": "/images/products/official/12/detail-08.webp",
+          "webp": "/images/products/official/12/detail-08.webp",
+          "alt": "지압침대 인베스트 1530 시리즈 공식 상세정보 8",
+          "width": 859,
+          "height": 1200,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202601231322581387318412.jpg"
+        },
+        {
+          "src": "/images/products/official/12/detail-09.webp",
+          "webp": "/images/products/official/12/detail-09.webp",
+          "alt": "지압침대 인베스트 1530 시리즈 공식 상세정보 9",
+          "width": 860,
+          "height": 7389,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202601231327101330208327.png"
+        },
+        {
+          "src": "/images/products/official/12/detail-10.webp",
+          "webp": "/images/products/official/12/detail-10.webp",
+          "alt": "지압침대 인베스트 1530 시리즈 공식 상세정보 10",
+          "width": 860,
+          "height": 1270,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202602021540581631598299.jpg"
+        },
+        {
+          "src": "/images/products/official/12/detail-11.webp",
+          "webp": "/images/products/official/12/detail-11.webp",
+          "alt": "지압침대 인베스트 1530 시리즈 공식 상세정보 11",
+          "width": 1600,
+          "height": 1954,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250903100514474076302.jpg"
+        },
+        {
+          "src": "/images/products/official/12/detail-12.webp",
+          "webp": "/images/products/official/12/detail-12.webp",
+          "alt": "지압침대 인베스트 1530 시리즈 공식 상세정보 12",
+          "width": 860,
+          "height": 1200,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_2026012313241034621425.jpg"
+        }
+      ],
+      "officialPriceText": "18,450,000원",
+      "officialPriceKrw": 18450000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": true,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=12",
+      "isPublished": true
+    },
+    {
+      "officialId": 35,
+      "name": "지압침대 인베스트 1300 시리즈",
+      "slug": "3h-1300n-series",
+      "officialModel": "3H-1300N Series",
+      "productType": "지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압침대",
+        "3H지압침대",
+        "2인용",
+        "실리콘원단",
+        "렌탈 가능"
+      ],
+      "summary": "지압침대 인베스트 1300 시리즈은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/35/cover.webp",
+        "webp": "/images/products/official/35/cover.webp",
+        "avif": "/images/products/official/35/cover.avif",
+        "alt": "지압침대 인베스트 1300 시리즈 공식 제품 이미지",
+        "width": 785,
+        "height": 520,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/04/03/O9ylKZyaNQXQ9x_NF3N9tuyZItP3_n.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/35/detail-01.webp",
+          "webp": "/images/products/official/35/detail-01.webp",
+          "alt": "지압침대 인베스트 1300 시리즈 공식 상세정보 1",
+          "width": 785,
+          "height": 520,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/04/03/cv6DBArZhYBBSFiTAKKh0SVwOXyThq.png"
+        },
+        {
+          "src": "/images/products/official/35/detail-02.webp",
+          "webp": "/images/products/official/35/detail-02.webp",
+          "alt": "지압침대 인베스트 1300 시리즈 공식 상세정보 2",
+          "width": 785,
+          "height": 520,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/04/03/KHWK_PdO0DmMqRpQPVaZAX2Or1lZtd.png"
+        },
+        {
+          "src": "/images/products/official/35/detail-03.webp",
+          "webp": "/images/products/official/35/detail-03.webp",
+          "alt": "지압침대 인베스트 1300 시리즈 공식 상세정보 3",
+          "width": 785,
+          "height": 520,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/04/03/kfnBSouF7jgL_sJqPPpX5PCwvGBJmO.png"
+        },
+        {
+          "src": "/images/products/official/35/detail-04.webp",
+          "webp": "/images/products/official/35/detail-04.webp",
+          "alt": "지압침대 인베스트 1300 시리즈 공식 상세정보 4",
+          "width": 860,
+          "height": 3700,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202601231425161776167670.jpg"
+        },
+        {
+          "src": "/images/products/official/35/detail-05.webp",
+          "webp": "/images/products/official/35/detail-05.webp",
+          "alt": "지압침대 인베스트 1300 시리즈 공식 상세정보 5",
+          "width": 860,
+          "height": 2790,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202601231101152114357142.jpg"
+        },
+        {
+          "src": "/images/products/official/35/detail-06.webp",
+          "webp": "/images/products/official/35/detail-06.webp",
+          "alt": "지압침대 인베스트 1300 시리즈 공식 상세정보 6",
+          "width": 860,
+          "height": 2420,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202601231101201532291992.jpg"
+        },
+        {
+          "src": "/images/products/official/35/detail-07.webp",
+          "webp": "/images/products/official/35/detail-07.webp",
+          "alt": "지압침대 인베스트 1300 시리즈 공식 상세정보 7",
+          "width": 860,
+          "height": 5360,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260123110141249030218.jpg"
+        },
+        {
+          "src": "/images/products/official/35/detail-08.webp",
+          "webp": "/images/products/official/35/detail-08.webp",
+          "alt": "지압침대 인베스트 1300 시리즈 공식 상세정보 8",
+          "width": 859,
+          "height": 1200,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260123110145651761983.jpg"
+        },
+        {
+          "src": "/images/products/official/35/detail-09.webp",
+          "webp": "/images/products/official/35/detail-09.webp",
+          "alt": "지압침대 인베스트 1300 시리즈 공식 상세정보 9",
+          "width": 860,
+          "height": 7389,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_2026012311015329467201.png"
+        },
+        {
+          "src": "/images/products/official/35/detail-10.webp",
+          "webp": "/images/products/official/35/detail-10.webp",
+          "alt": "지압침대 인베스트 1300 시리즈 공식 상세정보 10",
+          "width": 860,
+          "height": 1370,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260123110201868690356.jpg"
+        },
+        {
+          "src": "/images/products/official/35/detail-11.webp",
+          "webp": "/images/products/official/35/detail-11.webp",
+          "alt": "지압침대 인베스트 1300 시리즈 공식 상세정보 11",
+          "width": 1600,
+          "height": 1954,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250903095828818918322.jpg"
+        },
+        {
+          "src": "/images/products/official/35/detail-12.webp",
+          "webp": "/images/products/official/35/detail-12.webp",
+          "alt": "지압침대 인베스트 1300 시리즈 공식 상세정보 12",
+          "width": 860,
+          "height": 1200,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260123110220663066693.jpg"
+        }
+      ],
+      "officialPriceText": "13,750,000원",
+      "officialPriceKrw": 13750000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": true,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=35",
+      "isPublished": true
+    },
+    {
+      "officialId": 36,
+      "name": "지압침대 인베스트 1100 시리즈",
+      "slug": "3h-1100n-series",
+      "officialModel": "3H-1100N Series",
+      "productType": "지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압침대",
+        "3H지압침대",
+        "2인용",
+        "실리콘원단"
+      ],
+      "summary": "지압침대 인베스트 1100 시리즈은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/36/cover.webp",
+        "webp": "/images/products/official/36/cover.webp",
+        "avif": "/images/products/official/36/cover.avif",
+        "alt": "지압침대 인베스트 1100 시리즈 공식 제품 이미지",
+        "width": 1200,
+        "height": 800,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/05/27/kXjTE2P06acWuxA6xx6fsspxLLd-a-.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/36/detail-01.webp",
+          "webp": "/images/products/official/36/detail-01.webp",
+          "alt": "지압침대 인베스트 1100 시리즈 공식 상세정보 1",
+          "width": 1600,
+          "height": 1067,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/05/27/OUprahl0nWwzUfMHDYxrdEwmSfWa7n.png"
+        },
+        {
+          "src": "/images/products/official/36/detail-02.webp",
+          "webp": "/images/products/official/36/detail-02.webp",
+          "alt": "지압침대 인베스트 1100 시리즈 공식 상세정보 2",
+          "width": 860,
+          "height": 3800,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202601231030251462624220.jpg"
+        },
+        {
+          "src": "/images/products/official/36/detail-03.webp",
+          "webp": "/images/products/official/36/detail-03.webp",
+          "alt": "지압침대 인베스트 1100 시리즈 공식 상세정보 3",
+          "width": 860,
+          "height": 2800,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260122171546819966563.jpg"
+        },
+        {
+          "src": "/images/products/official/36/detail-04.webp",
+          "webp": "/images/products/official/36/detail-04.webp",
+          "alt": "지압침대 인베스트 1100 시리즈 공식 상세정보 4",
+          "width": 860,
+          "height": 2420,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260122171603491815174.jpg"
+        },
+        {
+          "src": "/images/products/official/36/detail-05.webp",
+          "webp": "/images/products/official/36/detail-05.webp",
+          "alt": "지압침대 인베스트 1100 시리즈 공식 상세정보 5",
+          "width": 860,
+          "height": 5360,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202601221714001553027268.jpg"
+        },
+        {
+          "src": "/images/products/official/36/detail-06.webp",
+          "webp": "/images/products/official/36/detail-06.webp",
+          "alt": "지압침대 인베스트 1100 시리즈 공식 상세정보 6",
+          "width": 859,
+          "height": 1200,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202601221714041883069256.jpg"
+        },
+        {
+          "src": "/images/products/official/36/detail-07.webp",
+          "webp": "/images/products/official/36/detail-07.webp",
+          "alt": "지압침대 인베스트 1100 시리즈 공식 상세정보 7",
+          "width": 860,
+          "height": 7389,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260122171407897614433.png"
+        },
+        {
+          "src": "/images/products/official/36/detail-08.webp",
+          "webp": "/images/products/official/36/detail-08.webp",
+          "alt": "지압침대 인베스트 1100 시리즈 공식 상세정보 8",
+          "width": 860,
+          "height": 1270,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260122171412582788030.jpg"
+        },
+        {
+          "src": "/images/products/official/36/detail-09.webp",
+          "webp": "/images/products/official/36/detail-09.webp",
+          "alt": "지압침대 인베스트 1100 시리즈 공식 상세정보 9",
+          "width": 1600,
+          "height": 1954,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202509030957051658621594.jpg"
+        },
+        {
+          "src": "/images/products/official/36/detail-10.webp",
+          "webp": "/images/products/official/36/detail-10.webp",
+          "alt": "지압침대 인베스트 1100 시리즈 공식 상세정보 10",
+          "width": 860,
+          "height": 1200,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260122171422467304984.jpg"
+        }
+      ],
+      "officialPriceText": "12,750,000원",
+      "officialPriceKrw": 12750000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=36",
+      "isPublished": true
+    },
+    {
+      "officialId": 39,
+      "name": "지압침대 인베스트 920 시리즈",
+      "slug": "3h-920n-series",
+      "officialModel": "3H-920N Series",
+      "productType": "지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압침대",
+        "3H지압침대",
+        "1인용",
+        "실리콘원단",
+        "렌탈 가능"
+      ],
+      "summary": "지압침대 인베스트 920 시리즈은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/39/cover.webp",
+        "webp": "/images/products/official/39/cover.webp",
+        "avif": "/images/products/official/39/cover.avif",
+        "alt": "지압침대 인베스트 920 시리즈 공식 제품 이미지",
+        "width": 785,
+        "height": 520,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/04/03/6K-Xpxz-oz3FS2il1M9LGPFp2Mgv4K.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/39/detail-01.webp",
+          "webp": "/images/products/official/39/detail-01.webp",
+          "alt": "지압침대 인베스트 920 시리즈 공식 상세정보 1",
+          "width": 785,
+          "height": 520,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/04/03/v9gPvesbyYNG0TuXcmek-viM3HCQUD.png"
+        },
+        {
+          "src": "/images/products/official/39/detail-02.webp",
+          "webp": "/images/products/official/39/detail-02.webp",
+          "alt": "지압침대 인베스트 920 시리즈 공식 상세정보 2",
+          "width": 785,
+          "height": 520,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/04/03/xWvie1BGcYT-0rnOX_C9t57b0Stv9g.png"
+        },
+        {
+          "src": "/images/products/official/39/detail-03.webp",
+          "webp": "/images/products/official/39/detail-03.webp",
+          "alt": "지압침대 인베스트 920 시리즈 공식 상세정보 3",
+          "width": 785,
+          "height": 520,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/04/03/oKyZ_OMDO0_LofJWYS7mtMxvBDNFsS.png"
+        },
+        {
+          "src": "/images/products/official/39/detail-04.webp",
+          "webp": "/images/products/official/39/detail-04.webp",
+          "alt": "지압침대 인베스트 920 시리즈 공식 상세정보 4",
+          "width": 860,
+          "height": 3800,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260123101333780815375.jpg"
+        },
+        {
+          "src": "/images/products/official/39/detail-05.webp",
+          "webp": "/images/products/official/39/detail-05.webp",
+          "alt": "지압침대 인베스트 920 시리즈 공식 상세정보 5",
+          "width": 860,
+          "height": 2790,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202601221700011026336147.jpg"
+        },
+        {
+          "src": "/images/products/official/39/detail-06.webp",
+          "webp": "/images/products/official/39/detail-06.webp",
+          "alt": "지압침대 인베스트 920 시리즈 공식 상세정보 6",
+          "width": 860,
+          "height": 2420,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202601221700061781583441.jpg"
+        },
+        {
+          "src": "/images/products/official/39/detail-07.webp",
+          "webp": "/images/products/official/39/detail-07.webp",
+          "alt": "지압침대 인베스트 920 시리즈 공식 상세정보 7",
+          "width": 860,
+          "height": 5360,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260122170128781813172.jpg"
+        },
+        {
+          "src": "/images/products/official/39/detail-08.webp",
+          "webp": "/images/products/official/39/detail-08.webp",
+          "alt": "지압침대 인베스트 920 시리즈 공식 상세정보 8",
+          "width": 1600,
+          "height": 2235,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260508143459305345560.jpg"
+        },
+        {
+          "src": "/images/products/official/39/detail-09.webp",
+          "webp": "/images/products/official/39/detail-09.webp",
+          "alt": "지압침대 인베스트 920 시리즈 공식 상세정보 9",
+          "width": 860,
+          "height": 7425,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606021327511950028876.jpg"
+        },
+        {
+          "src": "/images/products/official/39/detail-10.webp",
+          "webp": "/images/products/official/39/detail-10.webp",
+          "alt": "지압침대 인베스트 920 시리즈 공식 상세정보 10",
+          "width": 860,
+          "height": 1370,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260122170536853126099.jpg"
+        },
+        {
+          "src": "/images/products/official/39/detail-11.webp",
+          "webp": "/images/products/official/39/detail-11.webp",
+          "alt": "지압침대 인베스트 920 시리즈 공식 상세정보 11",
+          "width": 1600,
+          "height": 1954,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202509021652271497385661.jpg"
+        },
+        {
+          "src": "/images/products/official/39/detail-12.webp",
+          "webp": "/images/products/official/39/detail-12.webp",
+          "alt": "지압침대 인베스트 920 시리즈 공식 상세정보 12",
+          "width": 860,
+          "height": 1200,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202601221707211830983317.jpg"
+        }
+      ],
+      "officialPriceText": "10,365,000원",
+      "officialPriceKrw": 10365000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": true,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=39",
+      "isPublished": true
+    },
+    {
+      "officialId": 40,
+      "name": "지압침대 임페리얼 킹",
+      "slug": "3h-1530k",
+      "officialModel": "3H-1530K",
+      "productType": "지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압침대",
+        "3H지압침대",
+        "2인용",
+        "원목",
+        "실리콘원단"
+      ],
+      "summary": "지압침대 임페리얼 킹은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/40/cover.webp",
+        "webp": "/images/products/official/40/cover.webp",
+        "avif": "/images/products/official/40/cover.avif",
+        "alt": "지압침대 임페리얼 킹 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/Ckn9yTXpQaQIdj-IpqOo_n6c1zpB7h.jpg"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/40/detail-01.webp",
+          "webp": "/images/products/official/40/detail-01.webp",
+          "alt": "지압침대 임페리얼 킹 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/-qRrlsGG6OH23vAEKdpS0xWVyVebyF.jpg"
+        },
+        {
+          "src": "/images/products/official/40/detail-02.webp",
+          "webp": "/images/products/official/40/detail-02.webp",
+          "alt": "지압침대 임페리얼 킹 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/nKG3zzdILRCwYUDmKG9cqV0TFPIDQM.jpg"
+        },
+        {
+          "src": "/images/products/official/40/detail-03.webp",
+          "webp": "/images/products/official/40/detail-03.webp",
+          "alt": "지압침대 임페리얼 킹 공식 상세정보 3",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/M_bsyUHxxVD6O5Q23bM76iuYlU-dlV.jpg"
+        },
+        {
+          "src": "/images/products/official/40/detail-04.webp",
+          "webp": "/images/products/official/40/detail-04.webp",
+          "alt": "지압침대 임페리얼 킹 공식 상세정보 4",
+          "width": 860,
+          "height": 5960,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606191217481298517203.jpg"
+        },
+        {
+          "src": "/images/products/official/40/detail-05.webp",
+          "webp": "/images/products/official/40/detail-05.webp",
+          "alt": "지압침대 임페리얼 킹 공식 상세정보 5",
+          "width": 860,
+          "height": 5360,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260619121754844446088.jpg"
+        },
+        {
+          "src": "/images/products/official/40/detail-06.webp",
+          "webp": "/images/products/official/40/detail-06.webp",
+          "alt": "지압침대 임페리얼 킹 공식 상세정보 6",
+          "width": 860,
+          "height": 7700,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606191217591587096459.jpg"
+        }
+      ],
+      "officialPriceText": "18,396,000원",
+      "officialPriceKrw": 18396000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=40",
+      "isPublished": true
+    },
+    {
+      "officialId": 41,
+      "name": "지압침대 임페리얼 더블",
+      "slug": "3h-1300wd",
+      "officialModel": "3H-1300WD",
+      "productType": "지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압침대",
+        "3H지압침대",
+        "2인용",
+        "원목",
+        "실리콘원단"
+      ],
+      "summary": "지압침대 임페리얼 더블은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/41/cover.webp",
+        "webp": "/images/products/official/41/cover.webp",
+        "avif": "/images/products/official/41/cover.avif",
+        "alt": "지압침대 임페리얼 더블 공식 제품 이미지",
+        "width": 785,
+        "height": 520,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/nwZ1Dw8n-0jL7K2tdrYo0zXxVSUdnz.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/41/detail-01.webp",
+          "webp": "/images/products/official/41/detail-01.webp",
+          "alt": "지압침대 임페리얼 더블 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/ue65isHSmwWucLwLf062_vs512V9uw.png"
+        },
+        {
+          "src": "/images/products/official/41/detail-02.webp",
+          "webp": "/images/products/official/41/detail-02.webp",
+          "alt": "지압침대 임페리얼 더블 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/X0YzznMVGZ0MdsfjL3OzmeR1R3CqTZ.png"
+        },
+        {
+          "src": "/images/products/official/41/detail-03.webp",
+          "webp": "/images/products/official/41/detail-03.webp",
+          "alt": "지압침대 임페리얼 더블 공식 상세정보 3",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/J2L_RzTXSMHrDCku3-RsmS8SouJzHF.png"
+        },
+        {
+          "src": "/images/products/official/41/detail-04.webp",
+          "webp": "/images/products/official/41/detail-04.webp",
+          "alt": "지압침대 임페리얼 더블 공식 상세정보 4",
+          "width": 860,
+          "height": 7904,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202601201050111500911777.jpg"
+        },
+        {
+          "src": "/images/products/official/41/detail-05.webp",
+          "webp": "/images/products/official/41/detail-05.webp",
+          "alt": "지압침대 임페리얼 더블 공식 상세정보 5",
+          "width": 860,
+          "height": 5360,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260119120909958264161.jpg"
+        },
+        {
+          "src": "/images/products/official/41/detail-06.webp",
+          "webp": "/images/products/official/41/detail-06.webp",
+          "alt": "지압침대 임페리얼 더블 공식 상세정보 6",
+          "width": 860,
+          "height": 7389,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260119121104545525345.png"
+        }
+      ],
+      "officialPriceText": "14,742,000원",
+      "officialPriceKrw": 14742000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=41",
+      "isPublished": true
+    },
+    {
+      "officialId": 51,
+      "name": "지압침대 임페리얼 우드",
+      "slug": "3h-920wd",
+      "officialModel": "3H-920WD",
+      "productType": "지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압침대",
+        "3H지압침대",
+        "1인용",
+        "원목",
+        "실리콘원단"
+      ],
+      "summary": "지압침대 임페리얼 우드은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/51/cover.webp",
+        "webp": "/images/products/official/51/cover.webp",
+        "avif": "/images/products/official/51/cover.avif",
+        "alt": "지압침대 임페리얼 우드 공식 제품 이미지",
+        "width": 785,
+        "height": 520,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/kg1ssGT2Y-mYJM8wTQgbXO_2QELHvf.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/51/detail-01.webp",
+          "webp": "/images/products/official/51/detail-01.webp",
+          "alt": "지압침대 임페리얼 우드 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/83NsOtsFqlmqADlhV0DM0JNozn68O-.png"
+        },
+        {
+          "src": "/images/products/official/51/detail-02.webp",
+          "webp": "/images/products/official/51/detail-02.webp",
+          "alt": "지압침대 임페리얼 우드 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/C8E_Xc_-I-gYYFJFyMbRRF0jK8O4Yn.png"
+        },
+        {
+          "src": "/images/products/official/51/detail-03.webp",
+          "webp": "/images/products/official/51/detail-03.webp",
+          "alt": "지압침대 임페리얼 우드 공식 상세정보 3",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/fezplOxiGrhn1DzBbeQFLURtdFQ9nd.png"
+        },
+        {
+          "src": "/images/products/official/51/detail-04.webp",
+          "webp": "/images/products/official/51/detail-04.webp",
+          "alt": "지압침대 임페리얼 우드 공식 상세정보 4",
+          "width": 860,
+          "height": 5830,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606191032281138335860.jpg"
+        },
+        {
+          "src": "/images/products/official/51/detail-05.webp",
+          "webp": "/images/products/official/51/detail-05.webp",
+          "alt": "지압침대 임페리얼 우드 공식 상세정보 5",
+          "width": 860,
+          "height": 5390,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606191032311546486350.jpg"
+        },
+        {
+          "src": "/images/products/official/51/detail-06.webp",
+          "webp": "/images/products/official/51/detail-06.webp",
+          "alt": "지압침대 임페리얼 우드 공식 상세정보 6",
+          "width": 860,
+          "height": 7699,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260619103234292655467.jpg"
+        }
+      ],
+      "officialPriceText": "9,200,000원",
+      "officialPriceKrw": 9200000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=51",
+      "isPublished": true
+    },
+    {
+      "officialId": 42,
+      "name": "지압침대 슈페리어 (3H-1100-S)",
+      "slug": "3h-1100",
+      "officialModel": "3H-1100",
+      "productType": "지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압침대",
+        "3H지압침대",
+        "2인용",
+        "원목",
+        "렌탈 가능"
+      ],
+      "summary": "지압침대 슈페리어 (3H-1100-S)은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/42/cover.webp",
+        "webp": "/images/products/official/42/cover.webp",
+        "avif": "/images/products/official/42/cover.avif",
+        "alt": "지압침대 슈페리어 (3H-1100-S) 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/CRMzfs5kvcKSYk_ZvHGwTWVxpp5nPZ.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/42/detail-01.webp",
+          "webp": "/images/products/official/42/detail-01.webp",
+          "alt": "지압침대 슈페리어 (3H-1100-S) 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/WEi2r4W0HVz-HNNwu3zJXLRBsgHIyc.png"
+        },
+        {
+          "src": "/images/products/official/42/detail-02.webp",
+          "webp": "/images/products/official/42/detail-02.webp",
+          "alt": "지압침대 슈페리어 (3H-1100-S) 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/RtA5FsWp9JZIRx4GCQZxC7r7bRTHwI.png"
+        },
+        {
+          "src": "/images/products/official/42/detail-03.webp",
+          "webp": "/images/products/official/42/detail-03.webp",
+          "alt": "지압침대 슈페리어 (3H-1100-S) 공식 상세정보 3",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/3ZK57VacqhQt8_sOzcm4Qs9fqj13-K.png"
+        },
+        {
+          "src": "/images/products/official/42/detail-04.webp",
+          "webp": "/images/products/official/42/detail-04.webp",
+          "alt": "지압침대 슈페리어 (3H-1100-S) 공식 상세정보 4",
+          "width": 860,
+          "height": 7914,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_2026031013204048698971.jpg"
+        },
+        {
+          "src": "/images/products/official/42/detail-05.webp",
+          "webp": "/images/products/official/42/detail-05.webp",
+          "alt": "지압침대 슈페리어 (3H-1100-S) 공식 상세정보 5",
+          "width": 860,
+          "height": 5360,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_2026011516011434133532.png"
+        },
+        {
+          "src": "/images/products/official/42/detail-06.webp",
+          "webp": "/images/products/official/42/detail-06.webp",
+          "alt": "지압침대 슈페리어 (3H-1100-S) 공식 상세정보 6",
+          "width": 860,
+          "height": 7389,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260115160155682978581.png"
+        }
+      ],
+      "officialPriceText": "11,250,000원",
+      "officialPriceKrw": 11250000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": true,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=42",
+      "isPublished": true
+    },
+    {
+      "officialId": 43,
+      "name": "지압침대 슈페리어 (3H-925WD-S)",
+      "slug": "3h-925wd",
+      "officialModel": "3H-925WD",
+      "productType": "지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압침대",
+        "3H지압침대",
+        "1인용",
+        "원목",
+        "렌탈 가능"
+      ],
+      "summary": "지압침대 슈페리어 (3H-925WD-S)은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/43/cover.webp",
+        "webp": "/images/products/official/43/cover.webp",
+        "avif": "/images/products/official/43/cover.avif",
+        "alt": "지압침대 슈페리어 (3H-925WD-S) 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/oPJwqO96n0mIM_zkBTCHKUAQXmNJ75.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/43/detail-01.webp",
+          "webp": "/images/products/official/43/detail-01.webp",
+          "alt": "지압침대 슈페리어 (3H-925WD-S) 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/WbBC4yOUb58K8tJFMLiA0bvfDrvkE9.png"
+        },
+        {
+          "src": "/images/products/official/43/detail-02.webp",
+          "webp": "/images/products/official/43/detail-02.webp",
+          "alt": "지압침대 슈페리어 (3H-925WD-S) 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/2Zjwz-fvCk1J8qNeTH_uH8Cnb9GC29.png"
+        },
+        {
+          "src": "/images/products/official/43/detail-03.webp",
+          "webp": "/images/products/official/43/detail-03.webp",
+          "alt": "지압침대 슈페리어 (3H-925WD-S) 공식 상세정보 3",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/LOY7BaxQXYq_BO0fmz1VoT164iNT46.png"
+        },
+        {
+          "src": "/images/products/official/43/detail-04.webp",
+          "webp": "/images/products/official/43/detail-04.webp",
+          "alt": "지압침대 슈페리어 (3H-925WD-S) 공식 상세정보 4",
+          "width": 1108,
+          "height": 775,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202502171639141851840330.jpg"
+        },
+        {
+          "src": "/images/products/official/43/detail-05.webp",
+          "webp": "/images/products/official/43/detail-05.webp",
+          "alt": "지압침대 슈페리어 (3H-925WD-S) 공식 상세정보 5",
+          "width": 1600,
+          "height": 6692,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202605081655431765705199.jpg"
+        }
+      ],
+      "officialPriceText": "9,350,000원",
+      "officialPriceKrw": 9350000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": true,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=43",
+      "isPublished": true
+    },
+    {
+      "officialId": 44,
+      "name": "지압침대 슈페리어 (3H-850WD-S)",
+      "slug": "3h-850wd",
+      "officialModel": "3H-850WD",
+      "productType": "지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압침대",
+        "3H지압침대",
+        "1인용",
+        "원목"
+      ],
+      "summary": "지압침대 슈페리어 (3H-850WD-S)은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/44/cover.webp",
+        "webp": "/images/products/official/44/cover.webp",
+        "avif": "/images/products/official/44/cover.avif",
+        "alt": "지압침대 슈페리어 (3H-850WD-S) 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/-1mVjxBNvwC-OnhqUsC9Aa94Kb2GMD.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/44/detail-01.webp",
+          "webp": "/images/products/official/44/detail-01.webp",
+          "alt": "지압침대 슈페리어 (3H-850WD-S) 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/vmkpBO3JzQMx5axFhTSSVb9Kh8RzwC.png"
+        },
+        {
+          "src": "/images/products/official/44/detail-02.webp",
+          "webp": "/images/products/official/44/detail-02.webp",
+          "alt": "지압침대 슈페리어 (3H-850WD-S) 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/XQtejkDnIrDIyMY7oW70MahvB5NK6w.png"
+        },
+        {
+          "src": "/images/products/official/44/detail-03.webp",
+          "webp": "/images/products/official/44/detail-03.webp",
+          "alt": "지압침대 슈페리어 (3H-850WD-S) 공식 상세정보 3",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/tJwIVknVFpMw_WUdk3c-qVr1pZPV2n.png"
+        }
+      ],
+      "officialPriceText": "8,600,000원",
+      "officialPriceKrw": 8600000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=44",
+      "isPublished": true
+    },
+    {
+      "officialId": 52,
+      "name": "지압침대 우드",
+      "slug": "3h-820wd",
+      "officialModel": "3H-820WD",
+      "productType": "지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압침대",
+        "3H지압침대",
+        "1인용",
+        "원목",
+        "렌탈 가능"
+      ],
+      "summary": "지압침대 우드은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/52/cover.webp",
+        "webp": "/images/products/official/52/cover.webp",
+        "avif": "/images/products/official/52/cover.avif",
+        "alt": "지압침대 우드 공식 제품 이미지",
+        "width": 785,
+        "height": 520,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/kb4QmruPst1HxyjFQz4po5MjLbQyqE.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/52/detail-01.webp",
+          "webp": "/images/products/official/52/detail-01.webp",
+          "alt": "지압침대 우드 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/a7pHuWds02WFWM7Bm02-f6sZuQGcNY.png"
+        },
+        {
+          "src": "/images/products/official/52/detail-02.webp",
+          "webp": "/images/products/official/52/detail-02.webp",
+          "alt": "지압침대 우드 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/68vx0axYQYMrmfHqONnlJdaV9CQMWc.png"
+        },
+        {
+          "src": "/images/products/official/52/detail-03.webp",
+          "webp": "/images/products/official/52/detail-03.webp",
+          "alt": "지압침대 우드 공식 상세정보 3",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/4lydp6WnP2K77rW3GDaDm_feIUJRKP.png"
+        },
+        {
+          "src": "/images/products/official/52/detail-04.webp",
+          "webp": "/images/products/official/52/detail-04.webp",
+          "alt": "지압침대 우드 공식 상세정보 4",
+          "width": 1108,
+          "height": 775,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202503171438191409337036.jpg"
+        },
+        {
+          "src": "/images/products/official/52/detail-05.webp",
+          "webp": "/images/products/official/52/detail-05.webp",
+          "alt": "지압침대 우드 공식 상세정보 5",
+          "width": 1600,
+          "height": 6770,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260508170115651066915.jpg"
+        },
+        {
+          "src": "/images/products/official/52/detail-06.webp",
+          "webp": "/images/products/official/52/detail-06.webp",
+          "alt": "지압침대 우드 공식 상세정보 6",
+          "width": 1108,
+          "height": 420,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202503171438341365030582.jpg"
+        }
+      ],
+      "officialPriceText": "7,988,000원",
+      "officialPriceKrw": 7988000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": true,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=52",
+      "isPublished": true
+    },
+    {
+      "officialId": 54,
+      "name": "지압침대",
+      "slug": "3h-820",
+      "officialModel": "3H-820",
+      "productType": "지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압침대",
+        "3H지압침대",
+        "1인용",
+        "실리콘원단"
+      ],
+      "summary": "지압침대은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/54/cover.webp",
+        "webp": "/images/products/official/54/cover.webp",
+        "avif": "/images/products/official/54/cover.avif",
+        "alt": "지압침대 공식 제품 이미지",
+        "width": 785,
+        "height": 520,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/-LQI4817rOfk7YPfq2te3-vCGXOzh_.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/54/detail-01.webp",
+          "webp": "/images/products/official/54/detail-01.webp",
+          "alt": "지압침대 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/CjrSpLOssohHvpAjUuRgjQkekmJVLa.png"
+        },
+        {
+          "src": "/images/products/official/54/detail-02.webp",
+          "webp": "/images/products/official/54/detail-02.webp",
+          "alt": "지압침대 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/v2kG5oM46U2Mib0TpU4wyJzsBmuKVy.png"
+        },
+        {
+          "src": "/images/products/official/54/detail-03.webp",
+          "webp": "/images/products/official/54/detail-03.webp",
+          "alt": "지압침대 공식 상세정보 3",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/Ly9fSjBBHG04p2a0On7-LbfyZBvR7n.png"
+        },
+        {
+          "src": "/images/products/official/54/detail-04.webp",
+          "webp": "/images/products/official/54/detail-04.webp",
+          "alt": "지압침대 공식 상세정보 4",
+          "width": 860,
+          "height": 5800,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202606191007272114778614.jpg"
+        },
+        {
+          "src": "/images/products/official/54/detail-05.webp",
+          "webp": "/images/products/official/54/detail-05.webp",
+          "alt": "지압침대 공식 상세정보 5",
+          "width": 860,
+          "height": 5390,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260619100732504638682.jpg"
+        },
+        {
+          "src": "/images/products/official/54/detail-06.webp",
+          "webp": "/images/products/official/54/detail-06.webp",
+          "alt": "지압침대 공식 상세정보 6",
+          "width": 860,
+          "height": 7699,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260619100736862139588.jpg"
+        }
+      ],
+      "officialPriceText": "7,100,000원",
+      "officialPriceKrw": 7100000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=54",
+      "isPublished": true
+    },
+    {
+      "officialId": 53,
+      "name": "지압침대 HP",
+      "slug": "3h-820hp",
+      "officialModel": "3H-820HP",
+      "productType": "지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압침대",
+        "3H지압침대",
+        "렌탈 가능"
+      ],
+      "summary": "지압침대 HP은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/53/cover.webp",
+        "webp": "/images/products/official/53/cover.webp",
+        "avif": "/images/products/official/53/cover.avif",
+        "alt": "지압침대 HP 공식 제품 이미지",
+        "width": 785,
+        "height": 520,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/72X2Lu-_zkEuDOMGG7Th9ME9pzThAN.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/53/detail-01.webp",
+          "webp": "/images/products/official/53/detail-01.webp",
+          "alt": "지압침대 HP 공식 상세정보 1",
+          "width": 785,
+          "height": 520,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/31G7Y9HozZOHEeGsboJxdxUJqgGQ8R.png"
+        },
+        {
+          "src": "/images/products/official/53/detail-02.webp",
+          "webp": "/images/products/official/53/detail-02.webp",
+          "alt": "지압침대 HP 공식 상세정보 2",
+          "width": 785,
+          "height": 520,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/QqciflSKiNTnbPeSjZZVbA5xUX3O7B.png"
+        },
+        {
+          "src": "/images/products/official/53/detail-03.webp",
+          "webp": "/images/products/official/53/detail-03.webp",
+          "alt": "지압침대 HP 공식 상세정보 3",
+          "width": 785,
+          "height": 520,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/Z1Kr4GJGaEVYqss9y06INlMEWvtkou.png"
+        },
+        {
+          "src": "/images/products/official/53/detail-04.webp",
+          "webp": "/images/products/official/53/detail-04.webp",
+          "alt": "지압침대 HP 공식 상세정보 4",
+          "width": 1108,
+          "height": 732,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250326091842336347489.jpg"
+        },
+        {
+          "src": "/images/products/official/53/detail-05.webp",
+          "webp": "/images/products/official/53/detail-05.webp",
+          "alt": "지압침대 HP 공식 상세정보 5",
+          "width": 1600,
+          "height": 9558,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260508171636840105993.jpg"
+        },
+        {
+          "src": "/images/products/official/53/detail-06.webp",
+          "webp": "/images/products/official/53/detail-06.webp",
+          "alt": "지압침대 HP 공식 상세정보 6",
+          "width": 1108,
+          "height": 420,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202503260919121133054655.jpg"
+        }
+      ],
+      "officialPriceText": "6,450,000원",
+      "officialPriceKrw": 6450000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": true,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=53",
+      "isPublished": true
+    },
+    {
+      "officialId": 55,
+      "name": "지압 와이드 쇼파",
+      "slug": "3h-920ws",
+      "officialModel": "3H-920WS",
+      "productType": "3H지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "3H지압침대",
+        "1인용",
+        "원목",
+        "실리콘원단"
+      ],
+      "summary": "지압 와이드 쇼파은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/55/cover.webp",
+        "webp": "/images/products/official/55/cover.webp",
+        "avif": "/images/products/official/55/cover.avif",
+        "alt": "지압 와이드 쇼파 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/EWwdHfundJsGG-VrbngEO7-upgUaM6.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/55/detail-01.webp",
+          "webp": "/images/products/official/55/detail-01.webp",
+          "alt": "지압 와이드 쇼파 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/RoPDwvdqfeSps56hyv9K8OsWBGvx80.png"
+        },
+        {
+          "src": "/images/products/official/55/detail-02.webp",
+          "webp": "/images/products/official/55/detail-02.webp",
+          "alt": "지압 와이드 쇼파 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/iLOLeJFi_GxDMag6UMxG8gJ8Vtsenj.png"
+        },
+        {
+          "src": "/images/products/official/55/detail-03.webp",
+          "webp": "/images/products/official/55/detail-03.webp",
+          "alt": "지압 와이드 쇼파 공식 상세정보 3",
+          "width": 1108,
+          "height": 775,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202503250938151932663459.jpg"
+        },
+        {
+          "src": "/images/products/official/55/detail-04.webp",
+          "webp": "/images/products/official/55/detail-04.webp",
+          "alt": "지압 와이드 쇼파 공식 상세정보 4",
+          "width": 1600,
+          "height": 9151,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202605081719551648591824.jpg"
+        },
+        {
+          "src": "/images/products/official/55/detail-05.webp",
+          "webp": "/images/products/official/55/detail-05.webp",
+          "alt": "지압 와이드 쇼파 공식 상세정보 5",
+          "width": 1108,
+          "height": 420,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202503250938271462932036.jpg"
+        }
+      ],
+      "officialPriceText": "9,970,000원",
+      "officialPriceKrw": 9970000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=55",
+      "isPublished": true
+    },
+    {
+      "officialId": 56,
+      "name": "지압침대 크라운",
+      "slug": "3h-920c",
+      "officialModel": "3H-920C",
+      "productType": "지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압침대",
+        "3H지압침대",
+        "1인용",
+        "원목",
+        "렌탈 가능"
+      ],
+      "summary": "지압침대 크라운은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/56/cover.webp",
+        "webp": "/images/products/official/56/cover.webp",
+        "avif": "/images/products/official/56/cover.avif",
+        "alt": "지압침대 크라운 공식 제품 이미지",
+        "width": 785,
+        "height": 520,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/FwhfzUQvi2v9r6K8CsSSRoYH8wj3J4.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/56/detail-01.webp",
+          "webp": "/images/products/official/56/detail-01.webp",
+          "alt": "지압침대 크라운 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/B_9DoQWn_sEqqL0TCvtC01TinIXzG1.png"
+        },
+        {
+          "src": "/images/products/official/56/detail-02.webp",
+          "webp": "/images/products/official/56/detail-02.webp",
+          "alt": "지압침대 크라운 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/BZMrHKu122Qnp0RsfNzG30VbdPIekP.png"
+        },
+        {
+          "src": "/images/products/official/56/detail-03.webp",
+          "webp": "/images/products/official/56/detail-03.webp",
+          "alt": "지압침대 크라운 공식 상세정보 3",
+          "width": 1108,
+          "height": 732,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250325095111110927721.jpg"
+        },
+        {
+          "src": "/images/products/official/56/detail-04.webp",
+          "webp": "/images/products/official/56/detail-04.webp",
+          "alt": "지압침대 크라운 공식 상세정보 4",
+          "width": 860,
+          "height": 5251,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260508172231696537242.jpg"
+        }
+      ],
+      "officialPriceText": "9,743,000원",
+      "officialPriceKrw": 9743000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": true,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=56",
+      "isPublished": true
+    },
+    {
+      "officialId": 57,
+      "name": "지압쇼파",
+      "slug": "3h-820sj",
+      "officialModel": "3H-820SJ",
+      "productType": "지압쇼파",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "지압쇼파",
+        "3H지압침대",
+        "1인용",
+        "원목",
+        "실리콘원단",
+        "렌탈 가능"
+      ],
+      "summary": "지압쇼파은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/57/cover.webp",
+        "webp": "/images/products/official/57/cover.webp",
+        "avif": "/images/products/official/57/cover.avif",
+        "alt": "지압쇼파 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/21_deCm_4D5h84AEhYIE27Rit_qKKL.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/57/detail-01.webp",
+          "webp": "/images/products/official/57/detail-01.webp",
+          "alt": "지압쇼파 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/H7LzRTCOtUulpDTWeZAfFX4nPbzbTo.png"
+        },
+        {
+          "src": "/images/products/official/57/detail-02.webp",
+          "webp": "/images/products/official/57/detail-02.webp",
+          "alt": "지압쇼파 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/25/hwDh0RvhIUKXfgasLvS1bZvbJWJMDj.png"
+        },
+        {
+          "src": "/images/products/official/57/detail-03.webp",
+          "webp": "/images/products/official/57/detail-03.webp",
+          "alt": "지압쇼파 공식 상세정보 3",
+          "width": 1108,
+          "height": 775,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202503250956261971283557.jpg"
+        },
+        {
+          "src": "/images/products/official/57/detail-04.webp",
+          "webp": "/images/products/official/57/detail-04.webp",
+          "alt": "지압쇼파 공식 상세정보 4",
+          "width": 860,
+          "height": 3515,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20260511085609957767142.jpg"
+        }
+      ],
+      "officialPriceText": "9,230,000원",
+      "officialPriceKrw": 9230000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": true,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=57",
+      "isPublished": true
+    },
+    {
+      "officialId": 58,
+      "name": "카우치",
+      "slug": "sd-820sj-a",
+      "officialModel": "SD-820SJ (A)",
+      "productType": "3H지압침대",
+      "officialCategory": "3H지압침대",
+      "categories": [
+        "3H지압침대",
+        "1인용",
+        "원목",
+        "실리콘원단"
+      ],
+      "summary": "카우치은 3H 공식 제품 카탈로그에 등록된 3H지압침대 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/58/cover.webp",
+        "webp": "/images/products/official/58/cover.webp",
+        "avif": "/images/products/official/58/cover.avif",
+        "alt": "카우치 공식 제품 이미지",
+        "width": 785,
+        "height": 520,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/5iAJ4vdMNVPkOT4IS4joz2a6ItMnA_.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/58/detail-01.webp",
+          "webp": "/images/products/official/58/detail-01.webp",
+          "alt": "카우치 공식 상세정보 1",
+          "width": 785,
+          "height": 520,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/6dsAwP3jSK0Sfp5fa5C6Ktr4my7GFn.png"
+        },
+        {
+          "src": "/images/products/official/58/detail-02.webp",
+          "webp": "/images/products/official/58/detail-02.webp",
+          "alt": "카우치 공식 상세정보 2",
+          "width": 785,
+          "height": 520,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/syv4jdTrGvcWqCNVwwz9pZ60rrzRoH.png"
+        },
+        {
+          "src": "/images/products/official/58/detail-03.webp",
+          "webp": "/images/products/official/58/detail-03.webp",
+          "alt": "카우치 공식 상세정보 3",
+          "width": 785,
+          "height": 520,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/BYqZYpvK2Cz-Aln0j_PPje16q3hvNO.png"
+        },
+        {
+          "src": "/images/products/official/58/detail-04.webp",
+          "webp": "/images/products/official/58/detail-04.webp",
+          "alt": "카우치 공식 상세정보 4",
+          "width": 1108,
+          "height": 775,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250325095833234564340.jpg"
+        },
+        {
+          "src": "/images/products/official/58/detail-05.webp",
+          "webp": "/images/products/official/58/detail-05.webp",
+          "alt": "카우치 공식 상세정보 5",
+          "width": 860,
+          "height": 5997,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202605110928422113518118.jpg"
+        }
+      ],
+      "officialPriceText": "9,200,000원",
+      "officialPriceKrw": 9200000,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=58",
+      "isPublished": true
+    },
+    {
+      "officialId": 20,
+      "name": "ion9 이온수기",
+      "slug": "official-product-20",
+      "officialModel": "-",
+      "productType": "의료기기&건강보조기기",
+      "officialCategory": "의료기기&건강보조기기",
+      "categories": [
+        "의료기기&건강보조기기",
+        "BEST",
+        "렌탈 가능"
+      ],
+      "summary": "ion9 이온수기은 3H 공식 제품 카탈로그에 등록된 의료기기&건강보조기기 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/20/cover.webp",
+        "webp": "/images/products/official/20/cover.webp",
+        "avif": "/images/products/official/20/cover.avif",
+        "alt": "ion9 이온수기 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/IUpwFIktLYkFeRgbhsFFvpxMi5wkic.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/20/detail-01.webp",
+          "webp": "/images/products/official/20/detail-01.webp",
+          "alt": "ion9 이온수기 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/EAFjm3nGTGTfPHMtvDnv7rRS63mbDc.png"
+        },
+        {
+          "src": "/images/products/official/20/detail-02.webp",
+          "webp": "/images/products/official/20/detail-02.webp",
+          "alt": "ion9 이온수기 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/6fbiKdDdyESuCT2agOpPClnzrfMy4U.png"
+        },
+        {
+          "src": "/images/products/official/20/detail-03.webp",
+          "webp": "/images/products/official/20/detail-03.webp",
+          "alt": "ion9 이온수기 공식 상세정보 3",
+          "width": 1600,
+          "height": 3237,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250328161825878000964.jpg"
+        },
+        {
+          "src": "/images/products/official/20/detail-04.webp",
+          "webp": "/images/products/official/20/detail-04.webp",
+          "alt": "ion9 이온수기 공식 상세정보 4",
+          "width": 1600,
+          "height": 2697,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250328161825531439751.jpg"
+        },
+        {
+          "src": "/images/products/official/20/detail-05.webp",
+          "webp": "/images/products/official/20/detail-05.webp",
+          "alt": "ion9 이온수기 공식 상세정보 5",
+          "width": 1600,
+          "height": 3496,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250328161825670052829.jpg"
+        },
+        {
+          "src": "/images/products/official/20/detail-06.webp",
+          "webp": "/images/products/official/20/detail-06.webp",
+          "alt": "ion9 이온수기 공식 상세정보 6",
+          "width": 1600,
+          "height": 3255,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202503281618251956346451.jpg"
+        },
+        {
+          "src": "/images/products/official/20/detail-07.webp",
+          "webp": "/images/products/official/20/detail-07.webp",
+          "alt": "ion9 이온수기 공식 상세정보 7",
+          "width": 1600,
+          "height": 3460,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250328161825782705405.jpg"
+        },
+        {
+          "src": "/images/products/official/20/detail-08.webp",
+          "webp": "/images/products/official/20/detail-08.webp",
+          "alt": "ion9 이온수기 공식 상세정보 8",
+          "width": 860,
+          "height": 2235,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250829090232743662830.jpg"
+        },
+        {
+          "src": "/images/products/official/20/detail-09.webp",
+          "webp": "/images/products/official/20/detail-09.webp",
+          "alt": "ion9 이온수기 공식 상세정보 9",
+          "width": 1600,
+          "height": 6950,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_2025032816182528251238.jpg"
+        },
+        {
+          "src": "/images/products/official/20/detail-10.webp",
+          "webp": "/images/products/official/20/detail-10.webp",
+          "alt": "ion9 이온수기 공식 상세정보 10",
+          "width": 1600,
+          "height": 6554,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202503281618252089392737.jpg"
+        },
+        {
+          "src": "/images/products/official/20/detail-11.webp",
+          "webp": "/images/products/official/20/detail-11.webp",
+          "alt": "ion9 이온수기 공식 상세정보 11",
+          "width": 1600,
+          "height": 2789,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202503281618251452111151.jpg"
+        },
+        {
+          "src": "/images/products/official/20/detail-12.webp",
+          "webp": "/images/products/official/20/detail-12.webp",
+          "alt": "ion9 이온수기 공식 상세정보 12",
+          "width": 1600,
+          "height": 3264,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250328161825607853946.jpg"
+        },
+        {
+          "src": "/images/products/official/20/detail-13.webp",
+          "webp": "/images/products/official/20/detail-13.webp",
+          "alt": "ion9 이온수기 공식 상세정보 13",
+          "width": 1600,
+          "height": 4092,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250328161903237336422.jpg"
+        },
+        {
+          "src": "/images/products/official/20/detail-14.webp",
+          "webp": "/images/products/official/20/detail-14.webp",
+          "alt": "ion9 이온수기 공식 상세정보 14",
+          "width": 1600,
+          "height": 2158,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250328161903718619916.jpg"
+        },
+        {
+          "src": "/images/products/official/20/detail-15.webp",
+          "webp": "/images/products/official/20/detail-15.webp",
+          "alt": "ion9 이온수기 공식 상세정보 15",
+          "width": 1600,
+          "height": 4985,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250328161903646154562.jpg"
+        },
+        {
+          "src": "/images/products/official/20/detail-16.webp",
+          "webp": "/images/products/official/20/detail-16.webp",
+          "alt": "ion9 이온수기 공식 상세정보 16",
+          "width": 1600,
+          "height": 5064,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202503281619031189568379.jpg"
+        },
+        {
+          "src": "/images/products/official/20/detail-17.webp",
+          "webp": "/images/products/official/20/detail-17.webp",
+          "alt": "ion9 이온수기 공식 상세정보 17",
+          "width": 1600,
+          "height": 2575,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250328161903139679587.jpg"
+        },
+        {
+          "src": "/images/products/official/20/detail-18.webp",
+          "webp": "/images/products/official/20/detail-18.webp",
+          "alt": "ion9 이온수기 공식 상세정보 18",
+          "width": 1600,
+          "height": 623,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250328161903161096393.jpg"
+        },
+        {
+          "src": "/images/products/official/20/detail-19.webp",
+          "webp": "/images/products/official/20/detail-19.webp",
+          "alt": "ion9 이온수기 공식 상세정보 19",
+          "width": 1600,
+          "height": 2883,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250328161903918983401.jpg"
+        },
+        {
+          "src": "/images/products/official/20/detail-20.webp",
+          "webp": "/images/products/official/20/detail-20.webp",
+          "alt": "ion9 이온수기 공식 상세정보 20",
+          "width": 1600,
+          "height": 3348,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202503281619031425663614.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": true,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=20",
+      "isPublished": true
+    },
+    {
+      "officialId": 14,
+      "name": "주열기",
+      "slug": "neo9",
+      "officialModel": "NEO9",
+      "productType": "의료기기&건강보조기기",
+      "officialCategory": "의료기기&건강보조기기",
+      "categories": [
+        "의료기기&건강보조기기",
+        "BEST"
+      ],
+      "summary": "주열기은 3H 공식 제품 카탈로그에 등록된 의료기기&건강보조기기 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/14/cover.webp",
+        "webp": "/images/products/official/14/cover.webp",
+        "avif": "/images/products/official/14/cover.avif",
+        "alt": "주열기 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/dh4e4PJRwXX-GGLIU4kUN2tkMMcfDa.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/14/detail-01.webp",
+          "webp": "/images/products/official/14/detail-01.webp",
+          "alt": "주열기 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/7qfMVoy1hiF-pcNVybHT4wY-UxC-65.png"
+        },
+        {
+          "src": "/images/products/official/14/detail-02.webp",
+          "webp": "/images/products/official/14/detail-02.webp",
+          "alt": "주열기 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/eCg76kn4p5I_Sfsifjb0c3MLB70H67.png"
+        },
+        {
+          "src": "/images/products/official/14/detail-03.webp",
+          "webp": "/images/products/official/14/detail-03.webp",
+          "alt": "주열기 공식 상세정보 3",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/hO4PyEagEvpyQ-RIhnH4J_MD6pRbuR.png"
+        },
+        {
+          "src": "/images/products/official/14/detail-04.webp",
+          "webp": "/images/products/official/14/detail-04.webp",
+          "alt": "주열기 공식 상세정보 4",
+          "width": 1108,
+          "height": 775,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202502131450511354181490.jpg"
+        },
+        {
+          "src": "/images/products/official/14/detail-05.webp",
+          "webp": "/images/products/official/14/detail-05.webp",
+          "alt": "주열기 공식 상세정보 5",
+          "width": 1108,
+          "height": 1449,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250213145056682224279.jpg"
+        },
+        {
+          "src": "/images/products/official/14/detail-06.webp",
+          "webp": "/images/products/official/14/detail-06.webp",
+          "alt": "주열기 공식 상세정보 6",
+          "width": 1108,
+          "height": 3680,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250213145101784848842.jpg"
+        },
+        {
+          "src": "/images/products/official/14/detail-07.webp",
+          "webp": "/images/products/official/14/detail-07.webp",
+          "alt": "주열기 공식 상세정보 7",
+          "width": 1108,
+          "height": 1966,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250213145109195063822.jpg"
+        },
+        {
+          "src": "/images/products/official/14/detail-08.webp",
+          "webp": "/images/products/official/14/detail-08.webp",
+          "alt": "주열기 공식 상세정보 8",
+          "width": 1108,
+          "height": 4879,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202502131451091165393331.jpg"
+        },
+        {
+          "src": "/images/products/official/14/detail-09.webp",
+          "webp": "/images/products/official/14/detail-09.webp",
+          "alt": "주열기 공식 상세정보 9",
+          "width": 1108,
+          "height": 1559,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250213145123303297715.jpg"
+        },
+        {
+          "src": "/images/products/official/14/detail-10.webp",
+          "webp": "/images/products/official/14/detail-10.webp",
+          "alt": "주열기 공식 상세정보 10",
+          "width": 1108,
+          "height": 1329,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250213145123416512388.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=14",
+      "isPublished": true
+    },
+    {
+      "officialId": 16,
+      "name": "아이케어",
+      "slug": "official-product-16",
+      "officialModel": "-",
+      "productType": "의료기기&건강보조기기",
+      "officialCategory": "의료기기&건강보조기기",
+      "categories": [
+        "의료기기&건강보조기기",
+        "BEST"
+      ],
+      "summary": "아이케어은 3H 공식 제품 카탈로그에 등록된 의료기기&건강보조기기 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/16/cover.webp",
+        "webp": "/images/products/official/16/cover.webp",
+        "avif": "/images/products/official/16/cover.avif",
+        "alt": "아이케어 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/28/vAmcvmSCStPtWhts33Ox_8Y6GH6B8O.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/16/detail-01.webp",
+          "webp": "/images/products/official/16/detail-01.webp",
+          "alt": "아이케어 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/28/TAtOXoAOfTCUXE9pckXTyGzDAw6rQh.png"
+        },
+        {
+          "src": "/images/products/official/16/detail-02.webp",
+          "webp": "/images/products/official/16/detail-02.webp",
+          "alt": "아이케어 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/28/uwEjn8X7IeyBuCj_awB3Iqq7Ww-HHn.png"
+        },
+        {
+          "src": "/images/products/official/16/detail-03.webp",
+          "webp": "/images/products/official/16/detail-03.webp",
+          "alt": "아이케어 공식 상세정보 3",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/28/AVQYoN-lytntlRPodgBZ5kBW51Q8kQ.png"
+        },
+        {
+          "src": "/images/products/official/16/detail-04.webp",
+          "webp": "/images/products/official/16/detail-04.webp",
+          "alt": "아이케어 공식 상세정보 4",
+          "width": 1285,
+          "height": 16000,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202508071140451854366723.jpg"
+        },
+        {
+          "src": "/images/products/official/16/detail-05.webp",
+          "webp": "/images/products/official/16/detail-05.webp",
+          "alt": "아이케어 공식 상세정보 5",
+          "width": 1354,
+          "height": 16000,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250807114045960798265.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=16",
+      "isPublished": true
+    },
+    {
+      "officialId": 64,
+      "name": "뜸뜨미",
+      "slug": "official-product-64",
+      "officialModel": "공식 페이지 참조",
+      "productType": "의료기기&건강보조기기",
+      "officialCategory": "의료기기&건강보조기기",
+      "categories": [
+        "의료기기&건강보조기기",
+        "NEW",
+        "BEST"
+      ],
+      "summary": "뜸뜨미은 3H 공식 제품 카탈로그에 등록된 의료기기&건강보조기기 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/64/cover.webp",
+        "webp": "/images/products/official/64/cover.webp",
+        "avif": "/images/products/official/64/cover.avif",
+        "alt": "뜸뜨미 공식 제품 이미지",
+        "width": 1200,
+        "height": 967,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/06/16/R2Gd9PVKOKiZjebjXie7AX1k4bWnzA.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/64/detail-01.webp",
+          "webp": "/images/products/official/64/detail-01.webp",
+          "alt": "뜸뜨미 공식 상세정보 1",
+          "width": 860,
+          "height": 9182,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250616171600286285097.jpg"
+        },
+        {
+          "src": "/images/products/official/64/detail-02.webp",
+          "webp": "/images/products/official/64/detail-02.webp",
+          "alt": "뜸뜨미 공식 상세정보 2",
+          "width": 860,
+          "height": 8015,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250616171600335914382.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=64",
+      "isPublished": true
+    },
+    {
+      "officialId": 21,
+      "name": "3H 다기능 복부 뜸질기",
+      "slug": "official-product-21",
+      "officialModel": "-",
+      "productType": "의료기기&건강보조기기",
+      "officialCategory": "의료기기&건강보조기기",
+      "categories": [
+        "의료기기&건강보조기기",
+        "BEST"
+      ],
+      "summary": "3H 다기능 복부 뜸질기은 3H 공식 제품 카탈로그에 등록된 의료기기&건강보조기기 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/21/cover.webp",
+        "webp": "/images/products/official/21/cover.webp",
+        "avif": "/images/products/official/21/cover.avif",
+        "alt": "3H 다기능 복부 뜸질기 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/C0ot4UrkO4_lz5aA9fpji7kwWADyQ3.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/21/detail-01.webp",
+          "webp": "/images/products/official/21/detail-01.webp",
+          "alt": "3H 다기능 복부 뜸질기 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/uztve-4-sManB_TJK2PpkjRKA_XvMs.png"
+        },
+        {
+          "src": "/images/products/official/21/detail-02.webp",
+          "webp": "/images/products/official/21/detail-02.webp",
+          "alt": "3H 다기능 복부 뜸질기 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/YxL5jD8Vnj3UVclvYinmEPC91Cq86m.png"
+        },
+        {
+          "src": "/images/products/official/21/detail-03.webp",
+          "webp": "/images/products/official/21/detail-03.webp",
+          "alt": "3H 다기능 복부 뜸질기 공식 상세정보 3",
+          "width": 1283,
+          "height": 16000,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250730134528666383387.jpg"
+        },
+        {
+          "src": "/images/products/official/21/detail-04.webp",
+          "webp": "/images/products/official/21/detail-04.webp",
+          "alt": "3H 다기능 복부 뜸질기 공식 상세정보 4",
+          "width": 1600,
+          "height": 13046,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250730134528567779699.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=21",
+      "isPublished": true
+    },
+    {
+      "officialId": 24,
+      "name": "3H Slim매트",
+      "slug": "3h-2030",
+      "officialModel": "3H-2030",
+      "productType": "의료기기&건강보조기기",
+      "officialCategory": "의료기기&건강보조기기",
+      "categories": [
+        "의료기기&건강보조기기"
+      ],
+      "summary": "3H Slim매트은 3H 공식 제품 카탈로그에 등록된 의료기기&건강보조기기 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/24/cover.webp",
+        "webp": "/images/products/official/24/cover.webp",
+        "avif": "/images/products/official/24/cover.avif",
+        "alt": "3H Slim매트 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/rd_1QP8Vj_qrrn1eWMfkfV-0GipgxJ.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/24/detail-01.webp",
+          "webp": "/images/products/official/24/detail-01.webp",
+          "alt": "3H Slim매트 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/6Joulzd6NjteW-x5M2BxCHKyVnzNZt.png"
+        },
+        {
+          "src": "/images/products/official/24/detail-02.webp",
+          "webp": "/images/products/official/24/detail-02.webp",
+          "alt": "3H Slim매트 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/fW3ItUE3YQYDhY8BABCrLRdT7rrGBY.png"
+        },
+        {
+          "src": "/images/products/official/24/detail-03.webp",
+          "webp": "/images/products/official/24/detail-03.webp",
+          "alt": "3H Slim매트 공식 상세정보 3",
+          "width": 1108,
+          "height": 732,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202503260930411455501549.jpg"
+        },
+        {
+          "src": "/images/products/official/24/detail-04.webp",
+          "webp": "/images/products/official/24/detail-04.webp",
+          "alt": "3H Slim매트 공식 상세정보 4",
+          "width": 1108,
+          "height": 2316,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250326093048236424012.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=24",
+      "isPublished": true
+    },
+    {
+      "officialId": 26,
+      "name": "3H New Slim매트",
+      "slug": "3h-2030m",
+      "officialModel": "3H-2030M",
+      "productType": "의료기기&건강보조기기",
+      "officialCategory": "의료기기&건강보조기기",
+      "categories": [
+        "의료기기&건강보조기기"
+      ],
+      "summary": "3H New Slim매트은 3H 공식 제품 카탈로그에 등록된 의료기기&건강보조기기 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/26/cover.webp",
+        "webp": "/images/products/official/26/cover.webp",
+        "avif": "/images/products/official/26/cover.avif",
+        "alt": "3H New Slim매트 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/9uFbM4MYYcpfpHhajhZtkzrFIgWd0Z.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/26/detail-01.webp",
+          "webp": "/images/products/official/26/detail-01.webp",
+          "alt": "3H New Slim매트 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/qhe5654CsjTeU873GTCMM0t_SqNWub.png"
+        },
+        {
+          "src": "/images/products/official/26/detail-02.webp",
+          "webp": "/images/products/official/26/detail-02.webp",
+          "alt": "3H New Slim매트 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/sR6XyD_ennFDJHJx4xhrV1jVibBIsk.png"
+        },
+        {
+          "src": "/images/products/official/26/detail-03.webp",
+          "webp": "/images/products/official/26/detail-03.webp",
+          "alt": "3H New Slim매트 공식 상세정보 3",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/y2m5WRLvjhCRwmdCTzYPkLBm6VX6eH.png"
+        },
+        {
+          "src": "/images/products/official/26/detail-04.webp",
+          "webp": "/images/products/official/26/detail-04.webp",
+          "alt": "3H New Slim매트 공식 상세정보 4",
+          "width": 1108,
+          "height": 732,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250403100331285523943.jpg"
+        },
+        {
+          "src": "/images/products/official/26/detail-05.webp",
+          "webp": "/images/products/official/26/detail-05.webp",
+          "alt": "3H New Slim매트 공식 상세정보 5",
+          "width": 1108,
+          "height": 5306,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202504031003371716705935.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=26",
+      "isPublished": true
+    },
+    {
+      "officialId": 29,
+      "name": "3H 스마트 돔",
+      "slug": "official-product-29",
+      "officialModel": "-",
+      "productType": "의료기기&건강보조기기",
+      "officialCategory": "의료기기&건강보조기기",
+      "categories": [
+        "의료기기&건강보조기기"
+      ],
+      "summary": "3H 스마트 돔은 3H 공식 제품 카탈로그에 등록된 의료기기&건강보조기기 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/29/cover.webp",
+        "webp": "/images/products/official/29/cover.webp",
+        "avif": "/images/products/official/29/cover.avif",
+        "alt": "3H 스마트 돔 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/28/CxE493JQeXH1-79QYV2bWy_w75ZTPo.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/29/detail-01.webp",
+          "webp": "/images/products/official/29/detail-01.webp",
+          "alt": "3H 스마트 돔 공식 상세정보 1",
+          "width": 1108,
+          "height": 732,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202502131543201891168625.jpg"
+        },
+        {
+          "src": "/images/products/official/29/detail-02.webp",
+          "webp": "/images/products/official/29/detail-02.webp",
+          "alt": "3H 스마트 돔 공식 상세정보 2",
+          "width": 1108,
+          "height": 3573,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202502131543211917205187.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=29",
+      "isPublished": true
+    },
+    {
+      "officialId": 30,
+      "name": "3H 멀티펄스",
+      "slug": "official-product-30",
+      "officialModel": "-",
+      "productType": "의료기기&건강보조기기",
+      "officialCategory": "의료기기&건강보조기기",
+      "categories": [
+        "의료기기&건강보조기기"
+      ],
+      "summary": "3H 멀티펄스은 3H 공식 제품 카탈로그에 등록된 의료기기&건강보조기기 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/30/cover.webp",
+        "webp": "/images/products/official/30/cover.webp",
+        "avif": "/images/products/official/30/cover.avif",
+        "alt": "3H 멀티펄스 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/W3zxI1LecMj5RoHyrNem9F8OhUWB93.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/30/detail-01.webp",
+          "webp": "/images/products/official/30/detail-01.webp",
+          "alt": "3H 멀티펄스 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/4kLiK49vvPs2aizKKUO9sXadI7GLRy.png"
+        },
+        {
+          "src": "/images/products/official/30/detail-02.webp",
+          "webp": "/images/products/official/30/detail-02.webp",
+          "alt": "3H 멀티펄스 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/KhBUL83KcVnzDnMf8nU-OidF9hksrc.png"
+        },
+        {
+          "src": "/images/products/official/30/detail-03.webp",
+          "webp": "/images/products/official/30/detail-03.webp",
+          "alt": "3H 멀티펄스 공식 상세정보 3",
+          "width": 1108,
+          "height": 732,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250213154527546551548.jpg"
+        },
+        {
+          "src": "/images/products/official/30/detail-04.webp",
+          "webp": "/images/products/official/30/detail-04.webp",
+          "alt": "3H 멀티펄스 공식 상세정보 4",
+          "width": 1108,
+          "height": 2960,
+          "sourceUrl": "https://3h.midaworks.net/upload/se2/se2_202502131545271523979479.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=30",
+      "isPublished": true
+    },
+    {
+      "officialId": 31,
+      "name": "3H 숨쉬는 허리벨트",
+      "slug": "official-product-31",
+      "officialModel": "-",
+      "productType": "의료기기&건강보조기기",
+      "officialCategory": "의료기기&건강보조기기",
+      "categories": [
+        "의료기기&건강보조기기"
+      ],
+      "summary": "3H 숨쉬는 허리벨트은 3H 공식 제품 카탈로그에 등록된 의료기기&건강보조기기 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/31/cover.webp",
+        "webp": "/images/products/official/31/cover.webp",
+        "avif": "/images/products/official/31/cover.avif",
+        "alt": "3H 숨쉬는 허리벨트 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/DKY67cOIrAuKzM4-eg9VsaJr-YBGBC.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/31/detail-01.webp",
+          "webp": "/images/products/official/31/detail-01.webp",
+          "alt": "3H 숨쉬는 허리벨트 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/Ii_XX5NVmvXOV9rWZVIZcv865UhMEl.png"
+        },
+        {
+          "src": "/images/products/official/31/detail-02.webp",
+          "webp": "/images/products/official/31/detail-02.webp",
+          "alt": "3H 숨쉬는 허리벨트 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/2Yct81pIFWi0R31Gbvug6cM3_-nrW4.png"
+        },
+        {
+          "src": "/images/products/official/31/detail-03.webp",
+          "webp": "/images/products/official/31/detail-03.webp",
+          "alt": "3H 숨쉬는 허리벨트 공식 상세정보 3",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/9DPYIdQPQq9p5Fk34RqNndPmtxEMzF.png"
+        },
+        {
+          "src": "/images/products/official/31/detail-04.webp",
+          "webp": "/images/products/official/31/detail-04.webp",
+          "alt": "3H 숨쉬는 허리벨트 공식 상세정보 4",
+          "width": 1108,
+          "height": 732,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250213154818589532138.jpg"
+        },
+        {
+          "src": "/images/products/official/31/detail-05.webp",
+          "webp": "/images/products/official/31/detail-05.webp",
+          "alt": "3H 숨쉬는 허리벨트 공식 상세정보 5",
+          "width": 1108,
+          "height": 2164,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202502131548181519319283.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=31",
+      "isPublished": true
+    },
+    {
+      "officialId": 32,
+      "name": "3H 경추베개",
+      "slug": "official-product-32",
+      "officialModel": "-",
+      "productType": "의료기기&건강보조기기",
+      "officialCategory": "의료기기&건강보조기기",
+      "categories": [
+        "의료기기&건강보조기기"
+      ],
+      "summary": "3H 경추베개은 3H 공식 제품 카탈로그에 등록된 의료기기&건강보조기기 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/32/cover.webp",
+        "webp": "/images/products/official/32/cover.webp",
+        "avif": "/images/products/official/32/cover.avif",
+        "alt": "3H 경추베개 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/ouhYy1SikndYVIjUuhmz5BpGFnXEHc.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/32/detail-01.webp",
+          "webp": "/images/products/official/32/detail-01.webp",
+          "alt": "3H 경추베개 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/-Lxc8iGvE6t36_Gg_pYtX6WhAxga7j.png"
+        },
+        {
+          "src": "/images/products/official/32/detail-02.webp",
+          "webp": "/images/products/official/32/detail-02.webp",
+          "alt": "3H 경추베개 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/4YCYeit-rQzKLqzWlf0L9SXPnhKTgO.png"
+        },
+        {
+          "src": "/images/products/official/32/detail-03.webp",
+          "webp": "/images/products/official/32/detail-03.webp",
+          "alt": "3H 경추베개 공식 상세정보 3",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/Lu3ywAglkP1wKEWvGmayTg8iLlHbZQ.png"
+        },
+        {
+          "src": "/images/products/official/32/detail-04.webp",
+          "webp": "/images/products/official/32/detail-04.webp",
+          "alt": "3H 경추베개 공식 상세정보 4",
+          "width": 1600,
+          "height": 2227,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202604031141221638167072.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=32",
+      "isPublished": true
+    },
+    {
+      "officialId": 33,
+      "name": "3H 넥밴드",
+      "slug": "official-product-33",
+      "officialModel": "-",
+      "productType": "의료기기&건강보조기기",
+      "officialCategory": "의료기기&건강보조기기",
+      "categories": [
+        "의료기기&건강보조기기"
+      ],
+      "summary": "3H 넥밴드은 3H 공식 제품 카탈로그에 등록된 의료기기&건강보조기기 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/33/cover.webp",
+        "webp": "/images/products/official/33/cover.webp",
+        "avif": "/images/products/official/33/cover.avif",
+        "alt": "3H 넥밴드 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/VQwy_PSkB-K6cV88HaFYxmvmzBOmiI.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/33/detail-01.webp",
+          "webp": "/images/products/official/33/detail-01.webp",
+          "alt": "3H 넥밴드 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/WQinAfNYlJx2F1I-lVCTcUlzFMBlnW.png"
+        },
+        {
+          "src": "/images/products/official/33/detail-02.webp",
+          "webp": "/images/products/official/33/detail-02.webp",
+          "alt": "3H 넥밴드 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/qV9MBXwg5XETDri_dGdAqUjSy0drAN.png"
+        },
+        {
+          "src": "/images/products/official/33/detail-03.webp",
+          "webp": "/images/products/official/33/detail-03.webp",
+          "alt": "3H 넥밴드 공식 상세정보 3",
+          "width": 1108,
+          "height": 732,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250213155344518664720.jpg"
+        },
+        {
+          "src": "/images/products/official/33/detail-04.webp",
+          "webp": "/images/products/official/33/detail-04.webp",
+          "alt": "3H 넥밴드 공식 상세정보 4",
+          "width": 1108,
+          "height": 1085,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202502131553441560949690.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=33",
+      "isPublished": true
+    },
+    {
+      "officialId": 18,
+      "name": "빠사쥬",
+      "slug": "official-product-18",
+      "officialModel": "-",
+      "productType": "건강 · 미용용품",
+      "officialCategory": "건강 · 미용용품",
+      "categories": [
+        "건강 · 미용용품",
+        "BEST"
+      ],
+      "summary": "빠사쥬은 3H 공식 제품 카탈로그에 등록된 건강 · 미용용품 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/18/cover.webp",
+        "webp": "/images/products/official/18/cover.webp",
+        "avif": "/images/products/official/18/cover.avif",
+        "alt": "빠사쥬 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/IomebHjxu-9tzEQNyIX33JnYdrRjiw.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/18/detail-01.webp",
+          "webp": "/images/products/official/18/detail-01.webp",
+          "alt": "빠사쥬 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/Gi__1UdHVWInc6tDL37PoGNNSomolI.png"
+        },
+        {
+          "src": "/images/products/official/18/detail-02.webp",
+          "webp": "/images/products/official/18/detail-02.webp",
+          "alt": "빠사쥬 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/0legKwv_j6sJMPA6OFL2lwFIYMiMql.png"
+        },
+        {
+          "src": "/images/products/official/18/detail-03.webp",
+          "webp": "/images/products/official/18/detail-03.webp",
+          "alt": "빠사쥬 공식 상세정보 3",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/UOnEomAXOS748JFxUmlJx5HGPGpsA8.png"
+        },
+        {
+          "src": "/images/products/official/18/detail-04.webp",
+          "webp": "/images/products/official/18/detail-04.webp",
+          "alt": "빠사쥬 공식 상세정보 4",
+          "width": 860,
+          "height": 5009,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202505291612551872102204.jpg"
+        },
+        {
+          "src": "/images/products/official/18/detail-05.webp",
+          "webp": "/images/products/official/18/detail-05.webp",
+          "alt": "빠사쥬 공식 상세정보 5",
+          "width": 860,
+          "height": 3872,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202505291613051803629551.jpg"
+        },
+        {
+          "src": "/images/products/official/18/detail-06.webp",
+          "webp": "/images/products/official/18/detail-06.webp",
+          "alt": "빠사쥬 공식 상세정보 6",
+          "width": 860,
+          "height": 5490,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202505291613091471870326.jpg"
+        },
+        {
+          "src": "/images/products/official/18/detail-07.webp",
+          "webp": "/images/products/official/18/detail-07.webp",
+          "alt": "빠사쥬 공식 상세정보 7",
+          "width": 860,
+          "height": 4322,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250529161314104598795.jpg"
+        },
+        {
+          "src": "/images/products/official/18/detail-08.webp",
+          "webp": "/images/products/official/18/detail-08.webp",
+          "alt": "빠사쥬 공식 상세정보 8",
+          "width": 860,
+          "height": 4772,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202505291613182080143542.jpg"
+        },
+        {
+          "src": "/images/products/official/18/detail-09.webp",
+          "webp": "/images/products/official/18/detail-09.webp",
+          "alt": "빠사쥬 공식 상세정보 9",
+          "width": 860,
+          "height": 5235,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250529161322567349965.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=18",
+      "isPublished": true
+    },
+    {
+      "officialId": 22,
+      "name": "천백단",
+      "slug": "official-product-22",
+      "officialModel": "-",
+      "productType": "건강 · 미용용품",
+      "officialCategory": "건강 · 미용용품",
+      "categories": [
+        "건강 · 미용용품"
+      ],
+      "summary": "천백단은 3H 공식 제품 카탈로그에 등록된 건강 · 미용용품 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/22/cover.webp",
+        "webp": "/images/products/official/22/cover.webp",
+        "avif": "/images/products/official/22/cover.avif",
+        "alt": "천백단 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/k8pGtlnxYey1-5txmB6kkHI10DE-2g.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/22/detail-01.webp",
+          "webp": "/images/products/official/22/detail-01.webp",
+          "alt": "천백단 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/V0z6vzac-VQZBUkQavgnNZeofiJm9u.png"
+        },
+        {
+          "src": "/images/products/official/22/detail-02.webp",
+          "webp": "/images/products/official/22/detail-02.webp",
+          "alt": "천백단 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/iRQRGRxyh5YyS3EUBqJqNuXCG1Daxk.png"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=22",
+      "isPublished": true
+    },
+    {
+      "officialId": 23,
+      "name": "포미130플러스",
+      "slug": "official-product-23",
+      "officialModel": "-",
+      "productType": "건강 · 미용용품",
+      "officialCategory": "건강 · 미용용품",
+      "categories": [
+        "건강 · 미용용품"
+      ],
+      "summary": "포미130플러스은 3H 공식 제품 카탈로그에 등록된 건강 · 미용용품 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/23/cover.webp",
+        "webp": "/images/products/official/23/cover.webp",
+        "avif": "/images/products/official/23/cover.avif",
+        "alt": "포미130플러스 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/uZhqJczk27JAUlBhQtsngkaHwUnDvR.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/23/detail-01.webp",
+          "webp": "/images/products/official/23/detail-01.webp",
+          "alt": "포미130플러스 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/JfQwEseJHtzxJTKfmBaozqM-CvmWhn.png"
+        },
+        {
+          "src": "/images/products/official/23/detail-02.webp",
+          "webp": "/images/products/official/23/detail-02.webp",
+          "alt": "포미130플러스 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/8cKv2uBEOBO2Ce38z1Nu68M5s0rRKu.png"
+        },
+        {
+          "src": "/images/products/official/23/detail-03.webp",
+          "webp": "/images/products/official/23/detail-03.webp",
+          "alt": "포미130플러스 공식 상세정보 3",
+          "width": 1108,
+          "height": 732,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202502131536281535185777.jpg"
+        },
+        {
+          "src": "/images/products/official/23/detail-04.webp",
+          "webp": "/images/products/official/23/detail-04.webp",
+          "alt": "포미130플러스 공식 상세정보 4",
+          "width": 1108,
+          "height": 414,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202502131536351779035337.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=23",
+      "isPublished": true
+    },
+    {
+      "officialId": 25,
+      "name": "3H 스마트 치약",
+      "slug": "official-product-25",
+      "officialModel": "-",
+      "productType": "건강 · 미용용품",
+      "officialCategory": "건강 · 미용용품",
+      "categories": [
+        "건강 · 미용용품"
+      ],
+      "summary": "3H 스마트 치약은 3H 공식 제품 카탈로그에 등록된 건강 · 미용용품 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/25/cover.webp",
+        "webp": "/images/products/official/25/cover.webp",
+        "avif": "/images/products/official/25/cover.avif",
+        "alt": "3H 스마트 치약 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/74B4n8SIsTJ9R9z4F80CU_9TuPSJQ0.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/25/detail-01.webp",
+          "webp": "/images/products/official/25/detail-01.webp",
+          "alt": "3H 스마트 치약 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/y5RhUTAdPpRQyMsGfsLfyyzYqEdkGG.png"
+        },
+        {
+          "src": "/images/products/official/25/detail-02.webp",
+          "webp": "/images/products/official/25/detail-02.webp",
+          "alt": "3H 스마트 치약 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/jd_O6QMEy1bUHR5XShrhmzHiPrGHe2.png"
+        },
+        {
+          "src": "/images/products/official/25/detail-03.webp",
+          "webp": "/images/products/official/25/detail-03.webp",
+          "alt": "3H 스마트 치약 공식 상세정보 3",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/XQOO_jhhq9gPSn9loiDT3Xt9zjgnHR.png"
+        },
+        {
+          "src": "/images/products/official/25/detail-04.webp",
+          "webp": "/images/products/official/25/detail-04.webp",
+          "alt": "3H 스마트 치약 공식 상세정보 4",
+          "width": 1108,
+          "height": 732,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202502131540221029972067.jpg"
+        },
+        {
+          "src": "/images/products/official/25/detail-05.webp",
+          "webp": "/images/products/official/25/detail-05.webp",
+          "alt": "3H 스마트 치약 공식 상세정보 5",
+          "width": 1108,
+          "height": 350,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202502131540271707778428.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=25",
+      "isPublished": true
+    },
+    {
+      "officialId": 27,
+      "name": "3H 52샴푸",
+      "slug": "official-product-27",
+      "officialModel": "-",
+      "productType": "건강 · 미용용품",
+      "officialCategory": "건강 · 미용용품",
+      "categories": [
+        "건강 · 미용용품"
+      ],
+      "summary": "3H 52샴푸은 3H 공식 제품 카탈로그에 등록된 건강 · 미용용품 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/27/cover.webp",
+        "webp": "/images/products/official/27/cover.webp",
+        "avif": "/images/products/official/27/cover.avif",
+        "alt": "3H 52샴푸 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/b7rmDu0tBUBFCWazCzCj3dTHuybNR7.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/27/detail-01.webp",
+          "webp": "/images/products/official/27/detail-01.webp",
+          "alt": "3H 52샴푸 공식 상세정보 1",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/tPh2uCKliNxEmwCCpT-zfEfFRO6YfA.png"
+        },
+        {
+          "src": "/images/products/official/27/detail-02.webp",
+          "webp": "/images/products/official/27/detail-02.webp",
+          "alt": "3H 52샴푸 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/uVpkCUXXU1FUnBLIL3-xGMZDgIVSJE.png"
+        },
+        {
+          "src": "/images/products/official/27/detail-03.webp",
+          "webp": "/images/products/official/27/detail-03.webp",
+          "alt": "3H 52샴푸 공식 상세정보 3",
+          "width": 1108,
+          "height": 732,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250213154133819853059.jpg"
+        },
+        {
+          "src": "/images/products/official/27/detail-04.webp",
+          "webp": "/images/products/official/27/detail-04.webp",
+          "alt": "3H 52샴푸 공식 상세정보 4",
+          "width": 1108,
+          "height": 476,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250213154136453830283.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=27",
+      "isPublished": true
+    },
+    {
+      "officialId": 28,
+      "name": "3H 구운소금",
+      "slug": "official-product-28",
+      "officialModel": "-",
+      "productType": "건강 · 미용용품",
+      "officialCategory": "건강 · 미용용품",
+      "categories": [
+        "건강 · 미용용품"
+      ],
+      "summary": "3H 구운소금은 3H 공식 제품 카탈로그에 등록된 건강 · 미용용품 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/28/cover.webp",
+        "webp": "/images/products/official/28/cover.webp",
+        "avif": "/images/products/official/28/cover.avif",
+        "alt": "3H 구운소금 공식 제품 이미지",
+        "width": 785,
+        "height": 523,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/abr35FTz6nbQfLQvTKKBOfra_16JL_.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/28/detail-01.webp",
+          "webp": "/images/products/official/28/detail-01.webp",
+          "alt": "3H 구운소금 공식 상세정보 1",
+          "width": 824,
+          "height": 610,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/04/01/jU6LqyPtYS9U1Q9atgoCxzTlw03MV2.png"
+        },
+        {
+          "src": "/images/products/official/28/detail-02.webp",
+          "webp": "/images/products/official/28/detail-02.webp",
+          "alt": "3H 구운소금 공식 상세정보 2",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/t4w1nYYZNR3jWTmkI4-5g2PmLilPVB.png"
+        },
+        {
+          "src": "/images/products/official/28/detail-03.webp",
+          "webp": "/images/products/official/28/detail-03.webp",
+          "alt": "3H 구운소금 공식 상세정보 3",
+          "width": 824,
+          "height": 610,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/04/01/9ndMyJXaykhmVquoFCz8qPEmQhGLko.png"
+        },
+        {
+          "src": "/images/products/official/28/detail-04.webp",
+          "webp": "/images/products/official/28/detail-04.webp",
+          "alt": "3H 구운소금 공식 상세정보 4",
+          "width": 785,
+          "height": 523,
+          "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/03/26/H6Sx0DjjJrarsD31AN1_EUvGMJC1On.png"
+        },
+        {
+          "src": "/images/products/official/28/detail-05.webp",
+          "webp": "/images/products/official/28/detail-05.webp",
+          "alt": "3H 구운소금 공식 상세정보 5",
+          "width": 1108,
+          "height": 732,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202502131542291300420382.jpg"
+        },
+        {
+          "src": "/images/products/official/28/detail-06.webp",
+          "webp": "/images/products/official/28/detail-06.webp",
+          "alt": "3H 구운소금 공식 상세정보 6",
+          "width": 1108,
+          "height": 1008,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202502131542332078237109.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=28",
+      "isPublished": true
+    },
+    {
+      "officialId": 65,
+      "name": "MK303 텐셀이불",
+      "slug": "official-product-65",
+      "officialModel": "공식 페이지 참조",
+      "productType": "건강 · 미용용품",
+      "officialCategory": "건강 · 미용용품",
+      "categories": [
+        "건강 · 미용용품"
+      ],
+      "summary": "MK303 텐셀이불은 3H 공식 제품 카탈로그에 등록된 건강 · 미용용품 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/65/cover.webp",
+        "webp": "/images/products/official/65/cover.webp",
+        "avif": "/images/products/official/65/cover.avif",
+        "alt": "MK303 텐셀이불 공식 제품 이미지",
+        "width": 336,
+        "height": 270,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/08/06/eQhBOXI3FU3aqgaalcmklFQwfVbEaV.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/65/detail-01.webp",
+          "webp": "/images/products/official/65/detail-01.webp",
+          "alt": "MK303 텐셀이불 공식 상세정보 1",
+          "width": 1600,
+          "height": 13332,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_20250806104050694407482.jpg"
+        },
+        {
+          "src": "/images/products/official/65/detail-02.webp",
+          "webp": "/images/products/official/65/detail-02.webp",
+          "alt": "MK303 텐셀이불 공식 상세정보 2",
+          "width": 1600,
+          "height": 10832,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202508061040501384268554.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=65",
+      "isPublished": true
+    },
+    {
+      "officialId": 66,
+      "name": "3H 세라젤 크림",
+      "slug": "official-product-66",
+      "officialModel": "공식 페이지 참조",
+      "productType": "건강 · 미용용품",
+      "officialCategory": "건강 · 미용용품",
+      "categories": [
+        "건강 · 미용용품"
+      ],
+      "summary": "3H 세라젤 크림은 3H 공식 제품 카탈로그에 등록된 건강 · 미용용품 제품입니다.",
+      "mainImage": {
+        "src": "/images/products/official/66/cover.webp",
+        "webp": "/images/products/official/66/cover.webp",
+        "avif": "/images/products/official/66/cover.avif",
+        "alt": "3H 세라젤 크림 공식 제품 이미지",
+        "width": 698,
+        "height": 563,
+        "sourceUrl": "https://www.3hk.co.kr/upload/product/2025/08/06/cIbv7PrLuP6gB3nWtsrSoEbuXSDzC8.png"
+      },
+      "gallery": [
+        {
+          "src": "/images/products/official/66/detail-01.webp",
+          "webp": "/images/products/official/66/detail-01.webp",
+          "alt": "3H 세라젤 크림 공식 상세정보 1",
+          "width": 1029,
+          "height": 16000,
+          "sourceUrl": "https://www.3hk.co.kr/upload/se2/se2_202508141719411689186403.jpg"
+        }
+      ],
+      "officialPriceText": null,
+      "officialPriceKrw": null,
+      "priceCheckedAt": "2026-07-10",
+      "rentalConsultationAvailable": false,
+      "officialProductUrl": "https://www.3hk.co.kr/sub/02_product/product_01_V.php?idx=66",
+      "isPublished": true
+    }
+  ]
+}

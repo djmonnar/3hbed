@@ -16,10 +16,10 @@ const { product } = Astro.props;
     <ResponsiveImage image={product.mainImage} class="product-image" sizes="(max-width: 720px) 100vw, 33vw" />
   </a>
   <div class="product-meta">
-    <p>{product.productType} · {product.officialModel}</p>
+    <p>{product.officialCategory}{product.officialModel && ` · ${product.officialModel}`}</p>
     <h3><a href={withBase(`/products/${product.slug}/`)}>{product.name}</a></h3>
-    <p class="summary">{product.summary}</p>
-    <div class="tags">{product.categories.map((category) => <span>{category}</span>)}</div>
+    <p class="price">{product.officialPriceText ?? '공식 홈페이지 가격 미표기'}</p>
+    <div class="tags">{product.categories.slice(0, 4).map((category) => <span>{category}</span>)}</div>
     <a class="detail-link" href={withBase(`/products/${product.slug}/`)} data-track-event="product_view" data-product={product.slug}>
       제품 정보 보기 <Icon name="arrow" size={18} />
     </a>
@@ -35,13 +35,14 @@ const { product } = Astro.props;
     display: block;
     aspect-ratio: 4 / 3;
     overflow: hidden;
-    background: #eee3d1;
+    border: 1px solid #e1e3e0;
+    background: white;
   }
 
   .product-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 300ms ease;
   }
 
@@ -67,11 +68,11 @@ const { product } = Astro.props;
     letter-spacing: -0.04em;
   }
 
-  .summary {
-    min-height: 3.5em;
-    margin: 0.6rem 0 1rem;
-    color: #5b625f;
-    font-size: 0.9rem;
+  .price {
+    margin: .65rem 0 1rem;
+    color: #174b35;
+    font-size: 1rem;
+    font-weight: 800;
   }
 
   .tags {

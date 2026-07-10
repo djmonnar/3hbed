@@ -12,7 +12,7 @@ import VideoEmbed from '@/components/VideoEmbed.astro';
 import { centers } from '@/data/centers';
 import { publishedCertifications } from '@/data/certifications';
 import { publishedFaqs } from '@/data/faqs';
-import { publishedProducts } from '@/data/products';
+import { featuredProducts, productCatalog } from '@/data/products';
 import { heroMedia, site } from '@/data/site';
 import { visitorProfiles } from '@/data/reviews';
 import BaseLayout from '@/layouts/BaseLayout.astro';
@@ -107,13 +107,13 @@ const schemas = centers.map((center) => ({
   <section class="section-space product-section">
     <div class="container-wide">
       <div class="heading-row">
-        <SectionHeading kicker="PRODUCT LINE" title="공식 제품을 살펴보고 센터에서 비교하세요" />
+        <SectionHeading kicker="PRODUCT LINE" title="45개 공식 제품 중 주요 라인업을 만나보세요" />
         <a href={withBase('/products/')}>전체 제품 보기 <Icon name="arrow" size={18} /></a>
       </div>
       <div class="product-grid">
-        {publishedProducts.map((product) => <ProductCard product={product} />)}
+        {featuredProducts.map((product) => <ProductCard product={product} />)}
       </div>
-      <p class="data-note">제품명과 모델은 본사 공식 제품 페이지 기준입니다. 센터별 체험 모델과 입고 일정은 무료체험 예약 시 안내합니다.</p>
+      <p class="data-note">제품명·모델·가격·사진은 {productCatalog.checkedAt} 3H 공식 제품 카탈로그 기준입니다. 센터별 체험 모델과 입고 일정은 무료체험 예약 시 안내합니다.</p>
     </div>
   </section>
 
