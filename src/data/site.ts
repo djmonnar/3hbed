@@ -1,3 +1,24 @@
+import type { ImageAsset } from './types';
+
+export const heroMedia: Record<'showroom' | 'brand', ImageAsset> = {
+  showroom: {
+    src: '/images/centers/hero/jinju-showroom-beds.jpg',
+    webp: '/images/centers/hero/jinju-showroom-beds.webp',
+    avif: '/images/centers/hero/jinju-showroom-beds.avif',
+    alt: '진주 3H 체험센터에 전시된 지압침대 세 대',
+    width: 1280,
+    height: 720,
+  },
+  brand: {
+    src: '/images/centers/namgang/namgang-brand-hero.png',
+    webp: '/images/centers/namgang/namgang-brand-hero.webp',
+    avif: '/images/centers/namgang/namgang-brand-hero.avif',
+    alt: '3H 지압침대 진주 남강센터 브랜드 이미지',
+    width: 1280,
+    height: 720,
+  },
+};
+
 export const site = {
   name: '3H지압침대 진주경상·남강센터',
   shortName: '3H 진주센터',

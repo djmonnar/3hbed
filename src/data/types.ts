@@ -11,28 +11,26 @@ export interface ImageAsset {
   height: number;
 }
 
-export interface PhotoRequirement {
-  key: string;
-  label: string;
-  todo: string;
-  image: ImageAsset | null;
-}
-
 export interface Center {
   id: CenterId;
   slug: string;
   name: string;
   shortName: string;
-  address: string | null;
-  phone: string | null;
+  address: string;
+  phone: string;
   sms: string | null;
-  openingHours: string | null;
-  closedDays: string | null;
-  parking: string | null;
+  openingHours: string;
+  openingHoursSchema: string[];
+  closedDays: string;
+  parking: string;
+  directions: string;
+  amenities: string[];
   naverPlaceUrl: string;
+  naverReviewCount: number;
+  naverReviewLabel: string;
   coordinates: { latitude: number; longitude: number } | null;
-  heroImage: ImageAsset | null;
-  gallery: PhotoRequirement[];
+  heroImage: ImageAsset;
+  gallery: ImageAsset[];
   experienceProducts: string[];
   freeExperience: boolean;
   isPublished: boolean;

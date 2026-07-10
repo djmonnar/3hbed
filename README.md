@@ -76,12 +76,13 @@ npm run preview
 ## 센터 정보 변경
 
 1. `src/data/centers.ts`에서 대상 센터를 찾습니다.
-2. 확인된 값만 입력합니다. 미확정 필드는 `null` 또는 빈 배열로 유지합니다.
+2. 네이버 플레이스와 센터 담당자가 확인한 주소·전화·운영시간·휴무·주차 정보를 입력합니다.
 3. 센터 사진은 `public/images/centers/{center}/`에 저장하고 `ImageAsset`로 연결합니다.
-4. 전시 제품은 실제 확인 후 `experienceProducts`에 추가합니다.
-5. `npm run build && npm run audit:build`로 확인합니다.
+4. 네이버 리뷰 수는 확인일과 함께 갱신하고 원문 링크를 유지합니다.
+5. 전시 제품은 실제 확인 후 `experienceProducts`에 추가합니다.
+6. `npm run build && npm run audit:build`로 확인합니다.
 
-진주경상센터의 주소·전화·운영시간·주차는 현재 미확정이며 임의로 노출하지 않습니다. 남강센터는 제공된 주소와 대표번호만 확정 정보로 사용합니다.
+현재 두 센터의 주소·전화·운영시간·휴무·주차·찾아오는 길·편의시설은 2026-07-10 네이버 플레이스에서 확인한 정보입니다. 운영 정보가 바뀌면 `src/data/centers.ts`와 구조화 데이터를 함께 갱신합니다.
 
 ## 제품 추가
 
@@ -123,9 +124,9 @@ npm run preview
 npm run optimize:images
 ```
 
-`public/images/products/`, `brand/`, `video/`의 JPG·PNG 원본에서 WebP와 AVIF를 생성하고 OG 이미지를 갱신합니다. 제품명 기반 영문 파일명을 사용하고 `width`, `height`, 의미 있는 `alt`를 데이터에 지정합니다.
+`public/images/products/`, `brand/`, `video/`, `centers/`의 JPG·PNG 원본에서 WebP와 AVIF를 생성하고 OG 이미지를 갱신합니다. 제품명 기반 영문 파일명을 사용하고 `width`, `height`, 의미 있는 `alt`를 데이터에 지정합니다.
 
-본사 이미지 URL을 `<img>`에 직접 연결하지 않습니다. 실제 센터 사진이 없으면 타 매장 사진이나 생성 이미지를 넣지 않고 사진 TODO를 유지합니다.
+본사 이미지 URL을 `<img>`에 직접 연결하지 않습니다. 실제 센터 사진만 로컬 자산으로 관리하며 타 매장 사진이나 생성 이미지를 센터 사진으로 사용하지 않습니다.
 
 ## 환경변수와 추적 ID
 
@@ -157,7 +158,7 @@ PUBLIC_NAVER_CONVERSION_ID=
 - `public/manifest.webmanifest`, `favicon.svg`, OG 이미지
 - BreadcrumbList, Organization, Store, Product, FAQPage, VideoObject 구조화 데이터
 
-진주센터는 의료기관이 아니라 제품 체험·상담 대리점이므로 `MedicalBusiness` 대신 사실관계에 맞는 `Store` 유형을 사용합니다. 운영시간, 가격, 좌표처럼 미확정인 정보는 구조화 데이터에 넣지 않습니다.
+진주센터는 의료기관이 아니라 제품 체험·상담 대리점이므로 `MedicalBusiness` 대신 사실관계에 맞는 `Store` 유형을 사용합니다. 확인된 주소·전화·운영시간은 Store 구조화 데이터에 포함하고 가격과 좌표는 근거가 확보될 때만 추가합니다.
 
 ## GitHub Pages 배포
 

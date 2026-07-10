@@ -46,7 +46,7 @@
 - 공통 UI: `src/components/`
 - 데이터: `src/data/site.ts`, `centers.ts`, `products.ts`, `certifications.ts`, `reviews.ts`, `faqs.ts`, `navigation.ts`, `tracking.ts`
 - 페이지: `src/pages/`
-- 이미지: `public/images/brand/`, `products/`, `video/`, `og/`
+- 이미지: `public/images/brand/`, `products/`, `video/`, `centers/`, `og/`
 - 호환·SEO: `public/ad.html`, `public/404.html`, `manifest.webmanifest`, `favicon.svg`, `src/pages/robots.txt.ts`
 - 운영 문서: `README.md`, `CONTENT_GUIDE.md`, `TODO.md`, `RENEWAL_PLAN.md`
 
@@ -94,7 +94,7 @@
 
 - Organization
 - BreadcrumbList
-- Store: 센터별 생성, 미확정 주소·운영시간 제외
+- Store: 센터별 주소·전화·운영시간과 네이버 플레이스 연결
 - Product: 가격·Offers 없이 확인된 모델 정보만 포함
 - FAQPage: 공개 답변만 포함
 - VideoObject
@@ -110,17 +110,17 @@
 - 전화·문자 이동 전 추적 호출
 - 별도 1차 수집 API가 없어 `sendBeacon`은 임의 연결하지 않음
 
-## 13. 이미지가 필요한 위치
+## 13. 실제 센터 이미지 반영
 
-두 센터의 외관, 입구, 이동 경로, 내부, 제품 전시, 고객 체험, 상담, 조작, 주차, 담당자 사진이 필요합니다. 상세 목록은 `TODO.md`와 각 센터 화면 placeholder에 표시했습니다.
+사용자가 제공한 진주경상센터 내부, 남강센터 내부, 진주 쇼룸, 남강센터 브랜드 이미지 4장을 로컬 저장하고 WebP·AVIF를 생성했습니다. 메인 히어로, 광고 랜딩, 센터 카드와 상세 갤러리에 실제 사진을 배치하고 사진 placeholder를 제거했습니다.
 
 ## 14. 추가로 필요한 정보
 
-진주경상센터 확정 연락처·주소·운영·주차, 남강센터 운영·주차, 전시 제품, 제품별 공식 세부 자료, 심의필과 심의번호, 공개용 마스킹 인증서, 실제 후기와 동의, 추적 ID가 필요합니다.
+제품별 공식 판매 자료, 가격·렌탈·배송·설치 조건, 심의필과 심의번호, 공개용 마스킹 인증서, 실제 후기 본문 게시 동의, 추적 ID가 필요합니다. 추가 센터 사진은 확보되는 순서대로 갤러리를 확장합니다.
 
-## 15. TODO 처리
+## 15. 센터 실정보와 후기 처리
 
-미확정 값은 `null`, 빈 배열, `unknown`, `isPublished: false`로 분리했습니다. 화면에서는 거짓 데이터를 보여주지 않고 “방문 전 확인” 또는 명확한 실제 사진 TODO로 안내합니다.
+2026-07-10 네이버 플레이스에서 두 센터의 주소·전화·운영시간·휴무·주차·찾아오는 길·편의시설을 확인해 반영했습니다. 후기는 임의 인용문을 만들지 않고 네이버의 현재 리뷰 수와 원문 링크를 센터별로 제공합니다.
 
 ## 16. Lighthouse 결과
 

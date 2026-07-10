@@ -6,18 +6,25 @@ const roots = [
   'public/images/products',
   'public/images/brand',
   'public/images/video',
+  'public/images/centers',
 ];
 
 const sourcePattern = /\.(jpe?g|png)$/i;
 
-for (const root of roots) {
+const sourceFiles = async (root) => {
   const entries = await readdir(root, { withFileTypes: true });
-
-  for (const entry of entries) {
-    if (!entry.isFile() || !sourcePattern.test(entry.name)) continue;
-    if (entry.name.includes('.original.')) continue;
-
+  const files = await Promise.all(entries.map(async (entry) => {
     const source = path.join(root, entry.name);
+    if (entry.isDirectory()) return sourceFiles(source);
+    if (!entry.isFile() || !sourcePattern.test(entry.name) || entry.name.includes('.original.')) return [];
+    return [source];
+  }));
+
+  return files.flat();
+};
+
+for (const root of roots) {
+  for (const source of await sourceFiles(root)) {
     const base = source.replace(sourcePattern, '');
     const image = sharp(source).rotate();
     const metadata = await image.metadata();

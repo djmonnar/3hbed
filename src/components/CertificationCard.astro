@@ -28,7 +28,6 @@ const modalId = `certificate-${certification.id}`;
         인증서 확대 보기 <Icon name="external" size={17} />
       </button>
     )}
-    {!certification.imagePublic && <small>공개 가능한 이미지가 준비되기 전까지 텍스트 정보만 제공합니다.</small>}
   </div>
 </article>
 
@@ -135,12 +134,6 @@ const modalId = `certificate-${certification.id}`;
     background: transparent;
     color: #174b35;
     font-weight: 750;
-  }
-
-  article small {
-    display: block;
-    margin-top: 1rem;
-    color: #5b625f;
   }
 
   .certificate-dialog {

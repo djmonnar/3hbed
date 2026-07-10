@@ -5,12 +5,10 @@ import Icon from '@/components/Icon.astro';
 import ResponsiveImage from '@/components/ResponsiveImage.astro';
 import { centers } from '@/data/centers';
 import { publishedCertifications } from '@/data/certifications';
-import { publishedProducts } from '@/data/products';
-import { site } from '@/data/site';
+import { heroMedia, site } from '@/data/site';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { phoneHref, smsHref, withBase } from '@/lib/paths';
 
-const heroProduct = publishedProducts[0];
 ---
 
 <BaseLayout
@@ -38,8 +36,8 @@ const heroProduct = publishedProducts[0];
         </div>
       </div>
       <div class="hero-image">
-        {heroProduct && <ResponsiveImage image={heroProduct.mainImage} class="product-image" loading="eager" fetchpriority="high" sizes="(max-width: 760px) 100vw, 48vw" />}
-        <div><span>본사 공식 제품 이미지</span><strong>{heroProduct?.name}</strong></div>
+        <ResponsiveImage image={heroMedia.brand} class="product-image" loading="eager" fetchpriority="high" sizes="(max-width: 760px) 100vw, 48vw" />
+        <div><span>JINJU NAMGANG CENTER</span><strong>3H 지압침대 무료체험</strong></div>
       </div>
     </div>
   </section>
@@ -61,10 +59,10 @@ const heroProduct = publishedProducts[0];
       <div class="center-list">
         {centers.map((center) => (
           <article>
-            <div><p>무료체험 문의 가능</p><h3>{center.shortName}</h3><span>{center.address ?? '상세 위치는 네이버 플레이스에서 확인'}</span></div>
+            <div><p>무료체험 문의 가능</p><h3>{center.shortName}</h3><span>{center.address}</span></div>
             <div class="center-actions">
               <a href={center.naverPlaceUrl} target="_blank" rel="noopener noreferrer" data-track-event="place_click" data-center={center.id}><Icon name="map" size={19} /> 위치 보기</a>
-              <a href={phoneHref(center.phone ?? site.representativePhone)} data-track-event="phone_click" data-center={center.id}><Icon name="phone" size={19} /> 전화</a>
+              <a href={phoneHref(center.phone)} data-track-event="phone_click" data-center={center.id}><Icon name="phone" size={19} /> 전화</a>
             </div>
           </article>
         ))}

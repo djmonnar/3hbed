@@ -1,15 +1,18 @@
 ---
 import Breadcrumbs from '@/components/Breadcrumbs.astro';
 import FinalCta from '@/components/FinalCta.astro';
+import Icon from '@/components/Icon.astro';
 import PageHero from '@/components/PageHero.astro';
 import SectionHeading from '@/components/SectionHeading.astro';
-import { publishedReviews, visitorProfiles } from '@/data/reviews';
+import { centers } from '@/data/centers';
+import { visitorProfiles } from '@/data/reviews';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 
 const breadcrumbs = [
   { name: '홈', href: '/' },
   { name: '고객후기', href: '/reviews/' },
 ];
+const reviewCheckedAt = '2026년 7월 10일';
 ---
 
 <BaseLayout
@@ -18,7 +21,7 @@ const breadcrumbs = [
   breadcrumbs={breadcrumbs}
 >
   <Breadcrumbs items={breadcrumbs} />
-  <PageHero kicker="VERIFIED REVIEWS" title="실제 후기만, 출처와 동의를 확인한 뒤 공개합니다" description="후기를 꾸며내거나 출처 없는 별점을 표시하지 않습니다. 현재 공개 기준을 충족한 후기가 없어 체험 고객 유형을 안내합니다." />
+  <PageHero kicker="NAVER REVIEWS" title="두 센터의 실제 후기를 네이버에서 확인하세요" description="센터별 네이버 플레이스에 등록된 방문자·블로그 리뷰 수와 원문 링크를 바로 제공합니다." />
 
   <section class="section-space profiles-section">
     <div class="container-wide profiles-grid">
@@ -29,17 +32,18 @@ const breadcrumbs = [
 
   <section class="section-space review-section">
     <div class="container-wide">
-      <SectionHeading kicker="CUSTOMER STORIES" title="공개된 실제 후기" />
-      {publishedReviews.length ? (
-        <div class="review-grid">
-          {publishedReviews.map((review) => <article><p>{review.content}</p><footer><strong>{review.displayName}</strong><span>{review.createdAt} · {review.source}</span></footer></article>)}
-        </div>
-      ) : (
-        <div class="empty-state">
-          <strong>공개 기준을 충족한 후기를 준비 중입니다.</strong>
-          <p>표시명, 작성일, 원문 URL, 개인정보 마스킹 여부, 홈페이지 사용 동의가 모두 확인된 후기만 이 영역에 등록합니다.</p>
-        </div>
-      )}
+      <SectionHeading kicker="CUSTOMER STORIES" title="네이버 플레이스 후기 현황" description={`${reviewCheckedAt} 네이버 플레이스에서 확인한 수치이며, 새 후기가 등록되면 달라질 수 있습니다.`} />
+      <div class="review-grid">
+        {centers.map((center) => (
+          <article>
+            <p class="review-label">{center.naverReviewLabel}</p>
+            <strong><span>{center.naverReviewCount}</span>건</strong>
+            <h3>{center.name}</h3>
+            <p>작성자가 공개한 후기 내용과 사진은 네이버 플레이스 원문에서 확인할 수 있습니다.</p>
+            <a href={center.naverPlaceUrl} target="_blank" rel="noopener noreferrer" data-track-event="place_click" data-center={center.id}>실제 후기 보기 <Icon name="external" size={17} /></a>
+          </article>
+        ))}
+      </div>
     </div>
   </section>
 
@@ -88,29 +92,56 @@ const breadcrumbs = [
     background: #f0f1ef;
   }
 
-  .empty-state {
-    margin-top: 3rem;
-    padding: clamp(2rem, 6vw, 5rem);
-    border-top: 3px solid #174b35;
-    background: white;
-    text-align: center;
-  }
-
-  .empty-state strong {
-    font-size: clamp(1.4rem, 3vw, 2rem);
-  }
-
-  .empty-state p {
-    max-width: 42rem;
-    margin: 1rem auto 0;
-    color: #5b625f;
-  }
-
   .review-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin-top: 3rem;
+  }
+
+  .review-grid article {
+    padding: clamp(1.5rem, 4vw, 2.75rem);
+    border-top: 3px solid #174b35;
+    background: white;
+  }
+
+  .review-grid .review-label {
+    margin: 0;
+    color: #8f6835;
+    font-size: .76rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+  }
+
+  .review-grid article > strong {
+    display: block;
+    margin-top: .4rem;
+    color: #174b35;
+    font-size: 1.15rem;
+  }
+
+  .review-grid article > strong span {
+    font-size: clamp(3.5rem, 8vw, 6rem);
+    line-height: 1;
+  }
+
+  .review-grid h3 {
+    margin: 1.5rem 0 .5rem;
+    font-size: 1.45rem;
+  }
+
+  .review-grid article > p:not(.review-label) {
+    color: #5b625f;
+  }
+
+  .review-grid a {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    gap: .45rem;
+    margin-top: .75rem;
+    color: #174b35;
+    font-weight: 800;
   }
 
   .standards-section {
@@ -151,7 +182,8 @@ const breadcrumbs = [
 
   @media (max-width: 760px) {
     .profiles-grid,
-    .standards-grid {
+    .standards-grid,
+    .review-grid {
       grid-template-columns: 1fr;
     }
   }

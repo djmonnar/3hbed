@@ -10,7 +10,7 @@ import { withBase } from '@/lib/paths';
     <div class="footer-brand">
       <img src={withBase('/images/brand/3h-logo-light.png')} width="126" height="52" alt="3H" loading="lazy" />
       <p>{site.officialDealerNotice}</p>
-      <small>제품 정보는 공식 자료의 범위 안에서 안내하며, 제품별 사양과 전시 여부는 방문 전 확인해 주세요.</small>
+      <small>제품 정보는 공식 자료의 범위 안에서 안내하며, 제품별 사양과 센터 체험 모델은 상담 시 정확하게 안내합니다.</small>
     </div>
     <nav aria-label="하단 주요 메뉴">
       <p>둘러보기</p>
@@ -32,7 +32,7 @@ import { withBase } from '@/lib/paths';
       {centers.map((center) => (
         <a href={withBase(`/centers/${center.slug}/`)}>
           <strong>{center.shortName}</strong>
-          <span>{center.address ?? '상세 위치는 네이버 플레이스에서 확인'}</span>
+          <span>{center.address}</span>
         </a>
       ))}
     </div>
