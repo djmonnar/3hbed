@@ -177,14 +177,14 @@ const schemas = centers.map((center) => ({
 
   .hero-grid {
     display: grid;
-    width: min(100% - clamp(2rem, 5vw, 6rem), 103rem);
-    grid-template-columns: minmax(29rem, .82fr) minmax(42rem, 1.18fr);
+    width: min(100% - clamp(2rem, 5vw, 6rem), 92rem);
+    grid-template-columns: minmax(27rem, .9fr) minmax(38rem, 1.1fr);
     align-items: center;
-    gap: clamp(2.5rem, 4vw, 5rem);
+    gap: clamp(2.5rem, 4vw, 4.5rem);
   }
 
   .hero-copy {
-    max-width: 43rem;
+    max-width: 39rem;
   }
 
   .hero-eyebrow {
@@ -198,6 +198,10 @@ const schemas = centers.map((center) => ({
   .display-title em {
     color: #174b35;
     font-style: normal;
+  }
+
+  .hero-copy .display-title {
+    font-size: clamp(3rem, 4.5vw, 4.8rem);
   }
 
   .hero-copy .lead-copy {
@@ -226,7 +230,7 @@ const schemas = centers.map((center) => ({
 
   .hero-visual {
     position: relative;
-    height: clamp(34rem, 40vw, 46rem);
+    height: clamp(31rem, 36vw, 41rem);
   }
 
   .hero-frame {
@@ -241,14 +245,14 @@ const schemas = centers.map((center) => ({
     z-index: 1;
     top: 0;
     left: 0;
-    width: 79%;
+    width: 78%;
   }
 
   .hero-frame-showroom {
     z-index: 2;
     right: 0;
     bottom: 0;
-    width: 69%;
+    width: 68%;
     border: .55rem solid #fcfaf5;
   }
 
@@ -305,7 +309,7 @@ const schemas = centers.map((center) => ({
 
   .trust-strip {
     display: grid;
-    width: min(100% - clamp(2rem, 5vw, 6rem), 103rem);
+    width: min(100% - clamp(2rem, 5vw, 6rem), 92rem);
     grid-template-columns: repeat(6, 1fr);
     margin-top: clamp(2.5rem, 6vw, 5rem);
     border-top: 1px solid #d5d8d5;
@@ -314,13 +318,13 @@ const schemas = centers.map((center) => ({
 
   .trust-strip span {
     display: inline-flex;
-    min-height: 74px;
+    min-height: 76px;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     border-right: 1px solid #d5d8d5;
-    font-size: 0.8rem;
-    font-weight: 720;
+    font-size: 0.85rem;
+    font-weight: 730;
     text-align: center;
   }
 
