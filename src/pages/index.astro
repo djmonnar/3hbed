@@ -48,12 +48,18 @@ const schemas = centers.map((center) => ({
         </div>
       </div>
 
-      <div class="hero-visual">
-        <ResponsiveImage image={heroMedia.showroom} class="hero-product-image" loading="eager" fetchpriority="high" sizes="(max-width: 800px) 100vw, 48vw" />
-        <div class="hero-caption">
-          <span>JINJU EXPERIENCE CENTER</span>
-          <strong>진주센터 실제 체험 공간</strong>
+      <div class="hero-visual" aria-label="진주 3H 체험센터 사진">
+        <div class="hero-frame hero-frame-brand">
+          <ResponsiveImage image={heroMedia.brand} class="hero-product-image" loading="eager" fetchpriority="high" sizes="(max-width: 960px) 94vw, 43vw" />
         </div>
+        <div class="hero-frame hero-frame-showroom">
+          <ResponsiveImage image={heroMedia.showroom} class="hero-product-image" loading="eager" sizes="(max-width: 960px) 86vw, 36vw" />
+          <div class="hero-caption">
+            <span>JINJU EXPERIENCE CENTER</span>
+            <strong>두 센터에서 직접 비교 체험</strong>
+          </div>
+        </div>
+        <div class="hero-photo-label"><span>01</span><strong>남강센터</strong><i></i><span>02</span><strong>진주경상센터</strong></div>
       </div>
     </div>
     <div class="container-wide trust-strip" aria-label="신뢰 정보">
@@ -165,15 +171,20 @@ const schemas = centers.map((center) => ({
 <style>
   .home-hero {
     overflow: hidden;
-    padding: clamp(3rem, 7vw, 6rem) 0 0;
+    padding: clamp(2.5rem, 5vw, 5rem) 0 0;
     background: #fcfaf5;
   }
 
   .hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.05fr) minmax(20rem, 0.95fr);
+    width: min(100% - clamp(2rem, 5vw, 6rem), 103rem);
+    grid-template-columns: minmax(29rem, .82fr) minmax(42rem, 1.18fr);
     align-items: center;
-    gap: clamp(2.5rem, 7vw, 7rem);
+    gap: clamp(2.5rem, 4vw, 5rem);
+  }
+
+  .hero-copy {
+    max-width: 43rem;
   }
 
   .hero-eyebrow {
@@ -215,25 +226,43 @@ const schemas = centers.map((center) => ({
 
   .hero-visual {
     position: relative;
-    min-height: clamp(26rem, 50vw, 40rem);
+    height: clamp(34rem, 40vw, 46rem);
+  }
+
+  .hero-frame {
+    position: absolute;
     overflow: hidden;
+    aspect-ratio: 16 / 9;
     background: #eee3d1;
+    box-shadow: 0 1.5rem 4rem rgba(30, 38, 34, .16);
+  }
+
+  .hero-frame-brand {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 79%;
+  }
+
+  .hero-frame-showroom {
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    width: 69%;
+    border: .55rem solid #fcfaf5;
   }
 
   .hero-product-image {
     width: 100%;
     height: 100%;
-    min-height: inherit;
     object-fit: cover;
   }
 
   .hero-caption {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: auto 0 0;
     display: grid;
-    padding: 4rem 1.5rem 1.5rem;
+    padding: 3.5rem 1.25rem 1.15rem;
     background: linear-gradient(transparent, rgba(11,45,34,.88));
     color: white;
   }
@@ -249,8 +278,34 @@ const schemas = centers.map((center) => ({
     font-size: 1.2rem;
   }
 
+  .hero-photo-label {
+    position: absolute;
+    z-index: 3;
+    bottom: 1rem;
+    left: 0;
+    display: grid;
+    grid-template-columns: auto auto 2rem auto auto;
+    align-items: center;
+    gap: .5rem;
+    padding: .75rem .9rem;
+    background: #174b35;
+    color: white;
+    font-size: .72rem;
+  }
+
+  .hero-photo-label span {
+    color: #d4b47c;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+
+  .hero-photo-label i {
+    height: 1px;
+    background: rgba(255,255,255,.35);
+  }
+
   .trust-strip {
     display: grid;
+    width: min(100% - clamp(2rem, 5vw, 6rem), 103rem);
     grid-template-columns: repeat(6, 1fr);
     margin-top: clamp(2.5rem, 6vw, 5rem);
     border-top: 1px solid #d5d8d5;
@@ -520,7 +575,9 @@ const schemas = centers.map((center) => ({
     }
 
     .hero-visual {
-      min-height: 26rem;
+      width: min(100%, 50rem);
+      height: clamp(30rem, 78vw, 40rem);
+      margin-inline: auto;
     }
 
     .trust-strip {
@@ -568,7 +625,27 @@ const schemas = centers.map((center) => ({
     }
 
     .hero-visual {
-      min-height: 22rem;
+      display: grid;
+      height: auto;
+      min-height: 0;
+    }
+
+    .hero-frame {
+      position: relative;
+    }
+
+    .hero-frame-brand {
+      width: 100%;
+    }
+
+    .hero-frame-showroom {
+      width: 92%;
+      margin: -1.5rem 0 0 auto;
+      border-width: .35rem;
+    }
+
+    .hero-photo-label {
+      display: none;
     }
 
     .trust-strip {
