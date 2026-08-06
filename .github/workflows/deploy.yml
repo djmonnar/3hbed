@@ -40,7 +40,6 @@ jobs:
           PUBLIC_GA4_ID: ${{ vars.PUBLIC_GA4_ID }}
           PUBLIC_META_PIXEL_ID: ${{ vars.PUBLIC_META_PIXEL_ID }}
           PUBLIC_NAVER_WCS_ID: ${{ vars.PUBLIC_NAVER_WCS_ID }}
-          PUBLIC_NAVER_CONVERSION_ID: ${{ vars.PUBLIC_NAVER_CONVERSION_ID }}
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4

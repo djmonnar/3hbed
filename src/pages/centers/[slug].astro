@@ -42,6 +42,7 @@ const schema = {
   description={`${center.name}의 위치와 3H지압침대 무료체험, 전화·문자·네이버 플레이스 안내입니다.`}
   breadcrumbs={breadcrumbs}
   schema={schema}
+  naverConversion={{ type: 'view_content', id: `center_${center.slug}` }}
 >
   <Breadcrumbs items={breadcrumbs} />
   <section class="center-hero">

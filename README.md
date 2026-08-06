@@ -143,8 +143,9 @@ PUBLIC_SITE_URL=https://djmonnar.github.io
 PUBLIC_GA4_ID=
 PUBLIC_META_PIXEL_ID=
 PUBLIC_NAVER_WCS_ID=
-PUBLIC_NAVER_CONVERSION_ID=
 ```
+
+`PUBLIC_NAVER_WCS_ID`를 비워두면 `src/data/tracking.ts`의 기본 공통키 `s_40bc8b8907c3`을 사용합니다.
 
 지원 이벤트:
 
@@ -153,6 +154,21 @@ PUBLIC_NAVER_CONVERSION_ID=
 - `scroll_25`, `scroll_50`, `scroll_75`, `scroll_90`
 
 공통 데이터에는 센터, 제품, 페이지 경로·제목, UTM, referrer, 네이버 `NaPm`, 메타 `fbclid`가 포함됩니다. UTM과 클릭 ID는 세션 저장소에 보존됩니다.
+
+## 네이버 광고 웹 전환 추적
+
+[신 스크립트(wcs.trans) 규격](https://naver.github.io/conversion-tracking/pages/01_script_guide_wcstrans/)으로 설치합니다. 공통 스크립트는 `src/components/NaverTracking.astro`가 모든 페이지 `</body>` 직전에 출력하고, 전환 정의는 `src/data/tracking.ts`에 모여 있습니다.
+
+| 네이버 전환유형 | `_conv.type` | 발생 경로 |
+| --- | --- | --- |
+| 상품상세보기 | `view_product` | 제품 라인업 > 개별 제품 상세페이지(`/products/{slug}/`) 진입. `items`에 공식 제품 ID·제품명·공식 카테고리·공식 가격 전송 |
+| 신청완료 | `lead` | 헤더 전화상담, 본문·하단 CTA의 전화·문자 버튼, 모바일 하단 고정바 클릭 |
+| 콘텐츠보기 | `view_content` | 무료체험 안내(`/experience/`), 진주센터 안내(`/centers/`), 센터 상세·오시는길(`/centers/{slug}/`) 진입 |
+| 사용자정의1 | `custom001` | 센터 카드·하단 CTA의 네이버 길찾기(네이버플레이스) 버튼 클릭 |
+
+온라인 결제·회원가입·예약폼이 없으므로 구매완료·장바구니·회원가입·결제시작·예약완료·구독·상품찜은 사용하지 않습니다.
+
+검수 전 테스트는 URL에 `?wcs_test=1`을 붙이면 전환유형이 `test_` 접두사로 전송되어 실제 전환 집계와 구 스크립트 필터링에 영향을 주지 않습니다.
 
 현재 별도 1차 수집 서버가 없어 `navigator.sendBeacon`을 임의의 엔드포인트로 보내지 않습니다. 전화·문자 이동 전 이벤트를 즉시 dataLayer·설정된 픽셀로 전달하고 짧은 이동 지연을 사용합니다. 향후 자사 수집 API를 도입하면 `sendBeacon` 또는 `fetch(..., { keepalive: true })`를 연결할 수 있습니다.
 

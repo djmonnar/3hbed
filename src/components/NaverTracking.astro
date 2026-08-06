@@ -1,0 +1,66 @@
+---
+import { naverClickConversions, trackingConfig, type NaverConversion } from '@/data/tracking';
+
+interface Props {
+  conversion?: NaverConversion;
+}
+
+const { conversion } = Astro.props;
+const { naverWcsId } = trackingConfig;
+---
+
+{naverWcsId && (
+  <Fragment>
+    <!-- NAVER 공통 SCRIPT -->
+    <script is:inline type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script is:inline type="text/javascript" define:vars={{ naverWcsId, conversion, naverClickConversions }}>
+      if (!window.wcs_add) window.wcs_add = {};
+      window.wcs_add['wa'] = naverWcsId;
+      if (!window._nasa) window._nasa = {};
+      if (window.wcs) {
+        window.wcs.inflow();
+        window.wcs_do();
+      }
+      /* NAVER 공통 SCRIPT END */
+
+      (() => {
+        if (!window.wcs || typeof window.wcs.trans !== 'function') return;
+
+        /* 검수 전 테스트용: ?wcs_test=1 을 붙이면 전환유형 앞에 test_ 가 붙습니다. */
+        const isTest = new URLSearchParams(window.location.search).get('wcs_test') === '1';
+        const fired = new Set();
+
+        window.naverConvert = (input) => {
+          if (!input || !input.type) return;
+          const key = `${input.type}:${input.id || ''}`;
+          if (fired.has(key)) return;
+          fired.add(key);
+
+          const _conv = {};
+          _conv.type = isTest ? `test_${input.type}` : input.type;
+          if (input.id) _conv.id = String(input.id);
+          if (input.value) _conv.value = String(input.value);
+          if (input.currency) _conv.currency = input.currency;
+          if (input.items && input.items.length) _conv.items = input.items;
+          window.wcs.trans(_conv);
+        };
+
+        /* 페이지 진입형 전환 (상품상세보기 / 콘텐츠보기) */
+        if (conversion) window.naverConvert(conversion);
+
+        /* 클릭형 전환 (신청완료 / 사용자정의1) */
+        document.addEventListener(
+          'click',
+          (event) => {
+            const target = event.target instanceof Element ? event.target.closest('[data-track-event]') : null;
+            if (!target) return;
+            const mapped = naverClickConversions[target.dataset.trackEvent];
+            if (!mapped) return;
+            window.naverConvert({ type: mapped.type, id: mapped.id });
+          },
+          true,
+        );
+      })();
+    </script>
+  </Fragment>
+)}

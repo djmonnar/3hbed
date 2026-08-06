@@ -2,8 +2,10 @@
 import Footer from '@/components/Footer.astro';
 import Header from '@/components/Header.astro';
 import MobileCta from '@/components/MobileCta.astro';
+import NaverTracking from '@/components/NaverTracking.astro';
 import Tracking from '@/components/Tracking.astro';
 import { site } from '@/data/site';
+import type { NaverConversion } from '@/data/tracking';
 import { absoluteUrl, withBase } from '@/lib/paths';
 import '@/styles/global.css';
 
@@ -22,6 +24,7 @@ interface Props {
   pageEvent?: string;
   product?: string;
   hideChrome?: boolean;
+  naverConversion?: NaverConversion;
 }
 
 const {
@@ -34,6 +37,7 @@ const {
   pageEvent,
   product,
   hideChrome = false,
+  naverConversion,
 } = Astro.props;
 
 const fullTitle = title.includes('3H') ? title : `${title} | ${site.shortName}`;
@@ -112,6 +116,7 @@ const jsonLd = [...baseSchemas, ...schemas];
     {!hideChrome && <Footer />}
     {!hideChrome && <MobileCta />}
     <Tracking />
+    <NaverTracking conversion={naverConversion} />
   </body>
 </html>
 

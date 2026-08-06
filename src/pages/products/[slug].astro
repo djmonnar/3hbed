@@ -8,6 +8,7 @@ import SectionHeading from '@/components/SectionHeading.astro';
 import { centers } from '@/data/centers';
 import { publishedProducts } from '@/data/products';
 import type { Product } from '@/data/types';
+import { sanitizeConversionText, type NaverConversion } from '@/data/tracking';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { absoluteUrl } from '@/lib/paths';
 
@@ -43,6 +44,21 @@ const schema = {
     url: product.officialProductUrl,
   } : undefined,
 };
+// 네이버 전환: 상품상세보기(view_product)
+const naverConversion: NaverConversion = {
+  type: 'view_product',
+  id: String(product.officialId),
+  items: [
+    {
+      id: String(product.officialId),
+      name: sanitizeConversionText(product.name),
+      category: sanitizeConversionText(product.officialCategory),
+      quantity: 1,
+      payAmount: product.officialPriceKrw ?? 0,
+      option: sanitizeConversionText(product.officialModel ?? ''),
+    },
+  ],
+};
 ---
 
 <BaseLayout
@@ -53,6 +69,7 @@ const schema = {
   schema={schema}
   pageEvent="product_view"
   product={product.slug}
+  naverConversion={naverConversion}
 >
   <Breadcrumbs items={breadcrumbs} />
   <section class="product-hero">
